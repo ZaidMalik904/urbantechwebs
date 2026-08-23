@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+.font-logo {
+  font-family: var(--font-sans), 'Outfit', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans), 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-sans), 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-family: var(--font-sans), 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom Glassmorphism & Shadow Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #4f46e5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Collision Bounce Keyframe Animations for Floating Action Buttons */
+@keyframes collideDown {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  42% {
+    transform: translateY(4.5px) scaleY(0.94);
+  }
+  50% {
+    transform: translateY(3px) scaleY(1.04);
+  }
+  65% {
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+@keyframes collideUp {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  42% {
+    transform: translateY(-4.5px) scaleY(0.94);
+  }
+  50% {
+    transform: translateY(-3px) scaleY(1.04);
+  }
+  65% {
+    transform: translateY(2px) scale(1);
+  }
+}
+
+.animate-collide-down {
+  animation: collideDown 2.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.animate-collide-up {
+  animation: collideUp 2.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
