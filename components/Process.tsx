@@ -228,8 +228,115 @@ export default function Process() {
             </p>
           </div>
 
-          {/* 10 Industry Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {/* Mobile Viewports: 3-Row Auto-Animate Marquee (100% Full-Bleed Edge-to-Edge) */}
+          <div className="block sm:hidden overflow-hidden -mx-4 sm:mx-0 w-[calc(100%+2rem)] sm:w-full space-y-3.5 my-6">
+            <style jsx>{`
+              @keyframes serveMarqueeLeft {
+                0% {
+                  transform: translateX(0%);
+                }
+                100% {
+                  transform: translateX(-33.333%);
+                }
+              }
+              @keyframes serveMarqueeRight {
+                0% {
+                  transform: translateX(-33.333%);
+                }
+                100% {
+                  transform: translateX(0%);
+                }
+              }
+              .animate-serve-left {
+                display: flex;
+                width: max-content;
+                animation: serveMarqueeLeft 16s linear infinite;
+              }
+              .animate-serve-right {
+                display: flex;
+                width: max-content;
+                animation: serveMarqueeRight 16s linear infinite;
+              }
+            `}</style>
+
+            {/* Row 1: Leftward Motion */}
+            <div className="animate-serve-left gap-3">
+              {[
+                ...categories.slice(0, 3),
+                ...categories.slice(0, 3),
+                ...categories.slice(0, 3),
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-md flex items-center gap-3 flex-shrink-0 w-72"
+                  >
+                    <div className="w-9 h-9 rounded-md bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-4.5 h-4.5 stroke-[2]" />
+                    </div>
+                    <div className="overflow-hidden">
+                      <h4 className="text-xs font-bold text-white leading-tight truncate">{item.name}</h4>
+                      <p className="text-[10px] text-slate-400 leading-tight mt-0.5 truncate">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Row 2: Rightward Motion */}
+            <div className="animate-serve-right gap-3">
+              {[
+                ...categories.slice(3, 7),
+                ...categories.slice(3, 7),
+                ...categories.slice(3, 7),
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-md flex items-center gap-3 flex-shrink-0 w-72"
+                  >
+                    <div className="w-9 h-9 rounded-md bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-4.5 h-4.5 stroke-[2]" />
+                    </div>
+                    <div className="overflow-hidden">
+                      <h4 className="text-xs font-bold text-white leading-tight truncate">{item.name}</h4>
+                      <p className="text-[10px] text-slate-400 leading-tight mt-0.5 truncate">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Row 3: Leftward Motion */}
+            <div className="animate-serve-left gap-3">
+              {[
+                ...categories.slice(7, 10),
+                ...categories.slice(7, 10),
+                ...categories.slice(7, 10),
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-md flex items-center gap-3 flex-shrink-0 w-72"
+                  >
+                    <div className="w-9 h-9 rounded-md bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-4.5 h-4.5 stroke-[2]" />
+                    </div>
+                    <div className="overflow-hidden">
+                      <h4 className="text-xs font-bold text-white leading-tight truncate">{item.name}</h4>
+                      <p className="text-[10px] text-slate-400 leading-tight mt-0.5 truncate">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* 10 Industry Cards Grid (Tablet & Desktop) */}
+          <div className="hidden sm:grid grid-cols-2 lg:grid-cols-5 gap-4">
             {categories.map((item, idx) => {
               const Icon = item.icon;
               return (
