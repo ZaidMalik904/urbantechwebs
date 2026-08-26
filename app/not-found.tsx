@@ -44,7 +44,7 @@ export default function NotFound() {
             Oops! This page got lost in space.
           </h2>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-md mx-auto">
-            The page you are looking for might have been moved, renamed, or no longer exists. Let's get you back on track!
+            The page you are looking for might have been moved, renamed, or no longer exists. Let&apos;s get you back on track!
           </p>
         </div>
 

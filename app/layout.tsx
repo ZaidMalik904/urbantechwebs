@@ -20,17 +20,94 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UrbanTechWebs | Modern Websites That Help Businesses Grow",
+  metadataBase: new URL("https://urbantechwebs.in"),
+  title: {
+    default: "UrbanTechWebs | Modern Custom Websites & Web Development Agency Noida",
+    template: "%s | UrbanTechWebs",
+  },
   description:
-    "Modern, fast and conversion-focused websites designed to make your business look professional and turn visitors into customers.",
+    "UrbanTechWebs is a premier web development agency in Noida Sector 62. We build sub-2s fast, mobile-responsive custom websites, e-commerce stores, and high-converting landing pages with WhatsApp lead integration.",
   keywords: [
-    "Web Development",
-    "UI/UX Design",
-    "Landing Pages",
-    "E-Commerce Websites",
-    "SEO",
+    // Primary Core Services
+    "Website Development",
+    "Website Design Agency",
+    "Custom Website Development",
+    "Business Website Builder",
+    "E-commerce Website Development",
+    "Landing Page Development",
+    "WordPress Development",
+    "Website Redesign Services",
+    "Custom Web Applications",
+    "Sub-2s Web Speed Optimization",
+    "Mobile Responsive Web Design",
+
+    // Location & Local SEO
+    "Web Development Agency Noida",
+    "Website Designer Noida Sector 62",
+    "Web Development Company Uttar Pradesh",
+    "Website Developers Delhi NCR",
+    "Best Web Agency India",
+
+    // Business & Industry Keywords
+    "Restaurant Website Development",
+    "Salon & Spa Website Design",
+    "Retail E-Commerce Store",
+    "Real Estate Website Development",
+    "Consultancy Web Portal",
+    "Car Rental Booking System",
+    "Travel & Vacation Website",
+    "NGO & Community Foundation Website",
+    "UPVC Industrial Manufacturing Website",
+
+    // Tech & Integration Capabilities
+    "WhatsApp Lead Routing Website",
+    "Google Maps Business Integration",
+    "SSL HTTPS Security Setup",
+    "SEO Optimized Web Development",
+    "Razorpay Stripe Payment Gateway Integration",
     "UrbanTechWebs",
+    "UrbanTechWebs Noida",
   ],
+  authors: [{ name: "UrbanTechWebs", url: "https://urbantechwebs.in" }],
+  creator: "UrbanTechWebs",
+  publisher: "UrbanTechWebs",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://urbantechwebs.in/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://urbantechwebs.in/",
+    title: "UrbanTechWebs | Custom Web Development Agency Noida",
+    description:
+      "We design fast, professional, and mobile-friendly custom websites that build trust, generate WhatsApp leads, and grow businesses online.",
+    siteName: "UrbanTechWebs",
+    images: [
+      {
+        url: "/images/logo (2).png",
+        width: 800,
+        height: 600,
+        alt: "UrbanTechWebs Web Agency Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UrbanTechWebs | Custom Web Development Agency Noida",
+    description:
+      "We design fast, professional, and mobile-friendly custom websites that build trust, generate WhatsApp leads, and grow businesses online.",
+    images: ["/images/logo (2).png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },
@@ -55,3 +132,4 @@ export default function RootLayout({
     </html>
   );
 }
+

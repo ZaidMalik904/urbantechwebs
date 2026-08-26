@@ -41,7 +41,7 @@ export default function Logo({
       {!imgError ? (
         <div className="relative flex items-center flex-shrink-0">
           <Image
-            src="/logo (2).png"
+            src="/images/logo (2).png"
             alt="UrbanTechwebs Logo Mark"
             width={90}
             height={90}

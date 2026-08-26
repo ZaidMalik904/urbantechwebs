@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { Phone } from "lucide-react";
 
 export default function FloatingActions() {
@@ -53,10 +54,11 @@ export default function FloatingActions() {
           className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.7)] hover:scale-110 active:scale-95 transition-all duration-300 relative group"
         >
           <span className="absolute inset-0 rounded-full bg-emerald-500/30 animate-ping pointer-events-none opacity-40" />
-          <img src="/whatsapp.svg" alt="WhatsApp" className="w-8 h-8 relative z-10" />
+          <Image src="/images/whatsapp.svg" alt="WhatsApp" width={32} height={32} className="w-8 h-8 relative z-10" />
         </a>
       </div>
 
     </div>
   );
 }
+

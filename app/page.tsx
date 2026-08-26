@@ -3,14 +3,17 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Stats from "@/components/Stats";
+import BusinessValue from "@/components/BusinessValue";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
-import Stats from "@/components/Stats";
+import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
-import TechStack from "@/components/TechStack";
+import WhatYouGet from "@/components/WhatYouGet";
 import Process from "@/components/Process";
-import Industries from "@/components/Industries";
+import TechStack from "@/components/TechStack";
 import Testimonials from "@/components/Testimonials";
+import Faq from "@/components/Faq";
 import CtaBanner from "@/components/CtaBanner";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
@@ -25,24 +28,48 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
-      {/* Top Announcement Bar & Sticky Navbar */}
+      {/* Navbar with Sticky Header & Announcement Ticker */}
       <Navbar onOpenQuoteModal={handleOpenQuoteModal} />
 
-      {/* Main Sections */}
+      {/* Main Page Sections Flow */}
       <main>
-        {/* Full-Height Hero Section */}
+        {/* 1. Hero Section */}
         <Hero onOpenQuoteModal={handleOpenQuoteModal} />
-        
-        {/* Full-Width Dark Theme Stats Section right below Hero */}
-        <Stats />
 
-        <Services />
+        {/* 2. Red Floating Stats Banner */}
+        <Stats />
+        
+        {/* 3. Business Value Section */}
+        <BusinessValue />
+
+        {/* 4. Why UrbanTechWebs (Our Working Promise) */}
         <WhyUs onOpenQuoteModal={handleOpenQuoteModal} />
+
+        {/* 5. Services Section (Our Core Services) */}
+        <Services />
+
+        {/* 6. About Section */}
+        <About />
+
+        {/* 7. Portfolio & Real Case Studies */}
         <Portfolio />
-        <Process />
+
+        {/* 8. What You Get (Deliverables Checklist) */}
+        <WhatYouGet onOpenQuoteModal={handleOpenQuoteModal} />
+
+        {/* 9. Technology Stack (Technical Credibility) */}
         <TechStack />
-        <Industries />
+
+        {/* 10. Our Process */}
+        <Process />
+
+        {/* 12. Testimonials & Authentic Client Feedback */}
         <Testimonials />
+
+        {/* 14. Frequently Asked Questions */}
+        <Faq />
+
+        {/* 15. Final CTA Banner */}
         <CtaBanner onOpenQuoteModal={handleOpenQuoteModal} />
       </main>
 
@@ -54,3 +81,4 @@ export default function Home() {
     </div>
   );
 }
+
