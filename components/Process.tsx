@@ -206,181 +206,200 @@ export default function Process() {
             );
           })}
         </div>
+      </div>
 
-        {/* Section 13: BUSINESSES WE WORK WITH */}
-        <div id="sectors" className="mt-20 pt-16 border-t border-slate-800/80">
-          
-          {/* Style Keyframes for 100% Seamless Infinite Marquee */}
-          <style jsx>{`
-            @keyframes industryMarqueeLeft {
-              0% { transform: translateX(0%); }
-              100% { transform: translateX(calc(-100% - 1rem)); }
-            }
-            @keyframes industryMarqueeRight {
-              0% { transform: translateX(calc(-100% - 1rem)); }
-              100% { transform: translateX(0%); }
-            }
-            .animate-industry-left {
-              animation: industryMarqueeLeft 26s linear infinite;
-            }
-            .animate-industry-right {
-              animation: industryMarqueeRight 26s linear infinite;
-            }
-            .industry-marquee-wrapper:hover .animate-industry-left,
-            .industry-marquee-wrapper:hover .animate-industry-right {
-              animation-play-state: paused;
-            }
-          `}</style>
+      {/* Section 13: BUSINESSES WE WORK WITH (Full-Bleed Width on Desktop) */}
+      <div id="sectors" className="w-full relative z-10 mt-20 pt-16 border-t border-slate-800/80 overflow-hidden">
+        
+        {/* Style Keyframes for 100% Seamless Infinite Marquee */}
+        <style jsx>{`
+          @keyframes industryMarqueeLeft {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(calc(-100% - 1rem)); }
+          }
+          @keyframes industryMarqueeRight {
+            0% { transform: translateX(calc(-100% - 1rem)); }
+            100% { transform: translateX(0%); }
+          }
+          .animate-industry-left {
+            animation: industryMarqueeLeft 32s linear infinite;
+          }
+          .animate-industry-right {
+            animation: industryMarqueeRight 32s linear infinite;
+          }
+          .industry-marquee-wrapper:hover .animate-industry-left,
+          .industry-marquee-wrapper:hover .animate-industry-right {
+            animation-play-state: paused;
+          }
+        `}</style>
 
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3 px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider backdrop-blur-md">
-              <Globe className="w-3.5 h-3.5" />
-              <span>INDUSTRIES</span>
-            </div>
-
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
-              Websites for Different Types of Businesses
-            </h2>
-
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              We design websites suited to the specific requirements of diverse business sectors.
-            </p>
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3 px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-500/10 border border-blue-500/30 rounded-full text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider backdrop-blur-md">
+            <Globe className="w-3.5 h-3.5" />
+            <span>INDUSTRIES</span>
           </div>
 
-          {/* Full-Bleed Edge-to-Edge 2-Row Marquee Wrapper */}
-          <div className="w-full relative z-10 space-y-5 industry-marquee-wrapper overflow-hidden px-0 mx-0 mb-12">
-            
-            {/* Row 1 Infinite Marquee (Leftward) */}
-            <div className="flex overflow-hidden w-full select-none gap-4 py-2">
-              <div className="flex shrink-0 gap-4 min-w-full animate-industry-left items-center">
-                {categories.slice(0, 5).map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div
-                      key={idx}
-                      className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                    >
-                      <div>
-                        <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                          <Icon className="w-5 h-5 stroke-[2]" />
-                        </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+            Websites for Different Types of Businesses
+          </h2>
 
-                        <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                          {item.name}
-                        </h3>
-
-                        <p className="text-xs text-slate-400 leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div aria-hidden="true" className="flex shrink-0 gap-4 min-w-full animate-industry-left items-center">
-                {categories.slice(0, 5).map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div
-                      key={`dup1-${idx}`}
-                      className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                    >
-                      <div>
-                        <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                          <Icon className="w-5 h-5 stroke-[2]" />
-                        </div>
-
-                        <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                          {item.name}
-                        </h3>
-
-                        <p className="text-xs text-slate-400 leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Row 2 Infinite Marquee (Rightward) */}
-            <div className="flex overflow-hidden w-full select-none gap-4 py-2">
-              <div className="flex shrink-0 gap-4 min-w-full animate-industry-right items-center">
-                {categories.slice(5).map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div
-                      key={idx}
-                      className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                    >
-                      <div>
-                        <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                          <Icon className="w-5 h-5 stroke-[2]" />
-                        </div>
-
-                        <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                          {item.name}
-                        </h3>
-
-                        <p className="text-xs text-slate-400 leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div aria-hidden="true" className="flex shrink-0 gap-4 min-w-full animate-industry-right items-center">
-                {categories.slice(5).map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div
-                      key={`dup2-${idx}`}
-                      className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                    >
-                      <div>
-                        <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                          <Icon className="w-5 h-5 stroke-[2]" />
-                        </div>
-
-                        <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                          {item.name}
-                        </h3>
-
-                        <p className="text-xs text-slate-400 leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-          </div>
-
-          {/* Bottom Prompt */}
-          <div className="text-center bg-slate-900/90 border border-slate-800 p-6 rounded-xl max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-4 sm:px-6">
-            <p className="text-slate-300 text-xs sm:text-sm font-medium text-left">
-              Have a different requirement? Tell us what you need and we&apos;ll discuss the right approach for your project.
-            </p>
-
-            <a
-              href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20discuss%20a%20website%20for%20my%20business%20industry."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 flex-shrink-0 shadow-md"
-            >
-              <Image src="/images/whatsapp.svg" alt="WhatsApp" width={16} height={16} className="w-4 h-4" />
-              <span>Discuss on WhatsApp</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            We design websites suited to the specific requirements of diverse business sectors.
+          </p>
         </div>
 
+        {/* Full-Bleed Edge-to-Edge 2-Row Marquee Wrapper (Zero Padding/Margins) */}
+        <div className="w-full relative z-10 space-y-5 industry-marquee-wrapper overflow-hidden px-0 mx-0 mb-12">
+          
+          {/* Row 1 Infinite Marquee (Leftward) */}
+          <div className="flex overflow-hidden w-full select-none gap-4 py-2">
+            <div className="flex shrink-0 gap-4 animate-industry-left items-center">
+              {[
+                ...categories.slice(0, 5),
+                ...categories.slice(0, 5),
+                ...categories.slice(0, 5),
+                ...categories.slice(0, 5),
+              ].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
+                  >
+                    <div>
+                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-5 h-5 stroke-[2]" />
+                      </div>
+
+                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                        {item.name}
+                      </h3>
+
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-left items-center">
+              {[
+                ...categories.slice(0, 5),
+                ...categories.slice(0, 5),
+                ...categories.slice(0, 5),
+                ...categories.slice(0, 5),
+              ].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={`dup1-${idx}`}
+                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
+                  >
+                    <div>
+                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-5 h-5 stroke-[2]" />
+                      </div>
+
+                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                        {item.name}
+                      </h3>
+
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Row 2 Infinite Marquee (Rightward) */}
+          <div className="flex overflow-hidden w-full select-none gap-4 py-2">
+            <div className="flex shrink-0 gap-4 animate-industry-right items-center">
+              {[
+                ...categories.slice(5),
+                ...categories.slice(5),
+                ...categories.slice(5),
+                ...categories.slice(5),
+              ].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
+                  >
+                    <div>
+                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-5 h-5 stroke-[2]" />
+                      </div>
+
+                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                        {item.name}
+                      </h3>
+
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-right items-center">
+              {[
+                ...categories.slice(5),
+                ...categories.slice(5),
+                ...categories.slice(5),
+                ...categories.slice(5),
+              ].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={`dup2-${idx}`}
+                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
+                  >
+                    <div>
+                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-5 h-5 stroke-[2]" />
+                      </div>
+
+                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                        {item.name}
+                      </h3>
+
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+        </div>
+
+        {/* Bottom Prompt */}
+        <div className="text-center bg-slate-900/90 border border-slate-800 p-6 rounded-xl max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-4 sm:px-6 mb-16">
+          <p className="text-slate-300 text-xs sm:text-sm font-medium text-left">
+            Have a different requirement? Tell us what you need and we&apos;ll discuss the right approach for your project.
+          </p>
+
+          <a
+            href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20discuss%20a%20website%20for%20my%20business%20industry."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 flex-shrink-0 shadow-md"
+          >
+            <Image src="/images/whatsapp.svg" alt="WhatsApp" width={16} height={16} className="w-4 h-4" />
+            <span>Discuss on WhatsApp</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
     </section>
   );
