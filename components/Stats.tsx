@@ -7,23 +7,23 @@ export default function Stats() {
   const highlights = [
     {
       icon: Zap,
-      title: "Sub-2s Page Loading",
-      desc: "Optimized Core Web Vitals for fast loading speeds.",
+      title: "Fast Page Loading",
+      desc: "Optimized image sizes and code structure for quick page load times.",
     },
     {
       icon: Smartphone,
       title: "100% Mobile Responsive",
-      desc: "Tested across smartphones, tablets, and desktop viewports.",
+      desc: "Designed and tested to work smoothly across smartphones and tablets.",
     },
     {
       icon: Search,
       title: "SEO-Friendly Setup",
-      desc: "Clean semantic HTML structure for search engine crawlers.",
+      desc: "Clean semantic HTML structure that helps search engines index your pages.",
     },
     {
       icon: ShieldCheck,
       title: "Post-Launch Support",
-      desc: "Continued technical assistance according to project package.",
+      desc: "Ongoing assistance for updates and maintenance after deployment.",
     },
   ];
 

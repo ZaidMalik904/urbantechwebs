@@ -32,7 +32,6 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
     { name: "Services", href: "#services" },
     { name: "Our Work", href: "#work" },
     { name: "Process", href: "#process" },
-    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
@@ -51,30 +50,25 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
 
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-7">
-            {navLinks.map((link) => {
-              const isContact = link.name === "Contact Us";
-              return (
-                <a
-                  key={link.name}
-                  href={isContact ? "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website." : link.href}
-                  target={isContact ? "_blank" : undefined}
-                  rel={isContact ? "noopener noreferrer" : undefined}
-                  className="group relative py-1 text-sm font-bold tracking-wide text-slate-200 hover:text-cyan-400 transition-colors"
-                >
-                  <span>{link.name}</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full rounded-full shadow-[0_0_8px_#22d3ee]" />
-                </a>
-              );
-            })}
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="group relative py-1 text-sm font-bold tracking-wide text-slate-200 hover:text-cyan-400 transition-colors"
+              >
+                <span>{link.name}</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full rounded-full shadow-[0_0_8px_#22d3ee]" />
+              </a>
+            ))}
           </nav>
 
           {/* Action Button: Get Free Quote CTA */}
           <div className="hidden md:flex items-center">
             <button
               onClick={onOpenQuoteModal}
-              className="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-md shadow-blue-600/30 transition-all hover:shadow-lg hover:scale-105 active:scale-95 flex items-center gap-2"
+              className="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-md shadow-blue-600/30 transition-all hover:shadow-lg hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
-              <span>Get Free Quote</span>
+              <span>Get a Free Website Quote</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -125,22 +119,17 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 px-3 mb-2 block font-mono">
                   Navigation Menu
                 </span>
-                {navLinks.map((link) => {
-                  const isContact = link.name === "Contact Us";
-                  return (
-                    <a
-                      key={link.name}
-                      href={isContact ? "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website." : link.href}
-                      target={isContact ? "_blank" : undefined}
-                      rel={isContact ? "noopener noreferrer" : undefined}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-bold text-slate-200 hover:text-cyan-400 hover:bg-slate-900 border border-transparent hover:border-slate-800 transition-all group"
-                    >
-                      <span>{link.name}</span>
-                      <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-cyan-400 transform group-hover:translate-x-1 transition-all" />
-                    </a>
-                  );
-                })}
+                {navLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-bold text-slate-200 hover:text-cyan-400 hover:bg-slate-900 border border-transparent hover:border-slate-800 transition-all group"
+                  >
+                    <span>{link.name}</span>
+                    <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-cyan-400 transform group-hover:translate-x-1 transition-all" />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -153,7 +142,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
                 }}
                 className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>GET FREE QUOTE</span>
+                <span>GET A FREE WEBSITE QUOTE</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 

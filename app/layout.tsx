@@ -22,51 +22,22 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://urbantechwebs.in"),
   title: {
-    default: "UrbanTechWebs | Modern Custom Websites & Web Development Agency Noida",
+    default: "Website Design & Development Services | UrbanTechWebs",
     template: "%s | UrbanTechWebs",
   },
   description:
-    "UrbanTechWebs is a premier web development agency in Noida Sector 62. We build sub-2s fast, mobile-responsive custom websites, e-commerce stores, and high-converting landing pages with WhatsApp lead integration.",
+    "UrbanTechWebs builds responsive, fast and SEO-friendly websites for businesses, including business websites, e-commerce stores, landing pages and custom web applications.",
   keywords: [
-    // Primary Core Services
+    "Website Design",
     "Website Development",
-    "Website Design Agency",
-    "Custom Website Development",
-    "Business Website Builder",
+    "Business Website Design",
     "E-commerce Website Development",
-    "Landing Page Development",
-    "WordPress Development",
-    "Website Redesign Services",
+    "Landing Page Design",
+    "WordPress Website Development",
+    "Website Redesign",
     "Custom Web Applications",
-    "Sub-2s Web Speed Optimization",
-    "Mobile Responsive Web Design",
-
-    // Location & Local SEO
-    "Web Development Agency Noida",
-    "Website Designer Noida Sector 62",
-    "Web Development Company Uttar Pradesh",
-    "Website Developers Delhi NCR",
-    "Best Web Agency India",
-
-    // Business & Industry Keywords
-    "Restaurant Website Development",
-    "Salon & Spa Website Design",
-    "Retail E-Commerce Store",
-    "Real Estate Website Development",
-    "Consultancy Web Portal",
-    "Car Rental Booking System",
-    "Travel & Vacation Website",
-    "NGO & Community Foundation Website",
-    "UPVC Industrial Manufacturing Website",
-
-    // Tech & Integration Capabilities
-    "WhatsApp Lead Routing Website",
-    "Google Maps Business Integration",
-    "SSL HTTPS Security Setup",
-    "SEO Optimized Web Development",
-    "Razorpay Stripe Payment Gateway Integration",
+    "Web Development Agency",
     "UrbanTechWebs",
-    "UrbanTechWebs Noida",
   ],
   authors: [{ name: "UrbanTechWebs", url: "https://urbantechwebs.in" }],
   creator: "UrbanTechWebs",
@@ -88,24 +59,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://urbantechwebs.in/",
-    title: "UrbanTechWebs | Custom Web Development Agency Noida",
+    title: "Website Design & Development Services | UrbanTechWebs",
     description:
-      "We design fast, professional, and mobile-friendly custom websites that build trust, generate WhatsApp leads, and grow businesses online.",
+      "UrbanTechWebs builds responsive, fast and SEO-friendly websites for businesses, including business websites, e-commerce stores, landing pages and custom web applications.",
     siteName: "UrbanTechWebs",
     images: [
       {
         url: "/images/logo (2).png",
         width: 800,
         height: 600,
-        alt: "UrbanTechWebs Web Agency Logo",
+        alt: "UrbanTechWebs website development project",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UrbanTechWebs | Custom Web Development Agency Noida",
+    title: "Website Design & Development Services | UrbanTechWebs",
     description:
-      "We design fast, professional, and mobile-friendly custom websites that build trust, generate WhatsApp leads, and grow businesses online.",
+      "UrbanTechWebs builds responsive, fast and SEO-friendly websites for businesses, including business websites, e-commerce stores, landing pages and custom web applications.",
     images: ["/images/logo (2).png"],
   },
   icons: {
@@ -123,11 +94,55 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://urbantechwebs.in/#organization",
+        "name": "UrbanTechWebs",
+        "url": "https://urbantechwebs.in/",
+        "logo": "https://urbantechwebs.in/images/logo%20(2).png",
+        "description": "UrbanTechWebs builds responsive, fast and SEO-friendly websites for businesses, including business websites, e-commerce stores, landing pages and custom web applications.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-7827775353",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "Hindi"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://urbantechwebs.in/#website",
+        "url": "https://urbantechwebs.in/",
+        "name": "UrbanTechWebs",
+        "publisher": {
+          "@id": "https://urbantechwebs.in/#organization"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Website Design & Development Services",
+        "provider": {
+          "@id": "https://urbantechwebs.in/#organization"
+        },
+        "areaServed": "India",
+        "serviceType": "Web Development, Website Design, E-commerce Development"
+      }
+    ]
+  };
+
   return (
     <html
       lang="en"
       className={`${outfit.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );

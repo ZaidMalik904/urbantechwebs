@@ -13,8 +13,8 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
     {
       num: "01",
       icon: Target,
-      title: "Direct Developer Communication",
-      description: "You speak directly to the developers building your site, avoiding middleman salespeople or miscommunications.",
+      title: "Business-Focused Planning",
+      description: "We start by understanding your business, customers and website requirements before deciding what needs to be built.",
       bgClass: "bg-blue-950/80 border-blue-500/50 shadow-blue-500/10",
       iconBg: "bg-blue-500/20 text-cyan-300 border-blue-400/40",
       accentText: "text-blue-400 font-black",
@@ -23,8 +23,8 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
     {
       num: "02",
       icon: Palette,
-      title: "Custom UI Design",
-      description: "We craft custom layouts suited to your exact business branding instead of copying generic pre-made templates.",
+      title: "Custom Website Design",
+      description: "Your website is designed around your brand and goals rather than simply copying a generic template.",
       bgClass: "bg-slate-950/90 border-slate-800",
       iconBg: "bg-blue-500/10 text-cyan-400 border-blue-500/20",
       accentText: "text-slate-400",
@@ -33,8 +33,8 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
     {
       num: "03",
       icon: Smartphone,
-      title: "Fast 7–14 Day Delivery",
-      description: "We set a clear delivery target and stick to it so your business can start receiving online inquiries quickly.",
+      title: "Responsive on Every Screen",
+      description: "The website is built to work properly across mobile phones, tablets and desktop computers.",
       bgClass: "bg-slate-950/90 border-slate-800",
       iconBg: "bg-blue-500/10 text-cyan-400 border-blue-500/20",
       accentText: "text-slate-400",
@@ -43,8 +43,8 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
     {
       num: "04",
       icon: Search,
-      title: "Handcoded Sub-2s Speed",
-      description: "Custom engineered code to ensure your web pages load in under 2 seconds on mobile devices.",
+      title: "Performance-Focused Development",
+      description: "We pay attention to image sizes, code, loading behaviour and overall website performance.",
       bgClass: "bg-indigo-950/90 border-indigo-500/50 shadow-indigo-500/10",
       iconBg: "bg-indigo-500/20 text-indigo-300 border-indigo-400/40",
       accentText: "text-indigo-400 font-black",
@@ -53,8 +53,8 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
     {
       num: "05",
       icon: MessageSquare,
-      title: "Direct WhatsApp Leads",
-      description: "Customer inquiries are formatted neatly and sent directly to your WhatsApp and email inbox.",
+      title: "SEO-Friendly Website Structure",
+      description: "We use clear page structures, semantic HTML, metadata and other technical practices that help search engines understand the website.",
       bgClass: "bg-emerald-950/90 border-emerald-500/50 shadow-emerald-500/10",
       iconBg: "bg-emerald-500/20 text-emerald-300 border-emerald-400/40",
       accentText: "text-emerald-400 font-black",
@@ -63,8 +63,8 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
     {
       num: "06",
       icon: ShieldCheck,
-      title: "Post-Launch Developer Help",
-      description: "We assist you with domain connection, SSL certificates, cloud hosting setup, and post-launch updates.",
+      title: "Support After Launch",
+      description: "We remain available for agreed updates, fixes and support after the website goes live.",
       bgClass: "bg-rose-950/90 border-rose-500/50 shadow-xl shadow-rose-950/40",
       iconBg: "bg-rose-500/20 text-rose-300 border-rose-400/40",
       accentText: "text-rose-400 font-black",
@@ -92,15 +92,15 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>OUR WORKING PROMISE</span>
+            <span>WHY CHOOSE US</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            Why Choose UrbanTechWebs
+            Why Choose UrbanTechWebs for Website Development?
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
-            No sales jargon or hidden costs. We provide direct developer contact, transparent pricing, and fast 7–14 day project delivery.
+            We focus on clear communication, custom design, mobile responsiveness, practical performance, and post-launch developer assistance.
           </p>
         </div>
 

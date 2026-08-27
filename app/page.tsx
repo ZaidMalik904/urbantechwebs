@@ -7,21 +7,21 @@ import Stats from "@/components/Stats";
 import BusinessValue from "@/components/BusinessValue";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
-import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
-import WhatYouGet from "@/components/WhatYouGet";
 import Process from "@/components/Process";
-import TechStack from "@/components/TechStack";
+import WhatYouGet from "@/components/WhatYouGet";
 import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import CtaBanner from "@/components/CtaBanner";
+import About from "@/components/About";
+import TechStack from "@/components/TechStack";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
 
 export default function Home() {
   const handleOpenQuoteModal = () => {
     window.open(
-      "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20consultation%20for%20my%20website%20project.",
+      "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20website%20project.",
       "_blank"
     );
   };
@@ -36,40 +36,40 @@ export default function Home() {
         {/* 1. Hero Section */}
         <Hero onOpenQuoteModal={handleOpenQuoteModal} />
 
-        {/* 2. Red Floating Stats Banner */}
+        {/* 2. Highlights Banner */}
         <Stats />
         
-        {/* 3. Business Value Section */}
+        {/* 3. Business Website Value Section */}
         <BusinessValue />
 
-        {/* 4. Why UrbanTechWebs (Our Working Promise) */}
-        <WhyUs onOpenQuoteModal={handleOpenQuoteModal} />
-
-        {/* 5. Services Section (Our Core Services) */}
-        <Services />
-
-        {/* 6. About Section */}
+        {/* 4. About UrbanTechWebs */}
         <About />
 
-        {/* 7. Portfolio & Real Case Studies */}
-        <Portfolio />
+        {/* 5. Core Website Services & Feature Options */}
+        <Services />
 
-        {/* 8. What You Get (Deliverables Checklist) */}
-        <WhatYouGet onOpenQuoteModal={handleOpenQuoteModal} />
-
-        {/* 9. Technology Stack (Technical Credibility) */}
+        {/* Technologies We Use (Auto-Animating Infinite Marquee) */}
         <TechStack />
 
-        {/* 10. Our Process */}
+        {/* 6. Why Choose UrbanTechWebs */}
+        <WhyUs onOpenQuoteModal={handleOpenQuoteModal} />
+
+        {/* 7. Website Design & Development Projects */}
+        <Portfolio />
+
+        {/* 8. Development Process & Businesses We Work With */}
         <Process />
 
-        {/* 12. Testimonials & Authentic Client Feedback */}
+        {/* 9. What You Can Expect From Us (Trust Section) */}
         <Testimonials />
 
-        {/* 14. Frequently Asked Questions */}
+        {/* 10. What You Get With Your Website (Website Inclusions) */}
+        <WhatYouGet onOpenQuoteModal={handleOpenQuoteModal} />
+
+        {/* 11. Frequently Asked Questions */}
         <Faq />
 
-        {/* 15. Final CTA Banner */}
+        {/* 12. Final CTA Banner */}
         <CtaBanner onOpenQuoteModal={handleOpenQuoteModal} />
       </main>
 

@@ -27,11 +27,11 @@ export default function Services() {
     {
       num: "01",
       icon: Code,
-      title: "Website Development",
-      description: "Modern, fast, and responsive business websites designed to build trust and generate customer enquiries.",
+      title: "Business Website Design",
+      description: "Professional, responsive websites for businesses that need a clear and credible online presence.",
       image: "/images/service_web_dev_real.jpg",
-      badge: "Custom High-Speed Design",
-      highlights: ["Sub-2s Mobile Load Speed", "100% Touch Responsive UI", "Clean SEO Technical Setup"],
+      badge: "Business Websites",
+      highlights: ["Clear Service Layout", "Mobile Responsive", "SEO-Friendly Structure"],
       cardBg: "bg-blue-50/90 hover:bg-blue-100/90 border-blue-200 shadow-blue-500/5",
       iconBg: "bg-blue-600 text-white shadow-md shadow-blue-600/30",
       titleColor: "text-blue-950 group-hover:text-blue-700",
@@ -41,11 +41,11 @@ export default function Services() {
     {
       num: "02",
       icon: ShoppingCart,
-      title: "E-Commerce Development",
-      description: "Online stores with product catalogs, shopping cart, secure checkout, and integrated payment solutions.",
+      title: "E-commerce Website Development",
+      description: "Online stores with product pages, shopping carts, checkout and payment integrations.",
       image: "/images/service_ecommerce_real.jpg",
-      badge: "Razorpay & Stripe Ready",
-      highlights: ["Product Catalog & Filters", "Cart Drawer & Quick Checkout", "Integrated Payment Gateway"],
+      badge: "E-Commerce Stores",
+      highlights: ["Product Catalogues", "Shopping Cart & Checkout", "Payment Gateway Setup"],
       cardBg: "bg-purple-50/90 hover:bg-purple-100/90 border-purple-200 shadow-purple-500/5",
       iconBg: "bg-purple-600 text-white shadow-md shadow-purple-600/30",
       titleColor: "text-purple-950 group-hover:text-purple-700",
@@ -55,11 +55,11 @@ export default function Services() {
     {
       num: "03",
       icon: Rocket,
-      title: "Landing Page Development",
-      description: "High-quality, conversion-focused landing pages built specifically for ad campaigns and lead acquisition.",
+      title: "Landing Page Design",
+      description: "Focused landing pages for advertising campaigns, promotions and lead generation.",
       image: "/images/service_landing_page_real.jpg",
-      badge: "Ad Campaign Conversion UI",
-      highlights: ["High-Converting CTA Layout", "1-Click WhatsApp Lead Intake", "Google & Meta Ads Ready"],
+      badge: "Lead Acquisition",
+      highlights: ["Clear Call-to-Action", "WhatsApp & Form Leads", "Optimized for Ad Campaigns"],
       cardBg: "bg-emerald-50/90 hover:bg-emerald-100/90 border-emerald-200 shadow-emerald-500/5",
       iconBg: "bg-emerald-600 text-white shadow-md shadow-emerald-600/30",
       titleColor: "text-emerald-950 group-hover:text-emerald-700",
@@ -69,11 +69,11 @@ export default function Services() {
     {
       num: "04",
       icon: Globe,
-      title: "WordPress Development",
-      description: "Professional WordPress websites, theme customizations, content management, and plugin setups.",
+      title: "WordPress Website Development",
+      description: "Custom WordPress websites for businesses that want an easy-to-manage website.",
       image: "/images/service_wordpress_real.jpg",
-      badge: "Gutenberg CMS Admin",
-      highlights: ["Custom Theme Customizer", "Easy Admin Content Editor", "Security Hardening & Plugins"],
+      badge: "Easy Content Management",
+      highlights: ["Custom Theme Setup", "Easy Admin Dashboard", "Plugin & Security Setup"],
       cardBg: "bg-indigo-50/90 hover:bg-indigo-100/90 border-indigo-200 shadow-indigo-500/5",
       iconBg: "bg-indigo-600 text-white shadow-md shadow-indigo-600/30",
       titleColor: "text-indigo-950 group-hover:text-indigo-700",
@@ -84,10 +84,10 @@ export default function Services() {
       num: "05",
       icon: RefreshCw,
       title: "Website Redesign",
-      description: "Modernize outdated websites to improve visual appeal, mobile usability, page speed, and overall user experience.",
+      description: "Modernize an outdated website with better design, mobile responsiveness, usability and performance.",
       image: "/images/service_redesign_real.jpg",
-      badge: "UI & Speed Overhaul",
-      highlights: ["Modern Brand Layout", "Core Web Vitals Speedup", "Mobile Viewport Usability"],
+      badge: "Design & Speed Refresh",
+      highlights: ["Modern Layout & UI", "Mobile Friendly Design", "Improved Loading Speed"],
       cardBg: "bg-amber-50/90 hover:bg-amber-100/90 border-amber-200 shadow-amber-500/5",
       iconBg: "bg-amber-600 text-white shadow-md shadow-amber-600/30",
       titleColor: "text-amber-950 group-hover:text-amber-700",
@@ -97,11 +97,11 @@ export default function Services() {
     {
       num: "06",
       icon: Cpu,
-      title: "Custom Web Applications",
-      description: "Custom web dashboards, client portals, appointment booking systems, and internal business tools.",
+      title: "Custom Web Application Development",
+      description: "Custom dashboards, portals, booking systems and business applications built around specific requirements.",
       image: "/images/service_custom_app_real.jpg",
-      badge: "Custom Dashboard API",
-      highlights: ["Role-Based User Controls", "REST API & DB Integration", "Real-Time Data Analytics"],
+      badge: "Custom Web Apps",
+      highlights: ["Custom Dashboards", "Booking & Reservation Systems", "Database Integration"],
       cardBg: "bg-teal-50/90 hover:bg-teal-100/90 border-teal-200 shadow-teal-500/5",
       iconBg: "bg-teal-600 text-white shadow-md shadow-teal-600/30",
       titleColor: "text-teal-950 group-hover:text-teal-700",
@@ -111,14 +111,19 @@ export default function Services() {
   ];
 
   const secondaryCapabilities = [
-    { title: "SEO-Ready Development", icon: Search },
-    { title: "Speed Optimization", icon: Zap },
-    { title: "WhatsApp Integration", icon: MessageSquare },
-    { title: "Contact & Lead Forms", icon: Mail },
-    { title: "Google Maps Integration", icon: MapPin },
-    { title: "Payment Gateway Setup", icon: CreditCard },
-    { title: "API & Database Integration", icon: Database },
-    { title: "Post-Launch Maintenance", icon: ShieldCheck },
+    { title: "WhatsApp integration", icon: MessageSquare },
+    { title: "Contact forms", icon: Mail },
+    { title: "Google Maps", icon: MapPin },
+    { title: "Online booking", icon: Rocket },
+    { title: "Payment gateway integration", icon: CreditCard },
+    { title: "Product catalogues", icon: ShoppingCart },
+    { title: "Image galleries", icon: Globe },
+    { title: "Social media integration", icon: Sparkles },
+    { title: "Customer enquiry systems", icon: Mail },
+    { title: "Admin panels", icon: Database },
+    { title: "API integrations", icon: Code },
+    { title: "Basic SEO setup", icon: Search },
+    { title: "Performance optimization", icon: Zap },
   ];
 
   return (
@@ -129,20 +134,20 @@ export default function Services() {
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-50 border border-blue-200/80 rounded-full text-blue-600 text-xs font-mono font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>OUR CORE SERVICES</span>
+            <span>SERVICES OFFERED</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tight leading-tight">
-            Our Core Web Services
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            Website Design & Development Services
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-            We deliver straightforward, high-quality web development services focused on clear communication and business outcome.
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
+            We build simple, effective and reliable websites tailored to your specific business goals and customer needs.
           </p>
         </div>
 
         {/* 6 Primary Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
           {primaryServices.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -196,124 +201,156 @@ export default function Services() {
                 </div>
 
                 <a
-                  href={`https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20discuss%20the%20${encodeURIComponent(service.title)}%20solution%20for%20my%20business.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
                   className={`pt-4 border-t ${service.footerBorder} flex items-center justify-between text-xs font-bold text-slate-600 group-hover:text-slate-900 transition-colors`}
                 >
-                  <span>Discuss This Solution</span>
+                  <span>Discuss This Service</span>
                   <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             );
           })}
         </div>
+      </div>
 
-        {/* Secondary Capabilities Red Container with Styled Feature Cards */}
-        <div className="bg-gradient-to-r from-red-600 via-red-600 to-rose-700 border border-red-500/90 rounded-md py-10 px-0 sm:p-8 shadow-xl shadow-red-600/25 overflow-hidden">
-          <style jsx>{`
-            @keyframes mobileMarqueeLeft {
-              0% {
-                transform: translateX(0%);
-              }
-              100% {
-                transform: translateX(-33.333%);
-              }
-            }
-            @keyframes mobileMarqueeRight {
-              0% {
-                transform: translateX(-33.333%);
-              }
-              100% {
-                transform: translateX(0%);
-              }
-            }
-            .animate-mobile-marquee-left {
-              display: flex;
-              width: max-content;
-              animation: mobileMarqueeLeft 18s linear infinite;
-            }
-            .animate-mobile-marquee-right {
-              display: flex;
-              width: max-content;
-              animation: mobileMarqueeRight 18s linear infinite;
-            }
-            .animate-mobile-marquee-left:hover,
-            .animate-mobile-marquee-right:hover {
-              animation-play-state: paused;
-            }
-          `}</style>
+      {/* Section 5: Features We Can Add to Your Website (Full-Width Dark Section with 2-Row Auto-Animating Infinite Marquee) */}
+      <div id="features" className="w-full bg-slate-950 text-white pt-16 sm:pt-20 pb-16 sm:pb-20 border-t border-slate-800 relative overflow-hidden">
+        
+        {/* Background Image Layer */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image
+            src="/images/process_bg.jpg"
+            alt="Features background design"
+            fill
+            className="object-cover object-center opacity-30 scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/95 via-slate-950/90 to-slate-950/95" />
+        </div>
 
-          <h3 className="text-center text-xs sm:text-xs font-mono font-black uppercase tracking-wider text-red-100 mb-7 px-6 sm:px-0">
-            ADDITIONAL INTEGRATION & OPTIMIZATION CAPABILITIES
-          </h3>
+        {/* Interior Dot Grid Pattern Overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(#38bdf8_1.2px,transparent_1.2px)] [background-size:28px_28px] opacity-15 pointer-events-none z-0" />
 
-          {/* Mobile Auto-Animate 2-Row Dual Direction Marquee (100% Flush to Red Container Edges) */}
-          <div className="block sm:hidden overflow-hidden w-full space-y-4">
-            {/* Row 1: Leftward Motion */}
-            <div className="animate-mobile-marquee-left gap-3">
-              {[
-                ...secondaryCapabilities.slice(0, 4),
-                ...secondaryCapabilities.slice(0, 4),
-                ...secondaryCapabilities.slice(0, 4),
-              ].map((item, i) => {
-                const CapIcon = item.icon;
-                return (
-                  <div
-                    key={i}
-                    className="bg-white/15 border border-white/25 rounded-md p-4 text-white text-xs font-bold shadow-none flex items-center gap-3 flex-shrink-0 w-64"
-                  >
-                    <div className="w-8 h-8 rounded-md bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <CapIcon className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="truncate">{item.title}</span>
-                  </div>
-                );
-              })}
-            </div>
+        {/* Ambient Glowing Orbs */}
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none z-0" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none z-0" />
 
-            {/* Row 2: Rightward Reverse Motion */}
-            <div className="animate-mobile-marquee-right gap-3">
-              {[
-                ...secondaryCapabilities.slice(4, 8),
-                ...secondaryCapabilities.slice(4, 8),
-                ...secondaryCapabilities.slice(4, 8),
-              ].map((item, i) => {
-                const CapIcon = item.icon;
-                return (
-                  <div
-                    key={i}
-                    className="bg-white/15 border border-white/25 rounded-md p-4 text-white text-xs font-bold shadow-none flex items-center gap-3 flex-shrink-0 w-64"
-                  >
-                    <div className="w-8 h-8 rounded-md bg-white/20 flex items-center justify-center flex-shrink-0">
-                      <CapIcon className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="truncate">{item.title}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+        {/* Style Keyframes for 100% Seamless Infinite Marquee */}
+        <style jsx>{`
+          @keyframes featureMarqueeLeft {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(calc(-100% - 1.5rem)); }
+          }
+          @keyframes featureMarqueeRight {
+            0% { transform: translateX(calc(-100% - 1.5rem)); }
+            100% { transform: translateX(0%); }
+          }
+          .animate-feature-left {
+            animation: featureMarqueeLeft 25s linear infinite;
+          }
+          .animate-feature-right {
+            animation: featureMarqueeRight 25s linear infinite;
+          }
+          .feature-marquee-wrapper:hover .animate-feature-left,
+          .feature-marquee-wrapper:hover .animate-feature-right {
+            animation-play-state: paused;
+          }
+        `}</style>
 
-          {/* Tablet & Desktop Grid */}
-          <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {secondaryCapabilities.map((item, i) => {
-              const CapIcon = item.icon;
-              return (
-                <div
-                  key={i}
-                  className="bg-white/15 border border-white/25 rounded-md p-4 text-white text-xs font-bold shadow-none hover:bg-white hover:text-red-700 transition-all flex items-center gap-3 group"
-                >
-                  <div className="w-8 h-8 rounded-md bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:bg-red-600 group-hover:text-white transition-colors">
-                    <CapIcon className="w-4 h-4 text-white" />
-                  </div>
-                  <span>{item.title}</span>
-                </div>
-              );
-            })}
+        {/* Header (Centered Container) */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider rounded-full backdrop-blur-md">
+              FEATURE OPTIONS
+            </span>
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white">
+              Features We Can Add to Your Website
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+              Available based on your project requirements.
+            </p>
           </div>
         </div>
 
+        {/* Full-Bleed Edge-to-Edge Marquee Wrapper (Zero Padding/Margins) */}
+        <div className="w-full relative z-10 space-y-6 sm:space-y-8 feature-marquee-wrapper overflow-hidden px-0 mx-0">
+          
+          {/* Row 1 Infinite Marquee (Leftward) */}
+          <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
+            <div className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-left items-center">
+              {secondaryCapabilities.slice(0, 7).map((item, i) => {
+                const CapIcon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <CapIcon className="w-5 h-5 stroke-[2]" />
+                    </div>
+                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-left items-center">
+              {secondaryCapabilities.slice(0, 7).map((item, i) => {
+                const CapIcon = item.icon;
+                return (
+                  <div
+                    key={`dup1-${i}`}
+                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <CapIcon className="w-5 h-5 stroke-[2]" />
+                    </div>
+                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Row 2 Infinite Marquee (Rightward) */}
+          <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
+            <div className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-right items-center">
+              {secondaryCapabilities.slice(7).map((item, i) => {
+                const CapIcon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <CapIcon className="w-5 h-5 stroke-[2]" />
+                    </div>
+                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-right items-center">
+              {secondaryCapabilities.slice(7).map((item, i) => {
+                const CapIcon = item.icon;
+                return (
+                  <div
+                    key={`dup2-${i}`}
+                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <CapIcon className="w-5 h-5 stroke-[2]" />
+                    </div>
+                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
   );

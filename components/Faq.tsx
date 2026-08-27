@@ -7,36 +7,40 @@ import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
 export default function Faq() {
   const faqs = [
     {
+      q: "How much does it cost to build a website?",
+      a: "Website development cost depends on the number of pages, custom design work, features and integrations required. Our packages start from ₹2,999 for Starter websites and ₹5,999 for Business websites.",
+    },
+    {
       q: "How long does it take to build a website?",
-      a: "Typical delivery is around 7–14 working days depending on the project requirements, page count, and content availability.",
+      a: "Typical delivery is 7–14 working days where applicable, depending on project scope, feature complexity and content availability.",
     },
     {
-      q: "Will my website work on mobile?",
-      a: "Yes. All websites are engineered to be 100% responsive across smartphones, tablets, laptops, and desktop computers.",
+      q: "Will my website work on mobile phones?",
+      a: "Yes, all websites are designed to be fully responsive across mobile phones, tablets, laptops and desktop computers.",
     },
     {
-      q: "Can you integrate WhatsApp?",
-      a: "Yes. Direct WhatsApp chat buttons and custom pre-filled message links can be integrated based on your business requirements.",
+      q: "Can you add WhatsApp to my website?",
+      a: "Yes, WhatsApp contact functionality can be integrated based on your requirements so visitors can message you directly.",
     },
     {
       q: "Can you add online payments?",
-      a: "Yes. Payment gateways (such as Razorpay, Stripe, or UPI integration) can be added for e-commerce stores, booking sites, or paid services.",
+      a: "Yes, payment gateways can be integrated for suitable e-commerce stores, booking sites and digital service portals.",
     },
     {
       q: "Can you connect my domain and hosting?",
-      a: "Yes. Complete domain DNS configuration, cloud hosting setup, and SSL security installation are handled as part of the deployment.",
+      a: "Yes, complete domain DNS configuration and cloud hosting setup can be handled as part of the project.",
     },
     {
-      q: "Will I get support after the website goes live?",
-      a: "Yes. Post-launch technical support is provided according to your selected package or project agreement.",
+      q: "Will I get support after the website is launched?",
+      a: "Yes, post-launch support is available according to your selected package or project agreement.",
     },
     {
-      q: "Can I request changes later?",
-      a: "Yes. Future updates, page additions, and feature maintenance can be provided according to your evolving scope.",
+      q: "Can I update my website later?",
+      a: "Yes. Future updates, content additions and ongoing maintenance can be provided depending on your evolving requirements.",
     },
     {
-      q: "Do you provide SEO?",
-      a: "Websites are developed with a clean, SEO-friendly technical structure (clean HTML5, fast speed, meta tags, sitemap). Ongoing content SEO services can be provided separately if required.",
+      q: "Do you provide SEO services?",
+      a: "Websites are developed with an SEO-friendly technical structure (clean HTML, metadata, fast speed). Ongoing SEO services can be provided separately if required.",
     },
   ];
 
@@ -54,15 +58,15 @@ export default function Faq() {
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-4">
           <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200/80 text-blue-600 text-xs font-mono font-bold uppercase tracking-wider">
             <HelpCircle className="w-3.5 h-3.5" />
-            <span>GOT QUESTIONS?</span>
+            <span>QUESTIONS & ANSWERS</span>
           </span>
 
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
-            Frequently Asked Questions
+            Frequently Asked Questions About Website Development
           </h2>
 
           <p className="text-slate-600 text-base leading-relaxed font-normal">
-            Everything you need to know about working with UrbanTechWebs to build your business website.
+            Common questions about building a business website with UrbanTechWebs.
           </p>
         </div>
 

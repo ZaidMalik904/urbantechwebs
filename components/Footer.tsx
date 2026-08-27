@@ -31,18 +31,18 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { name: "Home", href: "#home", isExternal: false },
-                { name: "About", href: "#about", isExternal: false },
-                { name: "Services", href: "#services", isExternal: false },
-                { name: "Our Work", href: "#work", isExternal: false },
-                { name: "Process", href: "#process", isExternal: false },
-                { name: "Contact Us", href: "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website.", isExternal: true },
+                { name: "Home", href: "#home", external: false },
+                { name: "Services", href: "#services", external: false },
+                { name: "Our Work", href: "#work", external: false },
+                { name: "Process", href: "#process", external: false },
+                { name: "About", href: "#about", external: false },
+                { name: "Contact", href: "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website.", external: true },
               ].map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    target={item.isExternal ? "_blank" : undefined}
-                    rel={item.isExternal ? "noopener noreferrer" : undefined}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
                     className="hover:text-cyan-400 transition-colors inline-flex items-center gap-1 text-slate-300"
                   >
                     <span>{item.name}</span>

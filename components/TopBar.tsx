@@ -11,16 +11,16 @@ export default function TopBar({ onOpenQuoteModal }: TopBarProps) {
   // Announcements list (Free domain & hosting removed as requested)
   const announcements = [
     {
-      text: "LIMITED TIME — Save 20% on E-Commerce & Custom Web Development!",
-      action: "GET ESTIMATE",
+      text: "Custom Website Design & Development for Growing Businesses",
+      action: "GET A QUOTE",
     },
     {
-      text: "FAST DELIVERY — High Performance & SEO-Optimized Websites in 7 Days!",
-      action: "LEARN MORE",
+      text: "Fast, Responsive & SEO-Friendly Websites Delivered in 7–14 Working Days",
+      action: "VIEW PROCESS",
     },
     {
-      text: "FREE CONSULTATION — Book a 1-on-1 Web Strategy Session Today!",
-      action: "TALK TO EXPERT",
+      text: "Free Website Consultation — Discuss Your Project Requirements",
+      action: "CONTACT US",
     },
   ];
 

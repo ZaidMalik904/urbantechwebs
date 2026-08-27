@@ -8,14 +8,14 @@ export default function BusinessValue() {
   const cards = [
     {
       icon: ShieldCheck,
-      title: "Instant Trust & Credibility",
-      description: "A professional website gives your business an official address online. Customers can verify your business address, work photos, and authentic reviews before making big payments.",
+      title: "Build Customer Trust",
+      description: "A well-designed website gives customers a clear place to learn about your business, services and contact information.",
       image: "/images/value_trust_credibility.jpg",
-      badge: "Credibility & Trust",
+      badge: "Customer Trust",
       highlights: [
-        "Official business address & verified contact details",
-        "Authentic work portfolio & client case studies",
-        "SSL HTTPS security padlock for customer confidence",
+        "Verified business information & contact details",
+        "Clear presentation of past work & experience",
+        "Secure SSL certificate for visitor safety",
       ],
       iconBg: "bg-blue-600 text-white",
       badgeBg: "bg-blue-100 text-blue-800 border-blue-300",
@@ -23,14 +23,14 @@ export default function BusinessValue() {
     },
     {
       icon: MessageSquare,
-      title: "Direct WhatsApp Enquiries",
-      description: "Make it effortless for potential customers to reach you. With a single tap, visitors can initiate a direct WhatsApp conversation with pre-filled enquiry details.",
+      title: "Get More Enquiries",
+      description: "Make it easy for visitors to call, message on WhatsApp or submit an enquiry directly through your website.",
       image: "/images/value_whatsapp_enquiry.jpg",
-      badge: "Direct Lead Intake",
+      badge: "Direct Contact",
       highlights: [
-        "1-click direct WhatsApp chat button on all devices",
-        "Pre-filled enquiry messages formatted for quick replies",
-        "Instant notification directly to your phone number",
+        "Direct WhatsApp chat buttons on every page",
+        "Simple inquiry forms for quick customer messages",
+        "Click-to-call phone numbers for mobile visitors",
       ],
       iconBg: "bg-emerald-600 text-white",
       badgeBg: "bg-emerald-100 text-emerald-800 border-emerald-300",
@@ -38,14 +38,14 @@ export default function BusinessValue() {
     },
     {
       icon: LayoutGrid,
-      title: "All Services & Scope Clear",
-      description: "Stop wasting hours answering the same basic questions repeatedly on phone calls. A clean website outlines all your services, deliverables, and package details clearly.",
+      title: "Showcase Your Services",
+      description: "Present services, products, work samples, photos and important business information in one clear place.",
       image: "/images/value_services_pricing.jpg",
       badge: "Clear Offerings",
       highlights: [
-        "Complete breakdown of services and deliverables",
-        "Eliminates repetitive phone call pricing queries",
-        "Guides visitors smoothly toward making an inquiry",
+        "Structured overview of all services offered",
+        "Photo galleries and portfolio showcases",
+        "Answers common customer questions upfront",
       ],
       iconBg: "bg-purple-600 text-white",
       badgeBg: "bg-purple-100 text-purple-800 border-purple-300",
@@ -53,14 +53,14 @@ export default function BusinessValue() {
     },
     {
       icon: Clock,
-      title: "Open 24/7 For New Leads",
-      description: "Your physical office or store has opening hours, but your website works continuously. Capture inquiries and potential client leads even while you sleep or are busy on calls.",
+      title: "Be Available Online",
+      description: "Customers can learn about your business whenever they need information, even outside regular business hours.",
       image: "/images/value_open_247.jpg",
-      badge: "Always Open 24/7",
+      badge: "Available 24/7",
       highlights: [
-        "Automated lead capture form available round the clock",
-        "Never miss a potential client lead after office hours",
-        "Consistent business presence accessible anytime",
+        "24/7 access to business details and services",
+        "Contact form available around the clock",
+        "Consistent online presence for customer research",
       ],
       iconBg: "bg-amber-600 text-white",
       badgeBg: "bg-amber-100 text-amber-800 border-amber-300",
@@ -77,15 +77,15 @@ export default function BusinessValue() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-none bg-blue-100 text-blue-700 text-xs font-mono font-bold uppercase tracking-wider">
-            WHY YOUR BUSINESS NEEDS A WEBSITE
+            BUSINESS VALUE
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Why Your Business Needs an Official Website
+            Why a Professional Website Matters for Your Business
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-            Social media profiles get buried under algorithm changes and competitor ads. A dedicated website gives your business an official, trustworthy address where clients can evaluate your work and contact you directly.
+            A dedicated website gives your business a professional home online. It helps build credibility with potential clients, explains your services clearly, accepts enquiries 24/7, connects customers directly via WhatsApp, and supports your overall marketing efforts.
           </p>
         </div>
 
@@ -98,12 +98,12 @@ export default function BusinessValue() {
             return (
               <div
                 key={idx}
-                className={`border rounded-none p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col ${card.cardBg} ${
+                className={`border rounded-md p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col ${card.cardBg} ${
                   isEven ? "lg:flex-row" : "lg:flex-row-reverse"
                 } items-center gap-8 lg:gap-12 group`}
               >
                 {/* Image Column */}
-                <div className="w-full lg:w-1/2 relative aspect-16/10 rounded-none overflow-hidden border border-slate-200 shadow-md flex-shrink-0">
+                <div className="w-full lg:w-1/2 relative aspect-16/10 rounded-md overflow-hidden border border-slate-200 shadow-md flex-shrink-0">
                   <Image
                     src={card.image}
                     alt={card.title}
@@ -117,10 +117,10 @@ export default function BusinessValue() {
                 {/* Content Column */}
                 <div className="w-full lg:w-1/2 space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 rounded-none ${card.iconBg} flex items-center justify-center shadow-md flex-shrink-0`}>
+                    <div className={`w-10 h-10 rounded-md ${card.iconBg} flex items-center justify-center shadow-md flex-shrink-0`}>
                       <Icon className="w-5 h-5 stroke-[2]" />
                     </div>
-                    <span className={`text-xs font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-none border ${card.badgeBg}`}>
+                    <span className={`text-xs font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-md border ${card.badgeBg}`}>
                       {card.badge}
                     </span>
                   </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { Smartphone, Zap, MessageSquare, Search, Globe, ShieldCheck, Sparkles, ArrowRight } from "lucide-react";
 
 interface WhatYouGetProps {
@@ -13,141 +12,263 @@ export default function WhatYouGet({ onOpenQuoteModal }: WhatYouGetProps) {
     {
       id: "responsive",
       icon: Smartphone,
-      title: "100% Touch Responsive UI",
-      desc: "Pixel-perfect layout optimized across iPhone, Android smartphones, tablets, and wide desktop screens.",
-      image: "/images/package_responsive_ui_v2.jpg",
-      badge: "Cross-Device QA Passed",
-      highlights: ["Mobile Touch Navigation", "Sub-1s Touch Response", "Retina Display Sharpness"],
+      title: "Responsive Website Design",
+      desc: "Clean visual layout tailored to present your business clearly and professionally.",
     },
     {
-      id: "speed",
-      icon: Zap,
-      title: "Sub-2 Second Page Load",
-      desc: "Optimized asset pipeline, lightweight markup, and browser caching ensuring near-instant page rendering.",
-      image: "/images/package_speed_perf_v2.jpg",
-      badge: "Core Web Vitals Optimized",
-      highlights: ["90+ Google PageSpeed", "Image Compression Pipeline", "Sub-2s First Contentful Paint"],
+      id: "mobile",
+      icon: Smartphone,
+      title: "Mobile-Friendly Layout",
+      desc: "Optimized layout ensuring smooth navigation on smartphones, tablets and laptops.",
+    },
+    {
+      id: "form",
+      icon: MessageSquare,
+      title: "Contact Form Integration",
+      desc: "Simple contact forms allowing visitors to submit project enquiries directly to your email.",
     },
     {
       id: "whatsapp",
       icon: MessageSquare,
-      title: "Direct WhatsApp Lead Routing",
-      desc: "1-Click direct WhatsApp inquiry integration connecting interested website visitors straight to your phone.",
-      image: "/images/package_whatsapp_leads_v2.jpg",
-      badge: "Instant Customer Intake",
-      highlights: ["Pre-filled Service Messages", "Floating Sticky Action Bar", "High-Converting Placement"],
+      title: "WhatsApp Integration",
+      desc: "1-Click direct WhatsApp button for instant customer messaging and quick response.",
+    },
+    {
+      id: "domain",
+      icon: Globe,
+      title: "Domain & Hosting Connection",
+      desc: "Full assistance linking your custom domain name and cloud hosting server.",
     },
     {
       id: "ssl",
       icon: ShieldCheck,
-      title: "Free SSL & Domain Security",
-      desc: "HTTPS green padlock certificate installation protecting visitor data and building immediate buyer trust.",
-      image: "/images/package_ssl_security_v2.jpg",
-      badge: "Bank-Grade Encryption",
-      highlights: ["SSL Certificate Setup", "HTTP to HTTPS Redirection", "DDoS Protected Infrastructure"],
+      title: "SSL HTTPS Setup",
+      desc: "Secure SSL padlock installation for visitor data privacy and search engine trust.",
     },
     {
       id: "seo",
       icon: Search,
-      title: "SEO & Google Maps Setup",
-      desc: "Search-engine-ready meta structure, schema tags, and Google Business profile linking for local organic reach.",
-      image: "/images/package_seo_maps_v2.jpg",
-      badge: "Search Engine Ready",
-      highlights: ["Meta Description & Titles", "Google Business Listing Link", "Clean Semantic HTML5"],
+      title: "Basic SEO Setup",
+      desc: "Clean technical HTML structure, descriptive meta titles, and page description setup.",
     },
     {
-      id: "cloud",
+      id: "maps",
       icon: Globe,
-      title: "Cloud Hosting Deployment",
-      desc: "Complete end-to-end setup of custom domain DNS records, cloud server hosting, and production launch.",
-      image: "/images/package_cloud_domain_v2.jpg",
-      badge: "99.9% Uptime SLA",
-      highlights: ["Custom Domain DNS Link", "High-Availability Server", "Post-Launch Tech Support"],
+      title: "Google Maps Integration",
+      desc: "Embedded map showcasing your physical store or office location clearly.",
+    },
+    {
+      id: "social",
+      icon: Sparkles,
+      title: "Social Media Links",
+      desc: "Direct icons connecting website visitors to your official social channels.",
+    },
+    {
+      id: "speed",
+      icon: Zap,
+      title: "Performance Optimization",
+      desc: "Image compression and lightweight code structure for fast page loading.",
+    },
+    {
+      id: "deployment",
+      icon: Globe,
+      title: "Website Deployment",
+      desc: "Complete end-to-end production deployment making your website live on the web.",
+    },
+    {
+      id: "support",
+      icon: ShieldCheck,
+      title: "Post-Launch Support & Access",
+      desc: "Agreed post-launch technical assistance and admin management access where applicable.",
     },
   ];
 
+  const row1Items = packageDeliverables.slice(0, 6);
+  const row2Items = packageDeliverables.slice(6);
+
   return (
-    <section id="deliverables" className="py-14 sm:py-18 bg-slate-950 text-white border-b border-slate-800 relative overflow-hidden">
+    <section id="deliverables" className="py-20 sm:py-24 bg-slate-950 text-white border-b border-slate-800 relative overflow-hidden">
       {/* Ambient background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
 
+      {/* Style Keyframes for 100% Seamless Infinite Marquee */}
+      <style jsx>{`
+        @keyframes deliverableMarqueeLeft {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(calc(-100% - 1.5rem)); }
+        }
+        @keyframes deliverableMarqueeRight {
+          0% { transform: translateX(calc(-100% - 1.5rem)); }
+          100% { transform: translateX(0%); }
+        }
+        .animate-deliverable-left {
+          animation: deliverableMarqueeLeft 28s linear infinite;
+        }
+        .animate-deliverable-right {
+          animation: deliverableMarqueeRight 28s linear infinite;
+        }
+        .deliverables-marquee-wrapper:hover .animate-deliverable-left,
+        .deliverables-marquee-wrapper:hover .animate-deliverable-right {
+          animation-play-state: paused;
+        }
+      `}</style>
+
+      {/* Section Header (Centered Container) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>COMPLETE LAUNCH PACKAGE</span>
+            <span>WEBSITE INCLUSIONS</span>
           </span>
 
-          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight">
-            What You Get In Every Package
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+            What You Get With Your Website
           </h2>
 
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-            Every project includes essential features engineered for speed, mobile usability, lead generation, and security.
+          <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
+            Essential features and setup included to give your business a solid, functional online presence.
           </p>
         </div>
+      </div>
 
-        {/* 6 Core Deliverables Grid Cards with Dedicated Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-          {packageDeliverables.map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={idx}
-                className="bg-slate-900/90 border border-slate-800 rounded-md p-5 hover:border-blue-500/60 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden"
-              >
-                <div>
-                  {/* Card Image Matching Deliverable Title */}
-                  <div className="relative w-full aspect-16/9 rounded-md overflow-hidden mb-4 border border-slate-800 shadow-md">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-                    
-                    <div className="absolute bottom-2.5 left-2.5 p-1.5 rounded-md bg-slate-950/90 border border-slate-800 text-cyan-400 backdrop-blur-sm">
-                      <Icon className="w-4 h-4" />
+      {/* Full-Bleed Edge-to-Edge Marquee Wrapper */}
+      <div className="w-full relative z-10 space-y-6 sm:space-y-8 deliverables-marquee-wrapper overflow-hidden px-0 mx-0 mb-14">
+        
+        {/* Row 1 Infinite Marquee (Leftward) */}
+        <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
+          <div className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-deliverable-left items-center">
+            {row1Items.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="bg-slate-900/90 border border-slate-800 rounded-md p-5 sm:p-6 hover:border-blue-500/60 hover:bg-slate-900 hover:shadow-xl transition-all duration-300 flex flex-col justify-between flex-shrink-0 min-w-[280px] sm:min-w-[340px] max-w-[360px] min-h-[140px] group overflow-hidden cursor-pointer"
+                >
+                  <div>
+                    <div className="flex items-center gap-3 mb-2.5">
+                      <div className="p-2 rounded-md bg-blue-500/10 border border-blue-500/20 text-cyan-400 flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-4.5 h-4.5" />
+                      </div>
+                      <h3 className="text-base font-bold text-white leading-snug group-hover:text-cyan-300 transition-colors">
+                        {item.title}
+                      </h3>
                     </div>
+
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-
-                  <h3 className="text-base font-bold text-white mb-2 leading-snug group-hover:text-cyan-300 transition-colors">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-slate-300 text-xs leading-relaxed">
-                    {item.desc}
-                  </p>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-deliverable-left items-center">
+            {row1Items.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={`dup1-${idx}`}
+                  className="bg-slate-900/90 border border-slate-800 rounded-md p-5 sm:p-6 hover:border-blue-500/60 hover:bg-slate-900 hover:shadow-xl transition-all duration-300 flex flex-col justify-between flex-shrink-0 min-w-[280px] sm:min-w-[340px] max-w-[360px] min-h-[140px] group overflow-hidden cursor-pointer"
+                >
+                  <div>
+                    <div className="flex items-center gap-3 mb-2.5">
+                      <div className="p-2 rounded-md bg-blue-500/10 border border-blue-500/20 text-cyan-400 flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-4.5 h-4.5" />
+                      </div>
+                      <h3 className="text-base font-bold text-white leading-snug group-hover:text-cyan-300 transition-colors">
+                        {item.title}
+                      </h3>
+                    </div>
+
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Compact Package Note & CTA Bar */}
-        <div className="bg-slate-900 border border-slate-800 rounded-md p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Row 2 Infinite Marquee (Rightward) */}
+        <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
+          <div className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-deliverable-right items-center">
+            {row2Items.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="bg-slate-900/90 border border-slate-800 rounded-md p-5 sm:p-6 hover:border-blue-500/60 hover:bg-slate-900 hover:shadow-xl transition-all duration-300 flex flex-col justify-between flex-shrink-0 min-w-[280px] sm:min-w-[340px] max-w-[360px] min-h-[140px] group overflow-hidden cursor-pointer"
+                >
+                  <div>
+                    <div className="flex items-center gap-3 mb-2.5">
+                      <div className="p-2 rounded-md bg-blue-500/10 border border-blue-500/20 text-cyan-400 flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-4.5 h-4.5" />
+                      </div>
+                      <h3 className="text-base font-bold text-white leading-snug group-hover:text-cyan-300 transition-colors">
+                        {item.title}
+                      </h3>
+                    </div>
+
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-deliverable-right items-center">
+            {row2Items.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={`dup2-${idx}`}
+                  className="bg-slate-900/90 border border-slate-800 rounded-md p-5 sm:p-6 hover:border-blue-500/60 hover:bg-slate-900 hover:shadow-xl transition-all duration-300 flex flex-col justify-between flex-shrink-0 min-w-[280px] sm:min-w-[340px] max-w-[360px] min-h-[140px] group overflow-hidden cursor-pointer"
+                >
+                  <div>
+                    <div className="flex items-center gap-3 mb-2.5">
+                      <div className="p-2 rounded-md bg-blue-500/10 border border-blue-500/20 text-cyan-400 flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <Icon className="w-4.5 h-4.5" />
+                      </div>
+                      <h3 className="text-base font-bold text-white leading-snug group-hover:text-cyan-300 transition-colors">
+                        {item.title}
+                      </h3>
+                    </div>
+
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+      </div>
+
+      {/* Note Bar Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 text-slate-300 text-xs sm:text-sm">
             <ShieldCheck className="w-5 h-5 text-cyan-400 flex-shrink-0" />
             <span>
-              <strong className="text-white font-bold">100% Launch Guarantee:</strong> Full setup including domain connection, mobile testing, and post-launch support.
+              <strong className="text-white font-bold">Package Note:</strong> Specific features, page count and integrations depend on the selected package or custom scope.
             </span>
           </div>
 
           <button
             onClick={onOpenQuoteModal}
-            className="w-full sm:w-auto px-6 py-3 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 flex-shrink-0 cursor-pointer"
+            className="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 flex-shrink-0 cursor-pointer"
           >
-            <span>GET FREE CONSULTATION</span>
+            <span>GET A FREE WEBSITE QUOTE</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
-
       </div>
     </section>
   );
 }
-
