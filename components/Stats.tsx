@@ -35,7 +35,7 @@ export default function Stats() {
         <div className="bg-gradient-to-r from-red-600 via-red-600 to-rose-700 border-y sm:border border-red-500/90 shadow-2xl shadow-red-600/35 py-4 px-0 sm:p-8 -mx-4 sm:mx-0 rounded-none sm:rounded-md overflow-hidden">
           
           {/* Mobile Viewports: Auto-Animate Marquee (100% Flush Edge-to-Edge) */}
-          <div className="block sm:hidden overflow-hidden w-full">
+          <div className="block sm:hidden overflow-hidden w-full" aria-hidden="true">
             <style jsx>{`
               @keyframes statsMarqueeLeft {
                 0% {

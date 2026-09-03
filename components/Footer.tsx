@@ -2,12 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 text-xs sm:text-sm pt-16 pb-8 border-t border-slate-800">
+    <footer className="bg-slate-950 text-slate-400 text-xs sm:text-sm pt-16 pb-24 sm:pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Main Footer Grid */}
@@ -31,21 +31,27 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { name: "Home", href: "#home", external: false },
-                { name: "Services", href: "#services", external: false },
-                { name: "Our Work", href: "#work", external: false },
-                { name: "Process", href: "#process", external: false },
-                { name: "About", href: "#about", external: false },
-                { name: "Contact", href: "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website.", external: true },
+                { name: "Home", href: "#home", external: false, showArrow: false, isBold: false },
+                { name: "About", href: "#about", external: false, showArrow: false, isBold: false },
+                { name: "Services", href: "#services", external: false, showArrow: false, isBold: false },
+                { name: "Our Work", href: "#work", external: false, showArrow: false, isBold: false },
+                { name: "Process", href: "#process", external: false, showArrow: false, isBold: false },
+                { name: "Contact", href: "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website.", external: true, showArrow: false, isBold: false },
+                { name: "Portfolio", href: "https://portfolio-8qup.onrender.com/", external: true, showArrow: true, isBold: true },
               ].map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
                     target={item.external ? "_blank" : undefined}
                     rel={item.external ? "noopener noreferrer" : undefined}
-                    className="hover:text-cyan-400 transition-colors inline-flex items-center gap-1 text-slate-300"
+                    className={`transition-colors inline-flex items-center gap-1 ${
+                      item.isBold
+                        ? "font-extrabold text-cyan-400 hover:text-cyan-300"
+                        : "text-slate-300 hover:text-cyan-400 font-medium"
+                    }`}
                   >
                     <span>{item.name}</span>
+                    {item.showArrow && <ArrowUpRight className="w-3.5 h-3.5 flex-shrink-0 text-cyan-400" />}
                   </a>
                 </li>
               ))}
@@ -119,6 +125,15 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© 2026 UrbanTechWebs. All rights reserved.</p>
           <div className="flex items-center gap-6">
+            <a
+              href="https://portfolio-8qup.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-300 transition-colors text-cyan-400 font-black inline-flex items-center gap-1"
+            >
+              <span>Live Portfolio</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
             <a href="/privacy-policy" className="hover:text-slate-400 transition-colors">
               Privacy Policy
             </a>

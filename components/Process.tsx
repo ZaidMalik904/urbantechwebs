@@ -253,13 +253,8 @@ export default function Process() {
           
           {/* Row 1 Infinite Marquee (Leftward) */}
           <div className="flex overflow-hidden w-full select-none gap-4 py-2">
-            <div className="flex shrink-0 gap-4 animate-industry-left items-center">
-              {[
-                ...categories.slice(0, 5),
-                ...categories.slice(0, 5),
-                ...categories.slice(0, 5),
-                ...categories.slice(0, 5),
-              ].map((item, idx) => {
+            <div className="flex shrink-0 gap-4 animate-industry-left items-center min-w-full">
+              {categories.slice(0, 5).map((item, idx) => {
                 const Icon = item.icon;
                 return (
                   <div
@@ -284,13 +279,8 @@ export default function Process() {
               })}
             </div>
 
-            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-left items-center">
-              {[
-                ...categories.slice(0, 5),
-                ...categories.slice(0, 5),
-                ...categories.slice(0, 5),
-                ...categories.slice(0, 5),
-              ].map((item, idx) => {
+            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-left items-center min-w-full">
+              {categories.slice(0, 5).map((item, idx) => {
                 const Icon = item.icon;
                 return (
                   <div
@@ -302,9 +292,9 @@ export default function Process() {
                         <Icon className="w-5 h-5 stroke-[2]" />
                       </div>
 
-                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                      <p className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
                         {item.name}
-                      </h3>
+                      </p>
 
                       <p className="text-xs text-slate-400 leading-relaxed">
                         {item.desc}
@@ -318,13 +308,8 @@ export default function Process() {
 
           {/* Row 2 Infinite Marquee (Rightward) */}
           <div className="flex overflow-hidden w-full select-none gap-4 py-2">
-            <div className="flex shrink-0 gap-4 animate-industry-right items-center">
-              {[
-                ...categories.slice(5),
-                ...categories.slice(5),
-                ...categories.slice(5),
-                ...categories.slice(5),
-              ].map((item, idx) => {
+            <div className="flex shrink-0 gap-4 animate-industry-right items-center min-w-full">
+              {categories.slice(5).map((item, idx) => {
                 const Icon = item.icon;
                 return (
                   <div
@@ -349,13 +334,8 @@ export default function Process() {
               })}
             </div>
 
-            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-right items-center">
-              {[
-                ...categories.slice(5),
-                ...categories.slice(5),
-                ...categories.slice(5),
-                ...categories.slice(5),
-              ].map((item, idx) => {
+            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-right items-center min-w-full">
+              {categories.slice(5).map((item, idx) => {
                 const Icon = item.icon;
                 return (
                   <div
@@ -367,9 +347,9 @@ export default function Process() {
                         <Icon className="w-5 h-5 stroke-[2]" />
                       </div>
 
-                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                      <p className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
                         {item.name}
-                      </h3>
+                      </p>
 
                       <p className="text-xs text-slate-400 leading-relaxed">
                         {item.desc}

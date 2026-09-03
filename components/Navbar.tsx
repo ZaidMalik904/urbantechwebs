@@ -25,15 +25,18 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
     }
   };
 
-  // Lock background body scroll when mobile drawer is open
+  // Lock background body scroll & add body class when mobile drawer is open
   React.useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
+      document.body.classList.add("mobile-menu-open");
     } else {
       document.body.style.overflow = "auto";
+      document.body.classList.remove("mobile-menu-open");
     }
     return () => {
       document.body.style.overflow = "auto";
+      document.body.classList.remove("mobile-menu-open");
     };
   }, [mobileMenuOpen]);
 
@@ -52,6 +55,30 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
 
       {/* Main Sticky Navbar Header */}
       <header className="sticky top-0 z-40 bg-slate-950/85 backdrop-blur-md border-b border-white/10 transition-all text-white">
+        
+        {/* Mobile-Only Top Contact Strip (Left: Mail, Right: Phone) */}
+        <div className="block md:hidden bg-slate-900/90 border-b border-slate-800 text-[11px] py-2 px-4 text-slate-300">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+            {/* Left: Mail ID */}
+            <a
+              href="mailto:urbantechwebs904@gmail.com"
+              className="flex items-center gap-1.5 hover:text-cyan-400 transition-colors font-medium truncate"
+            >
+              <Mail className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
+              <span className="truncate">urbantechwebs904@gmail.com</span>
+            </a>
+
+            {/* Right: Phone Number */}
+            <a
+              href="tel:+917827775353"
+              className="flex items-center gap-1.5 hover:text-cyan-400 transition-colors font-semibold flex-shrink-0"
+            >
+              <Phone className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
+              <span>+91 78277 75353</span>
+            </a>
+          </div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           
           {/* Custom Brand Logo */}

@@ -91,9 +91,6 @@ export default function TechStack() {
     },
   ];
 
-  const fullRow1 = [...row1Tech, ...row1Tech, ...row1Tech, ...row1Tech];
-  const fullRow2 = [...row2Tech, ...row2Tech, ...row2Tech, ...row2Tech];
-
   return (
     <section id="tech-stack" className="pt-6 sm:pt-8 pb-16 sm:pb-20 bg-slate-50 text-slate-900 relative border-b border-slate-200 overflow-hidden">
 
@@ -142,8 +139,8 @@ export default function TechStack() {
         
         {/* Row 1 Infinite Marquee (Leftward) */}
         <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
-          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center">
-            {fullRow1.map((item, idx) => (
+          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center min-w-full">
+            {row1Tech.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
@@ -158,8 +155,8 @@ export default function TechStack() {
             ))}
           </div>
 
-          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center">
-            {fullRow1.map((item, idx) => (
+          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center min-w-full">
+            {row1Tech.map((item, idx) => (
               <div
                 key={`dup1-${idx}`}
                 className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
@@ -177,8 +174,8 @@ export default function TechStack() {
 
         {/* Row 2 Infinite Marquee (Rightward) */}
         <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
-          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center">
-            {fullRow2.map((item, idx) => (
+          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center min-w-full">
+            {row2Tech.map((item, idx) => (
               <div
                 key={idx}
                 className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
@@ -193,8 +190,8 @@ export default function TechStack() {
             ))}
           </div>
 
-          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center">
-            {fullRow2.map((item, idx) => (
+          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center min-w-full">
+            {row2Tech.map((item, idx) => (
               <div
                 key={`dup2-${idx}`}
                 className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
