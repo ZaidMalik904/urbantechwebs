@@ -5,10 +5,21 @@ import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 interface CtaBannerProps {
-  onOpenQuoteModal: () => void;
+  onOpenQuoteModal?: () => void;
 }
 
 export default function CtaBanner({ onOpenQuoteModal }: CtaBannerProps) {
+  const handleQuote = () => {
+    if (onOpenQuoteModal) {
+      onOpenQuoteModal();
+    } else {
+      window.open(
+        "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20website%20project.",
+        "_blank"
+      );
+    }
+  };
+
   return (
     <section className="py-12 sm:py-16 bg-white text-slate-900 border-b border-slate-200 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +49,7 @@ export default function CtaBanner({ onOpenQuoteModal }: CtaBannerProps) {
           {/* Right Action Buttons */}
           <div className="relative z-10 flex flex-col sm:flex-row items-center gap-4 flex-shrink-0 w-full sm:w-auto">
             <button
-              onClick={onOpenQuoteModal}
+              onClick={handleQuote}
               className="w-full sm:w-auto px-7 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-wider rounded-xl transition-all duration-300 shadow-lg shadow-blue-600/30 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Get a Free Website Quote</span>

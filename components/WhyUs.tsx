@@ -5,10 +5,20 @@ import Image from "next/image";
 import { ArrowRight, Sparkles, Target, Palette, Smartphone, Search, MessageSquare, ShieldCheck } from "lucide-react";
 
 interface WhyUsProps {
-  onOpenQuoteModal: () => void;
+  onOpenQuoteModal?: () => void;
 }
 
 export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
+  const handleQuote = () => {
+    if (onOpenQuoteModal) {
+      onOpenQuoteModal();
+    } else {
+      window.open(
+        "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20website%20project.",
+        "_blank"
+      );
+    }
+  };
   const points = [
     {
       num: "01",
@@ -165,7 +175,7 @@ export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
 
         <div className="mt-14 text-center">
           <button
-            onClick={onOpenQuoteModal}
+            onClick={handleQuote}
             className="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all inline-flex items-center gap-2 cursor-pointer group"
           >
             <span>DISCUSS YOUR WEBSITE WITH US</span>

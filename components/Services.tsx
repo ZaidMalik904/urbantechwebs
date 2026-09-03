@@ -160,7 +160,7 @@ export default function Services() {
                   <div className="relative w-full aspect-16/9 rounded-md overflow-hidden mb-6 border border-slate-200/60 shadow-xs">
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} showcase by UrbanTechWebs`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
@@ -220,7 +220,7 @@ export default function Services() {
         <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
             src="/images/process_bg.jpg"
-            alt="Features background design"
+            alt="UrbanTechWebs website feature capabilities background"
             fill
             className="object-cover object-center opacity-30 scale-105"
           />

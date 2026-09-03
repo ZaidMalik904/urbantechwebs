@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { ShieldCheck, MessageSquare, LayoutGrid, Clock, CheckCircle2 } from "lucide-react";
@@ -106,7 +104,7 @@ export default function BusinessValue() {
                 <div className="w-full lg:w-1/2 relative aspect-16/10 rounded-md overflow-hidden border border-slate-200 shadow-md flex-shrink-0">
                   <Image
                     src={card.image}
-                    alt={card.title}
+                    alt={`${card.title} - UrbanTechWebs business website value`}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"

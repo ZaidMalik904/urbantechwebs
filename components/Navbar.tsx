@@ -8,11 +8,22 @@ import LoadingLine from "./LoadingLine";
 import Logo from "./Logo";
 
 interface NavbarProps {
-  onOpenQuoteModal: () => void;
+  onOpenQuoteModal?: () => void;
 }
 
 export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleQuote = () => {
+    if (onOpenQuoteModal) {
+      onOpenQuoteModal();
+    } else {
+      window.open(
+        "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20website%20project.",
+        "_blank"
+      );
+    }
+  };
 
   // Lock background body scroll when mobile drawer is open
   React.useEffect(() => {
@@ -65,7 +76,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
           {/* Action Button: Get Free Quote CTA */}
           <div className="hidden md:flex items-center">
             <button
-              onClick={onOpenQuoteModal}
+              onClick={handleQuote}
               className="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-md shadow-blue-600/30 transition-all hover:shadow-lg hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
               <span>Get a Free Website Quote</span>
@@ -86,7 +97,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
         </div>
 
         {/* Announcement Ticker Bar below Navbar */}
-        <TopBar onOpenQuoteModal={onOpenQuoteModal} />
+        <TopBar onOpenQuoteModal={handleQuote} />
       </header>
 
       {/* Right-Side Mobile Drawer & Overlay */}
@@ -138,7 +149,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  if (onOpenQuoteModal) onOpenQuoteModal();
+                  handleQuote();
                 }}
                 className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >

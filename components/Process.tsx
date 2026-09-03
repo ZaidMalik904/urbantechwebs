@@ -172,7 +172,7 @@ export default function Process() {
                   <div className="relative w-full aspect-16/9 rounded-md overflow-hidden mb-6 border border-slate-700/80 shadow-md">
                     <Image
                       src={step.image}
-                      alt={step.title}
+                      alt={`${step.title} - Website development process step`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"

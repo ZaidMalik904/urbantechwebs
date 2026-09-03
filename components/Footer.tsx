@@ -119,10 +119,10 @@ export default function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© 2026 UrbanTechWebs. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#contact" className="hover:text-slate-400 transition-colors">
+            <a href="/privacy-policy" className="hover:text-slate-400 transition-colors">
               Privacy Policy
             </a>
-            <a href="#contact" className="hover:text-slate-400 transition-colors">
+            <a href="/terms-and-conditions" className="hover:text-slate-400 transition-colors">
               Terms & Conditions
             </a>
           </div>

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -19,22 +17,15 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
 
 export default function Home() {
-  const handleOpenQuoteModal = () => {
-    window.open(
-      "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20website%20project.",
-      "_blank"
-    );
-  };
-
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
       {/* Navbar with Sticky Header & Announcement Ticker */}
-      <Navbar onOpenQuoteModal={handleOpenQuoteModal} />
+      <Navbar />
 
       {/* Main Page Sections Flow */}
       <main>
         {/* 1. Hero Section */}
-        <Hero onOpenQuoteModal={handleOpenQuoteModal} />
+        <Hero />
 
         {/* 2. Highlights Banner */}
         <Stats />
@@ -52,7 +43,7 @@ export default function Home() {
         <TechStack />
 
         {/* 6. Why Choose UrbanTechWebs */}
-        <WhyUs onOpenQuoteModal={handleOpenQuoteModal} />
+        <WhyUs />
 
         {/* 7. Website Design & Development Projects */}
         <Portfolio />
@@ -64,13 +55,13 @@ export default function Home() {
         <Testimonials />
 
         {/* 10. What You Get With Your Website (Website Inclusions) */}
-        <WhatYouGet onOpenQuoteModal={handleOpenQuoteModal} />
+        <WhatYouGet />
 
         {/* 11. Frequently Asked Questions */}
         <Faq />
 
         {/* 12. Final CTA Banner */}
-        <CtaBanner onOpenQuoteModal={handleOpenQuoteModal} />
+        <CtaBanner />
       </main>
 
       {/* Footer */}
@@ -81,4 +72,5 @@ export default function Home() {
     </div>
   );
 }
+
 

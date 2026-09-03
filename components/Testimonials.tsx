@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { MessageSquare, FileText, Code2, Smartphone, CheckCircle2, ShieldCheck, HeartHandshake } from "lucide-react";
 
