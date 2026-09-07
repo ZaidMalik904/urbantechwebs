@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     siteName: "UrbanTechWebs",
     images: [
       {
-        url: "/images/hero.jpeg",
-        width: 1600,
-        height: 853,
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "UrbanTechWebs web development and website design",
       },
     ],
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/hero.jpeg"],
+    images: ["/images/og-image.jpg"],
   },
   icons: {
     icon: [
@@ -106,7 +106,7 @@ export default function RootLayout({
         name: "UrbanTechWebs",
         url: "https://urbantechwebs.in/",
         logo: "https://urbantechwebs.in/images/logo%20(2).png",
-        image: "https://urbantechwebs.in/images/hero.jpeg",
+        image: "https://urbantechwebs.in/images/og-image.jpg",
         description: siteDescription,
         telephone: "+91-7827775353",
         email: "urbantechwebs904@gmail.com",
