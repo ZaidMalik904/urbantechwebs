@@ -58,15 +58,15 @@ export default function About() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-              About UrbanTechWebs
+              About UrbanTech Webs
             </h2>
 
             <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed font-normal pt-2">
               <p>
-                UrbanTechWebs is a web development team focused on building clean, practical, and responsive websites for small businesses, local service providers, e-commerce stores, and growing startups.
+                UrbanTech Webs is a web development and website design company operating in Noida and across Delhi NCR. We build fast, responsive, and user-friendly websites for small businesses, local service providers, e-commerce brands, corporate agencies, and growing startups.
               </p>
               <p>
-                We believe a business website should be easy for your customers to read, quick to load on mobile phones, and simple to contact you through phone or WhatsApp. We handle the design, code setup, and domain connections so you can focus on running your business.
+                Our core focus is delivering practical web solutions that look great on mobile devices, load quickly, and make it easy for potential clients to reach you. From custom code development and modern UI/UX design to domain setup and post-launch technical assistance, we handle every stage of your website project.
               </p>
             </div>
           </div>
@@ -92,6 +92,16 @@ export default function About() {
                 </div>
               );
             })}
+          </div>
+
+          {/* CTA Button */}
+          <div className="mt-10 text-center relative z-10">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all hover:scale-105"
+            >
+              <span>Get in Touch With Our Team</span>
+            </a>
           </div>
 
         </div>

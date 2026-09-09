@@ -2,12 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Code,
   ShoppingCart,
   Rocket,
   Globe,
-  RefreshCw,
+  Layout,
   Cpu,
   CheckCircle2,
   ArrowRight,
@@ -27,11 +28,12 @@ export default function Services() {
     {
       num: "01",
       icon: Code,
-      title: "Business Website Design",
-      description: "Professional, responsive websites for businesses that need a clear and credible online presence.",
+      title: "Website Development",
+      description: "Fast, responsive and SEO-friendly websites engineered for business growth and credible online presence.",
+      link: "/web-development",
       image: "/images/service_web_dev_real.jpg",
-      badge: "Business Websites",
-      highlights: ["Clear Service Layout", "Mobile Responsive", "SEO-Friendly Structure"],
+      badge: "Custom Web Dev",
+      highlights: ["Clean Semantic Code", "Mobile Responsive", "SEO-Friendly Architecture"],
       cardBg: "bg-blue-50/90 hover:bg-blue-100/90 border-blue-200 shadow-blue-500/5",
       iconBg: "bg-blue-600 text-white shadow-md shadow-blue-600/30",
       titleColor: "text-blue-950 group-hover:text-blue-700",
@@ -40,12 +42,28 @@ export default function Services() {
     },
     {
       num: "02",
+      icon: Layout,
+      title: "Website Design",
+      description: "Modern, visually engaging UI/UX design tailored around your brand identity and conversion goals.",
+      link: "/website-design",
+      image: "/images/service_redesign_real.jpg",
+      badge: "UI / UX Design",
+      highlights: ["Modern Visual Hierarchy", "User Experience Focus", "Brand Identity Alignment"],
+      cardBg: "bg-amber-50/90 hover:bg-amber-100/90 border-amber-200 shadow-amber-500/5",
+      iconBg: "bg-amber-600 text-white shadow-md shadow-amber-600/30",
+      titleColor: "text-amber-950 group-hover:text-amber-700",
+      numColor: "text-amber-600 font-black",
+      footerBorder: "border-amber-200/80",
+    },
+    {
+      num: "03",
       icon: ShoppingCart,
-      title: "E-commerce Website Development",
-      description: "Online stores with product pages, shopping carts, checkout and payment integrations.",
+      title: "E-commerce Development",
+      description: "Complete online stores with product catalogs, shopping cart workflow, and secure payment integrations.",
+      link: "/ecommerce-development",
       image: "/images/service_ecommerce_real.jpg",
       badge: "E-Commerce Stores",
-      highlights: ["Product Catalogues", "Shopping Cart & Checkout", "Payment Gateway Setup"],
+      highlights: ["Product Catalogues", "Cart & Checkout Workflow", "Payment Gateway Setup"],
       cardBg: "bg-purple-50/90 hover:bg-purple-100/90 border-purple-200 shadow-purple-500/5",
       iconBg: "bg-purple-600 text-white shadow-md shadow-purple-600/30",
       titleColor: "text-purple-950 group-hover:text-purple-700",
@@ -53,27 +71,14 @@ export default function Services() {
       footerBorder: "border-purple-200/80",
     },
     {
-      num: "03",
-      icon: Rocket,
-      title: "Landing Page Design",
-      description: "Focused landing pages for advertising campaigns, promotions and lead generation.",
-      image: "/images/service_landing_page_real.jpg",
-      badge: "Lead Acquisition",
-      highlights: ["Clear Call-to-Action", "WhatsApp & Form Leads", "Optimized for Ad Campaigns"],
-      cardBg: "bg-emerald-50/90 hover:bg-emerald-100/90 border-emerald-200 shadow-emerald-500/5",
-      iconBg: "bg-emerald-600 text-white shadow-md shadow-emerald-600/30",
-      titleColor: "text-emerald-950 group-hover:text-emerald-700",
-      numColor: "text-emerald-600 font-black",
-      footerBorder: "border-emerald-200/80",
-    },
-    {
       num: "04",
       icon: Globe,
-      title: "WordPress Website Development",
-      description: "Custom WordPress websites for businesses that want an easy-to-manage website.",
+      title: "WordPress Development",
+      description: "Custom WordPress websites for businesses seeking easy content administration and theme flexibility.",
+      link: "/wordpress-development",
       image: "/images/service_wordpress_real.jpg",
       badge: "Easy Content Management",
-      highlights: ["Custom Theme Setup", "Easy Admin Dashboard", "Plugin & Security Setup"],
+      highlights: ["Custom Theme Setup", "Easy Admin Dashboard", "Plugin & Security Configuration"],
       cardBg: "bg-indigo-50/90 hover:bg-indigo-100/90 border-indigo-200 shadow-indigo-500/5",
       iconBg: "bg-indigo-600 text-white shadow-md shadow-indigo-600/30",
       titleColor: "text-indigo-950 group-hover:text-indigo-700",
@@ -82,26 +87,28 @@ export default function Services() {
     },
     {
       num: "05",
-      icon: RefreshCw,
-      title: "Website Redesign",
-      description: "Modernize an outdated website with better design, mobile responsiveness, usability and performance.",
-      image: "/images/service_redesign_real.jpg",
-      badge: "Design & Speed Refresh",
-      highlights: ["Modern Layout & UI", "Mobile Friendly Design", "Improved Loading Speed"],
-      cardBg: "bg-amber-50/90 hover:bg-amber-100/90 border-amber-200 shadow-amber-500/5",
-      iconBg: "bg-amber-600 text-white shadow-md shadow-amber-600/30",
-      titleColor: "text-amber-950 group-hover:text-amber-700",
-      numColor: "text-amber-600 font-black",
-      footerBorder: "border-amber-200/80",
+      icon: Rocket,
+      title: "Landing Page Development",
+      description: "High-converting landing pages tailored for ad campaigns, product promotions, and lead generation.",
+      link: "/landing-page-development",
+      image: "/images/service_landing_page_real.jpg",
+      badge: "Lead Acquisition",
+      highlights: ["Clear Call-to-Action", "WhatsApp & Form Capture", "Ad Campaign Optimized"],
+      cardBg: "bg-emerald-50/90 hover:bg-emerald-100/90 border-emerald-200 shadow-emerald-500/5",
+      iconBg: "bg-emerald-600 text-white shadow-md shadow-emerald-600/30",
+      titleColor: "text-emerald-950 group-hover:text-emerald-700",
+      numColor: "text-emerald-600 font-black",
+      footerBorder: "border-emerald-200/80",
     },
     {
       num: "06",
       icon: Cpu,
-      title: "Custom Web Application Development",
-      description: "Custom dashboards, portals, booking systems and business applications built around specific requirements.",
+      title: "Web Application Development",
+      description: "Custom web portals, client dashboards, booking engines, and scalable web applications.",
+      link: "/web-application-development",
       image: "/images/service_custom_app_real.jpg",
       badge: "Custom Web Apps",
-      highlights: ["Custom Dashboards", "Booking & Reservation Systems", "Database Integration"],
+      highlights: ["Custom Admin Dashboards", "Booking & Reservation Systems", "Database & API Integration"],
       cardBg: "bg-teal-50/90 hover:bg-teal-100/90 border-teal-200 shadow-teal-500/5",
       iconBg: "bg-teal-600 text-white shadow-md shadow-teal-600/30",
       titleColor: "text-teal-950 group-hover:text-teal-700",
@@ -200,13 +207,13 @@ export default function Services() {
                   </div>
                 </div>
 
-                <a
-                  href="#contact"
-                  className={`pt-4 border-t ${service.footerBorder} flex items-center justify-between text-xs font-bold text-slate-600 group-hover:text-slate-900 transition-colors`}
+                <Link
+                  href={service.link}
+                  className={`pt-4 border-t ${service.footerBorder} flex items-center justify-between text-xs font-bold text-slate-700 group-hover:text-blue-600 transition-colors`}
                 >
-                  <span>Discuss This Service</span>
+                  <span>Learn More</span>
                   <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             );
           })}

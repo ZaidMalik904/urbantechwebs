@@ -43,7 +43,7 @@ export default function TopBar({ onOpenQuoteModal }: TopBarProps) {
   };
 
   return (
-    <div className="relative z-40 bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-800 text-white text-[11px] py-1 px-4">
+    <div className="relative z-10 bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-800 text-white text-[11px] py-1 px-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2">
         
         {/* Left Arrow Button */}

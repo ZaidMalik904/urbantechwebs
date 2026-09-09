@@ -94,7 +94,7 @@ export default function TechStack() {
   return (
     <section id="tech-stack" className="pt-6 sm:pt-8 pb-16 sm:pb-20 bg-slate-50 text-slate-900 relative border-b border-slate-200 overflow-hidden">
 
-      {/* Style Keyframes for 100% Seamless Infinite Marquee */}
+      {/* Style Keyframes for Mobile/Tablet Marquee + Desktop Static Grid Override */}
       <style jsx>{`
         @keyframes techMarqueeLeft {
           0% { transform: translateX(0%); }
@@ -113,6 +113,18 @@ export default function TechStack() {
         .marquee-container:hover .animate-tech-left,
         .marquee-container:hover .animate-tech-right {
           animation-play-state: paused;
+        }
+
+        /* Desktop Only: Remove Auto Animation and Show Clean Static Grid */
+        @media (min-width: 1024px) {
+          .desktop-static-row {
+            animation: none !important;
+            transform: none !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            min-width: 0 !important;
+            width: 100% !important;
+          }
         }
       `}</style>
 
@@ -134,12 +146,12 @@ export default function TechStack() {
         </div>
       </div>
 
-      {/* Full-Bleed Edge-to-Edge Marquee Wrapper (Zero Padding/Margins) */}
-      <div className="w-full relative z-10 space-y-6 sm:space-y-8 marquee-container overflow-hidden px-0 mx-0">
+      {/* Technology Cards Container: Marquee on Mobile/Tablet, Clean Static Grid on Desktop */}
+      <div className="w-full max-w-7xl mx-auto relative z-10 space-y-6 sm:space-y-8 marquee-container overflow-hidden lg:overflow-visible px-4 sm:px-6 lg:px-8">
         
-        {/* Row 1 Infinite Marquee (Leftward) */}
-        <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
-          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center min-w-full">
+        {/* Row 1 Technology Cards */}
+        <div className="flex overflow-hidden lg:overflow-visible w-full select-none gap-4 sm:gap-6 py-2 justify-center">
+          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left desktop-static-row items-center justify-center min-w-full lg:min-w-0">
             {row1Tech.map((item, idx) => (
               <div
                 key={idx}
@@ -155,7 +167,8 @@ export default function TechStack() {
             ))}
           </div>
 
-          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center min-w-full">
+          {/* Duplicate Row for Seamless Mobile Marquee Only (Hidden on Desktop) */}
+          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center min-w-full lg:hidden">
             {row1Tech.map((item, idx) => (
               <div
                 key={`dup1-${idx}`}
@@ -172,9 +185,9 @@ export default function TechStack() {
           </div>
         </div>
 
-        {/* Row 2 Infinite Marquee (Rightward) */}
-        <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
-          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center min-w-full">
+        {/* Row 2 Technology Cards */}
+        <div className="flex overflow-hidden lg:overflow-visible w-full select-none gap-4 sm:gap-6 py-2 justify-center">
+          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right desktop-static-row items-center justify-center min-w-full lg:min-w-0">
             {row2Tech.map((item, idx) => (
               <div
                 key={idx}
@@ -190,7 +203,8 @@ export default function TechStack() {
             ))}
           </div>
 
-          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center min-w-full">
+          {/* Duplicate Row for Seamless Mobile Marquee Only (Hidden on Desktop) */}
+          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center min-w-full lg:hidden">
             {row2Tech.map((item, idx) => (
               <div
                 key={`dup2-${idx}`}

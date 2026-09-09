@@ -49,24 +49,29 @@ export default function NotFound() {
         </div>
 
         {/* Action Buttons */}
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
             href="/"
-            className="w-full sm:w-auto px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 rounded-xl"
+            className="w-full sm:w-auto px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 rounded-xl"
           >
             <Home className="w-4 h-4" />
-            <span>Return To Homepage</span>
+            <span>Go Home</span>
           </Link>
 
-          <a
-            href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20came%20across%20a%20404%20error%20on%20your%20website."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-sm uppercase tracking-wider transition-colors flex items-center justify-center gap-2 rounded-xl"
+          <Link
+            href="/web-development"
+            className="w-full sm:w-auto px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 rounded-xl"
           >
-            <MessageSquare className="w-4 h-4 text-emerald-400" />
-            <span>Contact Support</span>
-          </a>
+            <span>View Services</span>
+          </Link>
+
+          <Link
+            href="/contact"
+            className="w-full sm:w-auto px-6 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 rounded-xl"
+          >
+            <MessageSquare className="w-4 h-4 text-cyan-400" />
+            <span>Contact Us</span>
+          </Link>
         </div>
       </main>
 

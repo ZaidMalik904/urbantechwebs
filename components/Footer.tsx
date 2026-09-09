@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import Logo from "./Logo";
 
@@ -15,44 +16,35 @@ export default function Footer() {
 
           {/* Brand Col (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#home">
+            <Link href="/">
               <Logo size="md" darkText={false} />
-            </a>
+            </Link>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm pt-2">
-              We design and develop modern websites and digital solutions that help businesses build a stronger online presence.
+              UrbanTech Webs is a web development and website design company in Noida, Delhi NCR. We build custom, responsive, and performance-driven digital solutions.
             </p>
           </div>
 
           {/* Quick Links (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-white font-bold text-sm tracking-wider uppercase">
-              Quick Links
+              Important Pages
             </h4>
             <ul className="space-y-2.5">
               {[
-                { name: "Home", href: "#home", external: false, showArrow: false, isBold: false },
-                { name: "About", href: "#about", external: false, showArrow: false, isBold: false },
-                { name: "Services", href: "#services", external: false, showArrow: false, isBold: false },
-                { name: "Our Work", href: "#work", external: false, showArrow: false, isBold: false },
-                { name: "Process", href: "#process", external: false, showArrow: false, isBold: false },
-                { name: "Contact", href: "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20in%20touch%20for%20a%20website.", external: true, showArrow: false, isBold: false },
-                { name: "Portfolio", href: "https://portfolio-8qup.onrender.com/", external: true, showArrow: true, isBold: true },
+                { name: "Home", href: "/", external: false, showArrow: false },
+                { name: "About Us", href: "/about", external: false, showArrow: false },
+                { name: "Portfolio", href: "/portfolio", external: false, showArrow: false },
+                { name: "Blog Articles", href: "/blog", external: false, showArrow: false },
+                { name: "Contact Us", href: "/contact", external: false, showArrow: false },
               ].map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href={item.href}
-                    target={item.external ? "_blank" : undefined}
-                    rel={item.external ? "noopener noreferrer" : undefined}
-                    className={`transition-colors inline-flex items-center gap-1 ${
-                      item.isBold
-                        ? "font-extrabold text-cyan-400 hover:text-cyan-300"
-                        : "text-slate-300 hover:text-cyan-400 font-medium"
-                    }`}
+                    className="transition-colors inline-flex items-center gap-1 text-slate-300 hover:text-cyan-400 font-medium"
                   >
                     <span>{item.name}</span>
-                    {item.showArrow && <ArrowUpRight className="w-3.5 h-3.5 flex-shrink-0 text-cyan-400" />}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -65,19 +57,17 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               {[
-                "Website Development",
-                "E-Commerce Stores",
-                "Landing Pages",
-                "WordPress Sites",
-                "Website Redesign",
-                "Custom Web Apps",
-                "SEO-Ready Setup",
-                "Speed Optimization",
+                { name: "Website Development", href: "/web-development" },
+                { name: "Website Design", href: "/website-design" },
+                { name: "E-commerce Stores", href: "/ecommerce-development" },
+                { name: "WordPress Development", href: "/wordpress-development" },
+                { name: "Landing Pages", href: "/landing-page-development" },
+                { name: "Web Applications", href: "/web-application-development" },
               ].map((service) => (
-                <li key={service}>
-                  <a href="#services" className="hover:text-cyan-400 transition-colors text-slate-300 text-xs leading-relaxed">
-                    {service}
-                  </a>
+                <li key={service.name}>
+                  <Link href={service.href} className="hover:text-cyan-400 transition-colors text-slate-300 text-xs leading-relaxed">
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -123,23 +113,14 @@ export default function Footer() {
 
         {/* Bottom Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 UrbanTechWebs. All rights reserved.</p>
+          <p>© 2026 UrbanTech Webs. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a
-              href="https://portfolio-8qup.onrender.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-300 transition-colors text-cyan-400 font-black inline-flex items-center gap-1"
-            >
-              <span>Live Portfolio</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
-            <a href="/privacy-policy" className="hover:text-slate-400 transition-colors">
+            <Link href="/privacy-policy" className="hover:text-slate-400 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/terms-and-conditions" className="hover:text-slate-400 transition-colors">
+            </Link>
+            <Link href="/terms-and-conditions" className="hover:text-slate-400 transition-colors">
               Terms & Conditions
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -147,4 +128,5 @@ export default function Footer() {
     </footer>
   );
 }
+
 

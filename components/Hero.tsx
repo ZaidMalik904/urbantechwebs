@@ -44,17 +44,17 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
         {/* Small Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide shadow-xs backdrop-blur-md">
           <Zap className="w-4 h-4 text-cyan-400 fill-cyan-400/20" />
-          <span>Website Design & Development Services</span>
+          <span>Web Development & Website Design Services in Noida</span>
         </div>
 
         {/* Main Heading (Single H1 for SEO) */}
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight max-w-4xl mx-auto">
-          Custom Website Design & Web Development for Growing Businesses
+          Web Development & Website Design Company in Noida
         </h1>
 
         {/* Supporting Copy */}
-        <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
-          We build fast, responsive and professional websites that help businesses present their services, reach customers and generate more enquiries online.
+        <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto font-normal leading-relaxed">
+          UrbanTech Webs builds fast, responsive and conversion-focused websites, e-commerce stores, landing pages and custom web applications for businesses in Noida and across Delhi NCR.
         </p>
 
         {/* CTA Buttons */}
@@ -63,7 +63,7 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
             onClick={handleQuote}
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group cursor-pointer"
           >
-            <span>Get a Free Website Quote</span>
+            <span>Get a Free Consultation</span>
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
           </button>
 

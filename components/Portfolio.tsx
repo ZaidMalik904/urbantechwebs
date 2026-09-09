@@ -149,7 +149,7 @@ export default function Portfolio() {
   const visibleProjects = showAll ? projects : projects.slice(0, 5);
 
   return (
-    <section id="work" className="py-20 sm:py-24 bg-slate-50 relative border-b border-slate-200">
+    <section id="work" className="py-20 sm:py-24 bg-white relative border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

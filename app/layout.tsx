@@ -20,34 +20,34 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const siteTitle = "UrbanTechWebs | Web Development & Website Design Company";
+const siteTitle =
+  "Web Development & Website Design Company in Noida | UrbanTech Webs";
 const siteDescription =
-  "UrbanTechWebs is a top web development & website design company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages & web apps.";
+  "UrbanTech Webs is a web development and website design company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages and web applications.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://urbantechwebs.in"),
   title: {
     default: siteTitle,
-    template: "%s | UrbanTechWebs",
+    template: "%s | UrbanTech Webs",
   },
   description: siteDescription,
   keywords: [
-    "Website Design",
-    "Website Development",
-    "Business Website Design",
-    "E-commerce Website Development",
-    "Landing Page Design",
-    "WordPress Website Development",
-    "Website Redesign",
-    "Custom Web Applications",
+    "Web Development & Website Design Company in Noida",
     "Web Development Company in Noida",
     "Website Design Company in Noida",
-    "Web Development Services in Delhi NCR",
-    "UrbanTechWebs",
+    "Custom Web Development Noida",
+    "Website Design Services Noida",
+    "E-commerce Website Development Noida",
+    "WordPress Development Noida",
+    "Landing Page Design Noida",
+    "Web Application Development Delhi NCR",
+    "Business Website Design Noida",
+    "UrbanTech Webs",
   ],
-  authors: [{ name: "UrbanTechWebs", url: "https://urbantechwebs.in" }],
-  creator: "UrbanTechWebs",
-  publisher: "UrbanTechWebs",
+  authors: [{ name: "UrbanTech Webs", url: "https://urbantechwebs.in" }],
+  creator: "UrbanTech Webs",
+  publisher: "UrbanTech Webs",
   robots: {
     index: true,
     follow: true,
@@ -67,13 +67,13 @@ export const metadata: Metadata = {
     url: "https://urbantechwebs.in/",
     title: siteTitle,
     description: siteDescription,
-    siteName: "UrbanTechWebs",
+    siteName: "UrbanTech Webs",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "UrbanTechWebs web development and website design",
+        alt: "UrbanTech Webs Web Development and Website Design Company in Noida",
       },
     ],
   },
