@@ -24,6 +24,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
 import Stats from "@/components/Stats";
+import { useQuoteModal } from "@/components/QuoteModalContext";
 
 export interface ServicePageProps {
   title: string;
@@ -54,6 +55,7 @@ export default function ServicePageLayout({
   heroImage,
   showStats = true,
 }: ServicePageProps) {
+  const { openQuoteModal } = useQuoteModal();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
@@ -107,13 +109,13 @@ export default function ServicePageLayout({
             </div>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="#contact-cta"
-                className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2"
+              <button
+                onClick={() => openQuoteModal(badge)}
+                className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Get a Free Consultation</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </button>
               <a
                 href="https://wa.me/917827775353?text=Hi%20UrbanTech%20Webs%2C%20I%20want%20to%20discuss%20a%20project."
                 target="_blank"
@@ -367,7 +369,7 @@ export default function ServicePageLayout({
                       className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden flex flex-col sm:flex-row items-center p-5 gap-5 hover:shadow-xl hover:border-blue-500 transition-all duration-200 group"
                     >
                       <div className="relative w-full sm:w-52 aspect-16/10 rounded-xl overflow-hidden border border-slate-200 flex-shrink-0 shadow-sm">
-                        <Image src={ex.image} alt={ex.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <Image src={ex.image} alt={ex.title} fill sizes="(max-width: 640px) 100vw, 208px" className="object-cover group-hover:scale-105 transition-transform duration-300" />
                       </div>
                       <div className="space-y-2.5 flex-1">
                         <h4 className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{ex.title}</h4>

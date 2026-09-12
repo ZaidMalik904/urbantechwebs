@@ -3,20 +3,20 @@
 import React from "react";
 import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { useQuoteModal } from "./QuoteModalContext";
 
 interface HeroProps {
   onOpenQuoteModal?: () => void;
 }
 
 export default function Hero({ onOpenQuoteModal }: HeroProps) {
+  const { openQuoteModal } = useQuoteModal();
   const handleQuote = () => {
     if (onOpenQuoteModal) {
       onOpenQuoteModal();
     } else {
-      window.open(
-        "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20quote%20for%20my%20website%20project.",
-        "_blank"
-      );
+      openQuoteModal();
     }
   };
 
@@ -67,12 +67,12 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
           </button>
 
-          <a
-            href="#work"
+          <Link
+            href="/portfolio"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/90 hover:bg-slate-800 text-white border border-slate-700/80 font-semibold text-sm sm:text-base shadow-xs backdrop-blur-xs transition-all text-center"
           >
             View Our Work
-          </a>
+          </Link>
         </div>
 
         {/* Single-Line Trust / Value Bar below CTA */}

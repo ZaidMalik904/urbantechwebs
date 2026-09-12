@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Outfit, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { QuoteModalProvider } from "@/components/QuoteModalContext";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -233,6 +234,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${outfit.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <head>
@@ -277,7 +279,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {children}
+        <QuoteModalProvider>
+          {children}
+        </QuoteModalProvider>
       </body>
     </html>
   );

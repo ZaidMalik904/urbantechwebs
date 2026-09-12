@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { MessageSquare, Smartphone, ShieldCheck, Sparkles } from "lucide-react";
+import { useQuoteModal } from "./QuoteModalContext";
 
 export default function About() {
+  const { openQuoteModal } = useQuoteModal();
   const highlights = [
     {
       icon: MessageSquare,
@@ -96,12 +100,12 @@ export default function About() {
 
           {/* CTA Button */}
           <div className="mt-10 text-center relative z-10">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all hover:scale-105"
+            <button
+              onClick={() => openQuoteModal()}
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all hover:scale-105 cursor-pointer"
             >
               <span>Get in Touch With Our Team</span>
-            </a>
+            </button>
           </div>
 
         </div>

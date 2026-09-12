@@ -3,20 +3,19 @@
 import React from "react";
 import Image from "next/image";
 import { ArrowRight, Sparkles, Target, Palette, Smartphone, Search, MessageSquare, ShieldCheck, ShoppingCart, Cpu, Zap, CheckCircle2 } from "lucide-react";
+import { useQuoteModal } from "./QuoteModalContext";
 
 interface WhyUsProps {
   onOpenQuoteModal?: () => void;
 }
 
 export default function WhyUs({ onOpenQuoteModal }: WhyUsProps) {
+  const { openQuoteModal } = useQuoteModal();
   const handleQuote = () => {
     if (onOpenQuoteModal) {
       onOpenQuoteModal();
     } else {
-      window.open(
-        "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20consultation%20for%20my%20website%20project.",
-        "_blank"
-      );
+      openQuoteModal();
     }
   };
 

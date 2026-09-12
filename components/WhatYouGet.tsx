@@ -2,12 +2,21 @@
 
 import React from "react";
 import { Smartphone, Zap, MessageSquare, Search, Globe, ShieldCheck, Sparkles, ArrowRight } from "lucide-react";
+import { useQuoteModal } from "./QuoteModalContext";
 
 interface WhatYouGetProps {
   onOpenQuoteModal?: () => void;
 }
 
 export default function WhatYouGet({ onOpenQuoteModal }: WhatYouGetProps) {
+  const { openQuoteModal } = useQuoteModal();
+  const handleQuote = () => {
+    if (onOpenQuoteModal) {
+      onOpenQuoteModal();
+    } else {
+      openQuoteModal();
+    }
+  };
   const packageDeliverables = [
     {
       id: "responsive",
@@ -261,7 +270,7 @@ export default function WhatYouGet({ onOpenQuoteModal }: WhatYouGetProps) {
           </div>
 
           <button
-            onClick={onOpenQuoteModal}
+            onClick={handleQuote}
             className="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 flex-shrink-0 cursor-pointer"
           >
             <span>GET A FREE WEBSITE QUOTE</span>

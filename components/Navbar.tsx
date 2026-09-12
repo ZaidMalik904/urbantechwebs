@@ -7,12 +7,14 @@ import { Menu, X, ArrowRight, Phone, Mail, ChevronDown, Sparkles, Code, Layout, 
 import TopBar from "./TopBar";
 import LoadingLine from "./LoadingLine";
 import Logo from "./Logo";
+import { useQuoteModal } from "./QuoteModalContext";
 
 interface NavbarProps {
   onOpenQuoteModal?: () => void;
 }
 
 export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
+  const { openQuoteModal } = useQuoteModal();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
@@ -44,10 +46,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
     if (onOpenQuoteModal) {
       onOpenQuoteModal();
     } else {
-      window.open(
-        "https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20consultation%20for%20my%20website%20project.",
-        "_blank"
-      );
+      openQuoteModal();
     }
   };
 

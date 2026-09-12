@@ -81,7 +81,9 @@ body {
   animation: collideUp 2.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
-/* Hide Mobile Bottom Actions Bar when Mobile Navigation Drawer is Open */
-body.mobile-menu-open .mobile-bottom-actions {
+/* Hide Mobile Bottom Actions Bar & Floating Desktop Buttons when Navigation Drawer or Modal Form is Open */
+body.mobile-menu-open .mobile-bottom-actions,
+body.modal-open .mobile-bottom-actions,
+body.modal-open .floating-desktop-actions {
   display: none !important;
 }

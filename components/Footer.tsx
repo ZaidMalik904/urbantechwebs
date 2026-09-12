@@ -35,7 +35,6 @@ export default function Footer() {
                 { name: "Home", href: "/", external: false, showArrow: false },
                 { name: "About Us", href: "/about", external: false, showArrow: false },
                 { name: "Portfolio", href: "/portfolio", external: false, showArrow: false },
-                { name: "Blog Articles", href: "/blog", external: false, showArrow: false },
                 { name: "Contact Us", href: "/contact", external: false, showArrow: false },
               ].map((item) => (
                 <li key={item.name}>

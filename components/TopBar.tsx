@@ -2,12 +2,21 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
+import { useQuoteModal } from "./QuoteModalContext";
 
 interface TopBarProps {
   onOpenQuoteModal?: () => void;
 }
 
 export default function TopBar({ onOpenQuoteModal }: TopBarProps) {
+  const { openQuoteModal } = useQuoteModal();
+  const handleAction = () => {
+    if (onOpenQuoteModal) {
+      onOpenQuoteModal();
+    } else {
+      openQuoteModal();
+    }
+  };
   // Announcements list (Free domain & hosting removed as requested)
   const announcements = [
     {
@@ -57,7 +66,7 @@ export default function TopBar({ onOpenQuoteModal }: TopBarProps) {
 
         {/* Centered Message Content (Clickable) */}
         <div
-          onClick={onOpenQuoteModal}
+          onClick={handleAction}
           className="flex-1 text-center font-medium tracking-wide truncate cursor-pointer hover:underline flex items-center justify-center gap-1.5 group"
         >
           <Sparkles className="w-3 h-3 text-amber-300 flex-shrink-0 animate-pulse" />

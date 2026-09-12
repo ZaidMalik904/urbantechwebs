@@ -1,17 +1,37 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Phone } from "lucide-react";
 
 export default function FloatingActions() {
   const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
+  const [showScrollActions, setShowScrollActions] = useState(false);
+
+  // Show floating actions ONLY when user scrolls down the page (> 150px)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setShowScrollActions(true);
+      } else {
+        setShowScrollActions(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      {/* 1. Desktop Floating Bottom-Right Action Buttons (Hidden on mobile) */}
-      <div className="hidden sm:flex fixed bottom-6 right-6 z-50 flex-col items-center gap-4">
-        
+      {/* 1. Desktop Floating Bottom-Right Action Buttons (Hidden initially, Shown ONLY on scroll) */}
+      <div
+        className={`hidden sm:flex fixed bottom-6 right-6 z-50 flex-col items-center gap-4 floating-desktop-actions transition-all duration-300 ${
+          showScrollActions
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 translate-y-12 pointer-events-none"
+        }`}
+      >
         {/* Phone Call Button */}
         <div className="relative flex items-center group">
           {/* Tooltip */}
@@ -28,7 +48,7 @@ export default function FloatingActions() {
             aria-label="Call Us Now"
             onMouseEnter={() => setActiveTooltip("call")}
             onMouseLeave={() => setActiveTooltip(null)}
-            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.7)] hover:scale-110 active:scale-95 transition-all duration-300 relative group"
+            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.7)] hover:scale-110 active:scale-95 transition-all duration-300 relative group cursor-pointer"
           >
             <span className="absolute inset-0 rounded-full bg-blue-500/30 animate-ping pointer-events-none opacity-40" />
             <Phone className="w-6 h-6 fill-white/20 relative z-10" />
@@ -53,20 +73,25 @@ export default function FloatingActions() {
             aria-label="Chat on WhatsApp"
             onMouseEnter={() => setActiveTooltip("whatsapp")}
             onMouseLeave={() => setActiveTooltip(null)}
-            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.7)] hover:scale-110 active:scale-95 transition-all duration-300 relative group"
+            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.7)] hover:scale-110 active:scale-95 transition-all duration-300 relative group cursor-pointer"
           >
             <span className="absolute inset-0 rounded-full bg-emerald-500/30 animate-ping pointer-events-none opacity-40" />
             <Image src="/images/whatsapp.svg" alt="WhatsApp" width={32} height={32} className="w-8 h-8 relative z-10" />
           </a>
         </div>
-
       </div>
 
-      {/* 2. Mobile-Only Fixed Bottom Action Bar (Hidden when hamburger menu is open) */}
-      <div className="flex sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-950 border-t border-slate-800 p-0 gap-0 shadow-2xl mobile-bottom-actions">
+      {/* 2. Original Mobile Bottom Action Bar (Left: Call Now, Right: WhatsApp — Shown ONLY on scroll) */}
+      <div
+        className={`flex sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-950 border-t border-slate-800 p-0 gap-0 shadow-2xl mobile-bottom-actions transition-all duration-300 ${
+          showScrollActions
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 translate-y-full pointer-events-none"
+        }`}
+      >
         <a
           href="tel:+917827775353"
-          className="flex-1 h-14 px-3 rounded-none bg-blue-600 active:bg-blue-700 text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-colors"
+          className="flex-1 h-14 px-3 rounded-none bg-blue-600 active:bg-blue-700 text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-colors cursor-pointer"
         >
           <Phone className="w-5.5 h-5.5 fill-white/20 flex-shrink-0" />
           <span>Call Now</span>
@@ -76,7 +101,7 @@ export default function FloatingActions() {
           href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20am%20interested%20in%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 h-14 px-3 rounded-none bg-[#25D366] active:bg-[#20ba59] text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-colors"
+          className="flex-1 h-14 px-3 rounded-none bg-[#25D366] active:bg-[#20ba59] text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-colors cursor-pointer"
         >
           <Image src="/images/whatsapp.svg" alt="WhatsApp" width={22} height={22} className="w-5.5 h-5.5 flex-shrink-0" />
           <span>WhatsApp</span>

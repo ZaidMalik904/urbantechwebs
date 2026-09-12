@@ -32,14 +32,14 @@ export default function PortfolioPage() {
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/portfolio_hero_bg.jpg"
-              alt="UrbanTech Webs Portfolio Projects Background"
+              src="/images/portfolio_hero_workspace.jpg"
+              alt="UrbanTech Webs Portfolio Web Design Workspace"
               fill
               priority
-              className="object-cover object-center opacity-75"
+              className="object-cover object-center opacity-85 sm:opacity-90"
             />
-            {/* Soft Overlay matching service page hero */}
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/65 to-slate-950/95" />
+            {/* Soft Dark Overlay for Text Readability & Image Vibrancy */}
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/75 via-slate-950/55 to-slate-950/85" />
           </div>
 
           {/* Hero Content */}
