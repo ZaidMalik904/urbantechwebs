@@ -67,7 +67,7 @@ export default function TopBar({ onOpenQuoteModal }: TopBarProps) {
         {/* Centered Message Content (Clickable) */}
         <div
           onClick={handleAction}
-          className="flex-1 text-center font-medium tracking-wide truncate cursor-pointer hover:underline flex items-center justify-center gap-1.5 group"
+          className="flex-1 text-center font-medium tracking-wide truncate cursor-pointer flex items-center justify-center gap-1.5 group"
         >
           <Sparkles className="w-3 h-3 text-amber-300 flex-shrink-0 animate-pulse" />
           <span className="truncate">

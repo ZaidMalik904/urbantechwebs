@@ -54,7 +54,23 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
 
         {/* Supporting Copy */}
         <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto font-normal leading-relaxed">
-          UrbanTech Webs builds fast, responsive and conversion-focused websites, e-commerce stores, landing pages and custom web applications for businesses in Noida and across Delhi NCR.
+          UrbanTech Webs builds fast, responsive and conversion-focused{" "}
+          <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            web development
+          </Link>{" "}
+          projects,{" "}
+          <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            e-commerce stores
+          </Link>
+          ,{" "}
+          <Link href="/landing-page-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            landing pages
+          </Link>{" "}
+          and{" "}
+          <Link href="/web-application-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            custom web applications
+          </Link>{" "}
+          for businesses in Noida and across Delhi NCR.
         </p>
 
         {/* CTA Buttons */}

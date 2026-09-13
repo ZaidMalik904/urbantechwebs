@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -15,6 +16,39 @@ import About from "@/components/About";
 import TechStack from "@/components/TechStack";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
+
+export const metadata: Metadata = {
+  title: "Web Development Company in Noida | Website Design & Services | UrbanTech Webs",
+  description:
+    "UrbanTech Webs is a premier web development company in Noida & Delhi NCR. We build custom websites, e-commerce stores, landing pages, and web applications.",
+  alternates: {
+    canonical: "https://urbantechwebs.in/",
+  },
+  openGraph: {
+    title: "Web Development Company in Noida | Website Design | UrbanTech Webs",
+    description:
+      "UrbanTech Webs is a web development company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages, and web applications.",
+    url: "https://urbantechwebs.in/",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "UrbanTech Webs Web Development Company in Noida",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Development Company in Noida | UrbanTech Webs",
+    description:
+      "Web development and website design company serving Noida, Delhi NCR, and India.",
+    images: ["/images/og-image.jpg"],
+  },
+};
 
 export default function Home() {
   return (

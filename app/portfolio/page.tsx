@@ -12,11 +12,35 @@ import FloatingActions from "@/components/WhatsAppButton";
 import { FolderCheck, CheckCircle2, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Portfolio & Case Studies | UrbanTech Webs - Website Design Projects",
+  title: "Portfolio & Projects | UrbanTech Webs - Website Design Noida",
   description:
-    "Explore website design and development projects by UrbanTech Webs. Featuring business websites, e-commerce stores, car rentals, and custom web apps.",
+    "Explore website design and development projects by UrbanTech Webs. Business websites, e-commerce stores, car rental portals, and custom web applications.",
   alternates: {
     canonical: "https://urbantechwebs.in/portfolio",
+  },
+  openGraph: {
+    title: "Portfolio & Case Studies | UrbanTech Webs - Website Design Projects",
+    description:
+      "Explore website design and web development projects by UrbanTech Webs. Featuring business websites, e-commerce stores, car rentals, and custom web apps.",
+    url: "https://urbantechwebs.in/portfolio",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/portfolio_hero_workspace.jpg",
+        width: 1200,
+        height: 630,
+        alt: "UrbanTech Webs Web Development & Website Design Portfolio",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio & Projects | UrbanTech Webs - Website Design Noida",
+    description:
+      "Explore real client websites and web applications built by UrbanTech Webs.",
+    images: ["/images/portfolio_hero_workspace.jpg"],
   },
 };
 
@@ -61,7 +85,23 @@ export default function PortfolioPage() {
 
             {/* Subtext */}
             <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto font-normal leading-relaxed">
-              Explore real-world client websites, high-converting e-commerce stores, car rental portals, and custom web applications designed and developed by UrbanTech Webs.
+              Explore real-world client websites, high-converting{" "}
+              <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                e-commerce stores
+              </Link>
+              ,{" "}
+              <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                custom web development
+              </Link>{" "}
+              projects, and{" "}
+              <Link href="/web-application-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                web applications
+              </Link>{" "}
+              designed and developed by UrbanTech Webs. Ready for your project?{" "}
+              <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                Get a free consultation
+              </Link>
+              .
             </p>
 
             {/* Single-Line Trust Bar */}

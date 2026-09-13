@@ -1,12 +1,37 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Web Application Development Services in Noida | UrbanTech Webs",
+  title: "Web Application Development Company Noida | Custom Web Apps",
   description:
-    "UrbanTech Webs builds custom web applications, SaaS dashboards, booking portals, and custom web systems in Noida and Delhi NCR.",
+    "UrbanTech Webs is a leading web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-application-development",
+  },
+  openGraph: {
+    title: "Web Application Development Company Noida | Custom Web Systems | UrbanTech Webs",
+    description:
+      "UrbanTech Webs is a custom web application development company in Noida. We build SaaS dashboards, client portals, booking engines, and web applications.",
+    url: "https://urbantechwebs.in/web-application-development",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/web_app_dev_hero_bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Web Application Development Company in Noida",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Application Development Company Noida | UrbanTech Webs",
+    description:
+      "Custom web app development services, SaaS dashboards, and web systems in Noida & Delhi NCR.",
+    images: ["/images/web_app_dev_hero_bg.jpg"],
   },
 };
 
@@ -16,11 +41,27 @@ export default function WebApplicationDevelopmentPage() {
       badge="Web Application Development"
       h1="Custom Web Application Development Services in Noida"
       heroImage="/images/web_app_dev_hero_bg.jpg"
-      title="Web Application Development Services in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs builds custom web applications, SaaS dashboards, booking portals, and custom web systems in Noida and Delhi NCR."
+      title="Web Application Development Company Noida | Custom Web Apps"
+      metaDescription="UrbanTech Webs is a leading web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems."
       introParagraphs={[
-        "UrbanTech Webs designs and engineers custom web applications, administrative control panels, booking engines, and interactive web portals for growing businesses in Noida and Delhi NCR.",
-        "We build web applications focused on solving operational workflows, managing data efficiently, providing role-based user access, and delivering seamless interactive experiences.",
+        <>
+          UrbanTech Webs is a premier web application development company in Noida engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}
+          <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            custom web development Noida
+          </Link>{" "}
+          practices to build enterprise-grade web tools.
+        </>,
+        <>
+          Whether you need a full SaaS system, a custom booking portal, or specialized{" "}
+          <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            web portal UI/UX design
+          </Link>
+          , our full-stack engineers build responsive interfaces and high-concurrency API endpoints. You can{" "}
+          <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            consult our web application developers
+          </Link>{" "}
+          to scope your project requirements.
+        </>,
       ]}
       benefits={[
         {
@@ -29,38 +70,45 @@ export default function WebApplicationDevelopmentPage() {
         },
         {
           title: "Interactive Dashboards & Analytics",
-          desc: "Clean graphical reporting panels for real-time tracking of sales, customer requests, or inventory status.",
+          desc: "Clean graphical reporting panels for real-time tracking of sales metrics, customer requests, or inventory status.",
         },
         {
           title: "Role-Based Access & Security",
-          desc: "Multi-user permissions for administrators, staff members, and public customers.",
+          desc: "Multi-user authentication and permissions for system administrators, internal staff members, and public customers.",
         },
         {
-          title: "Database Integration & APIs",
-          desc: "Robust database connections (PostgreSQL, MongoDB, MySQL) and REST API endpoints.",
+          title: "Database Integration & Custom Endpoints",
+          desc: "Robust database connections (PostgreSQL, MongoDB, MySQL) and REST API endpoints engineered for high concurrency.",
         },
         {
-          title: "Responsive Full-Stack Logic",
-          desc: "Fluid user interfaces powered by modern JavaScript frameworks and scalable server infrastructure.",
+          title: "Marketplace & E-Commerce Integration",
+          desc: (
+            <>
+              For multi-vendor selling or custom checkout logic, we integrate tailored shopping workflows with our{" "}
+              <Link href="/ecommerce-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                custom e-commerce marketplace portals
+              </Link>.
+            </>
+          ),
         },
         {
-          title: "Scalable Architecture",
-          desc: "Engineered to support increasing user traffic, data volume, and feature additions over time.",
+          title: "Scalable Cloud Architecture",
+          desc: "Engineered to support growing user traffic, large data volume, and future feature additions over time.",
         },
       ]}
       features={[
-        { title: "Custom Admin Control Panels", desc: "Manage operational workflows and user accounts." },
-        { title: "Booking & Reservation Engines", desc: "Real-time date and slot scheduling systems." },
-        { title: "Customer Account Portals", desc: "Secure login, profile settings, and order history." },
-        { title: "Real-Time Data Processing", desc: "Live status updates and order tracking flows." },
-        { title: "Third-Party API Connections", desc: "Integration with payment, SMS, email, or CRM APIs." },
-        { title: "Cloud Deployment & Monitoring", desc: "Hosted on cloud infrastructure with SSL encryption." },
+        { title: "Custom Admin Control Panels", desc: "Manage business workflows, inventory data, and user accounts." },
+        { title: "Booking & Reservation Engines", desc: "Real-time date selection, slot scheduling systems, and payments." },
+        { title: "Customer Account Portals", desc: "Secure user authentication, profile settings, and order history." },
+        { title: "Real-Time Data Processing", desc: "Live status updates, notification triggers, and order tracking flows." },
+        { title: "Third-Party API Connections", desc: "Integration with payment gateways, SMS portals, email, or CRM systems." },
+        { title: "Cloud Deployment & Hardened Security", desc: "Hosted on cloud infrastructure with SSL encryption and automated backups." },
       ]}
       processSteps={[
-        { step: "Step 01", title: "Workflow Mapping", desc: "Documenting business logic, user roles, and database schemas." },
-        { step: "Step 02", title: "UI & UX Prototyping", desc: "Designing interactive screens and dashboard wireframes." },
-        { step: "Step 03", title: "Full-Stack Dev", desc: "Developing database models, API routes, and user interfaces." },
-        { step: "Step 04", title: "Testing & Deployment", desc: "Security auditing, load verification, and live cloud deployment." },
+        { step: "Step 01", title: "Workflow Mapping", desc: "Documenting business logic, user permissions, and database schemas." },
+        { step: "Step 02", title: "UI & UX Prototyping", desc: "Designing interactive screens, dashboard wireframes, and data flows." },
+        { step: "Step 03", title: "Full-Stack Dev", desc: "Developing database models, REST API endpoints, and frontend UI." },
+        { step: "Step 04", title: "Testing & Deployment", desc: "Security auditing, load testing, and live cloud server deployment." },
       ]}
       portfolioExamples={[
         {
@@ -78,24 +126,37 @@ export default function WebApplicationDevelopmentPage() {
       ]}
       faqs={[
         {
+          q: "Why choose UrbanTech Webs as your web application development company in Noida?",
+          rawText: "We engineer scalable full-stack web applications using Next.js, React, Node.js, and modern databases, delivering high-performance platforms tailored to complex business logic.",
+          a: "We engineer scalable full-stack web applications using Next.js, React, Node.js, and modern databases, delivering high-performance platforms tailored to complex business logic.",
+        },
+        {
+          q: "How much does custom web application development cost?",
+          rawText: "Web application development cost varies based on feature complexity, database schemas, and multi-user roles. Basic web app portals start from ₹9,999.",
+          a: "Web application development cost varies based on feature complexity, database schemas, and multi-user roles. Basic web app portals start from ₹9,999.",
+        },
+        {
           q: "What types of web applications do you develop?",
+          rawText: "We develop administrative control panels, booking engines, customer portals, custom e-commerce marketplaces, inventory systems, and custom SaaS web software.",
           a: "We develop administrative control panels, booking engines, customer portals, custom e-commerce marketplaces, inventory systems, and custom SaaS web software.",
         },
         {
           q: "What technologies do you use for web application development?",
+          rawText: "We utilize modern technology stacks including React, Next.js, Node.js, TypeScript, PostgreSQL, MongoDB, and Tailwind CSS.",
           a: "We utilize modern technology stacks including React, Next.js, Node.js, TypeScript, PostgreSQL, MongoDB, and Tailwind CSS.",
         },
         {
           q: "How long does it take to develop a custom web application?",
+          rawText: "Simple web applications or custom dashboards take 2 to 4 weeks, while complex multi-role platforms take 4 to 8 weeks depending on scope.",
           a: "Simple web applications or custom dashboards take 2 to 4 weeks, while complex multi-role platforms take 4 to 8 weeks depending on scope.",
         },
       ]}
       relatedServices={[
-        { title: "Website Development", href: "/web-development" },
-        { title: "Website Design", href: "/website-design" },
+        { title: "Custom Web Development", href: "/web-development" },
+        { title: "Website Design Services", href: "/website-design" },
         { title: "E-commerce Development", href: "/ecommerce-development" },
         { title: "WordPress Development", href: "/wordpress-development" },
-        { title: "Landing Page Development", href: "/landing-page-development" },
+        { title: "SEO & Website Performance", href: "/seo-services" },
       ]}
     />
   );

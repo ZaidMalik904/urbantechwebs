@@ -62,6 +62,8 @@ export default function Footer() {
                 { name: "WordPress Development", href: "/wordpress-development" },
                 { name: "Landing Pages", href: "/landing-page-development" },
                 { name: "Web Applications", href: "/web-application-development" },
+                { name: "SEO & Performance", href: "/seo-services" },
+                { name: "Logo & Brand Design", href: "/logo-design" },
               ].map((service) => (
                 <li key={service.name}>
                   <Link href={service.href} className="hover:text-cyan-400 transition-colors text-slate-300 text-xs leading-relaxed">

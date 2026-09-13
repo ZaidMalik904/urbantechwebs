@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
@@ -13,6 +14,30 @@ export const metadata: Metadata = {
     "Contact UrbanTech Webs for custom website development and website design in Noida & Delhi NCR. Phone: +91 78277 75353, Email: urbantechwebs904@gmail.com.",
   alternates: {
     canonical: "https://urbantechwebs.in/contact",
+  },
+  openGraph: {
+    title: "Contact Us | UrbanTech Webs - Web Development Company in Noida",
+    description:
+      "Contact UrbanTech Webs for website development, website design, and web applications in Noida & Delhi NCR.",
+    url: "https://urbantechwebs.in/contact",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/contact_hero_bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact UrbanTech Webs Web Development Company in Noida",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | UrbanTech Webs - Web Development Company in Noida",
+    description:
+      "Get a free consultation and project quote for custom web development in Noida.",
+    images: ["/images/contact_hero_bg.jpg"],
   },
 };
 
@@ -66,7 +91,23 @@ export default function ContactPage() {
 
             {/* Subtext Description */}
             <p className="text-slate-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-normal">
-              Have a question or ready to launch your business website? Reach out to our web development team in Noida for instant quotes, technical guidance, and custom consultation.
+              Have a question or looking for custom{" "}
+              <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                web development
+              </Link>
+              ,{" "}
+              <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                website design
+              </Link>
+              , or{" "}
+              <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                e-commerce solutions
+              </Link>
+              ? Reach out to our team in Noida for instant quotes, technical guidance, and free consultation. View our{" "}
+              <Link href="/portfolio" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                completed projects
+              </Link>
+              .
             </p>
 
             {/* Direct Contact Action Buttons (Integrated into Hero) */}

@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-xl sm:text-2xl font-bold text-white">1. Introduction</h2>
           <p className="leading-relaxed text-sm sm:text-base">
             UrbanTechWebs (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the website{" "}
-            <a href="https://urbantechwebs.in/" className="text-cyan-400 underline">
+            <a href="https://urbantechwebs.in/" className="text-cyan-400 hover:text-cyan-300 transition-colors">
               https://urbantechwebs.in/
             </a>
             . We are committed to respecting your privacy and protecting any personal information you share with us when using our website or contacting us regarding our website design and web development services.

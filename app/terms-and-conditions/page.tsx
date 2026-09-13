@@ -61,7 +61,7 @@ export default function TermsAndConditionsPage() {
           <h2 className="text-xl sm:text-2xl font-bold text-white">1. Agreement to Terms</h2>
           <p className="leading-relaxed text-sm sm:text-base">
             By accessing or using the website at{" "}
-            <a href="https://urbantechwebs.in/" className="text-cyan-400 underline">
+            <a href="https://urbantechwebs.in/" className="text-cyan-400 hover:text-cyan-300 transition-colors">
               https://urbantechwebs.in/
             </a>{" "}
             or engaging UrbanTechWebs (&quot;we,&quot; &quot;our,&quot; &quot;us&quot;) for website design and development services, you agree to comply with and be bound by these Terms &amp; Conditions.

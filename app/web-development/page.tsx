@@ -1,12 +1,37 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Custom Web Development Services in Noida | UrbanTech Webs",
+  title: "Web Development Services in Noida | Custom Business Websites | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations.",
+    "UrbanTech Webs provides top-rated custom web development services in Noida and Delhi NCR. We build fast, responsive business websites, web applications, and API integrations.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-development",
+  },
+  openGraph: {
+    title: "Web Development Services in Noida | Custom Websites | UrbanTech Webs",
+    description:
+      "UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations.",
+    url: "https://urbantechwebs.in/web-development",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/web_dev_hero_bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Custom Web Development Services in Noida",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Development Services in Noida | UrbanTech Webs",
+    description:
+      "Professional custom website development solutions for businesses in Noida & Delhi NCR.",
+    images: ["/images/web_dev_hero_bg.jpg"],
   },
 };
 
@@ -15,30 +40,58 @@ export default function WebDevelopmentPage() {
     <ServicePageLayout
       badge="Web Development"
       h1="Custom Web Development Services in Noida"
-      title="Custom Web Development Services in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations."
+      title="Web Development Services in Noida | Custom Business Websites | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides top-rated custom web development services in Noida and Delhi NCR. We build fast, responsive business websites, web applications, and API integrations."
       heroImage="/images/web_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
-        "UrbanTech Webs delivers custom web development solutions tailored to the operational goals of businesses in Noida, Delhi NCR, and across India.",
-        "We focus on writing clean, maintainable code, implementing responsive mobile layouts, integrating external APIs, and optimizing site performance so your business web presence loads fast and performs reliably.",
+        <>
+          UrbanTech Webs delivers professional web development services in Noida tailored to the operational goals of growing businesses. We combine custom frontend layout engineering with robust backend infrastructure to build high-converting platforms, seamless{" "}
+          <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            website design solutions
+          </Link>
+          , and scalable digital portals for clients across Noida and Delhi NCR.
+        </>,
+        <>
+          Whether you require custom code for a corporate site, an{" "}
+          <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            online store development
+          </Link>{" "}
+          project, or interactive{" "}
+          <Link href="/web-application-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            custom web application development
+          </Link>
+          , our web development team ensures clean semantic HTML, rapid page speeds, and mobile-first responsiveness. You can also{" "}
+          <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            get in touch for a free quote
+          </Link>{" "}
+          to discuss your exact scope.
+        </>,
       ]}
       benefits={[
         {
           title: "Custom Business Architecture",
-          desc: "Tailored website structures built around your specific business requirements rather than pre-made generic layouts.",
+          desc: "Tailored website structures built around your specific operational requirements rather than generic pre-made templates.",
         },
         {
           title: "API & Third-Party Integrations",
-          desc: "Seamless connection with CRM tools, payment gateways, WhatsApp messaging, and custom database endpoints.",
+          desc: "Seamless connection with CRM tools, payment gateways, instant WhatsApp messaging, and custom database endpoints.",
         },
         {
           title: "Mobile-First Responsiveness",
-          desc: "Flawless rendering and touch-friendly navigation across smartphones, tablets, and desktop computers.",
+          desc: "Flawless rendering and touch-friendly navigation across smartphones, tablets, laptops, and desktop computers.",
         },
         {
-          title: "Clean Semantic Code",
-          desc: "Developed following modern web standards for enhanced accessibility, security, and search engine crawling.",
+          title: "Clean Semantic Code & Technical SEO",
+          desc: (
+            <>
+              Developed following modern HTML5 web standards and integrated with our{" "}
+              <Link href="/seo-services" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                technical SEO services
+              </Link>{" "}
+              for enhanced accessibility, security, and search engine crawling.
+            </>
+          ),
         },
         {
           title: "Speed & Performance Optimization",
@@ -46,19 +99,19 @@ export default function WebDevelopmentPage() {
         },
         {
           title: "Scalable Infrastructure",
-          desc: "Built to expand seamlessly as your business adds new pages, products, or functional capabilities.",
+          desc: "Built to expand seamlessly as your business adds new pages, product lines, or custom functional capabilities.",
         },
       ]}
       features={[
-        { title: "Custom Web Design", desc: "Tailored UI/UX visual layout & responsive brand design." },
-        { title: "API & Payment Integration", desc: "Connect Razorpay, Paytm, Stripe, or custom APIs." },
-        { title: "Database & Backend Support", desc: "Structured data storage and query handling." },
-        { title: "Cross-Browser Compatibility", desc: "Verified on Chrome, Safari, Firefox, and Edge." },
-        { title: "SEO-Friendly Markup", desc: "Structured H1-H6 headers, meta tags, and schema." },
-        { title: "Domain & DNS Setup", desc: "Complete domain connection and SSL configuration." },
-        { title: "Website Security & SSL Encryption", desc: "HTTPS encryption, malware protection & firewall security." },
-        { title: "Core Web Vitals & Speed Tuning", desc: "Image compression, minification & fast load optimization." },
-        {title: "Free 1 Year Post-Launch Support", desc: "1 full year of dedicated maintenance, updates & bug-fix guarantee." },
+        { title: "Custom Web Architecture", desc: "Tailored UI/UX layout & responsive corporate web structure." },
+        { title: "API & Payment Gateway Setup", desc: "Connect Razorpay, Paytm, Stripe, or custom REST APIs." },
+        { title: "Database & Backend Support", desc: "Structured data storage, query handling, and security." },
+        { title: "Cross-Browser Compatibility", desc: "Verified on Chrome, Safari, Firefox, and Edge browsers." },
+        { title: "SEO-Friendly Technical Structure", desc: "Structured H1-H6 headers, meta tags, and JSON-LD schema." },
+        { title: "Domain & Cloud DNS Setup", desc: "Complete domain connection, cloud server & SSL configuration." },
+        { title: "Website Security & SSL Encryption", desc: "HTTPS encryption, malware protection & firewall hardening." },
+        { title: "Core Web Vitals Speed Tuning", desc: "Image compression, minification & fast load optimization." },
+        { title: "Free 1 Year Support Guarantee", desc: "1 full year of dedicated maintenance, updates & bug-fix warranty." },
       ]}
       processSteps={[
         { step: "Step 01", title: "Discovery", desc: "Requirement mapping and technical scope specification." },
@@ -82,28 +135,53 @@ export default function WebDevelopmentPage() {
       ]}
       faqs={[
         {
-          q: "What types of websites do you build under web development?",
-          a: "We build corporate business websites, custom web applications, product catalogues, customer service portals, and custom API-driven platforms.",
+          q: "What types of websites do you build under web development services?",
+          rawText: "We build corporate business websites, custom web applications, product catalogues, customer service portals, and custom API-driven platforms for clients in Noida and Delhi NCR.",
+          a: (
+            <>
+              We build corporate business websites, custom web portals, product catalogues, customer service systems, and custom API-driven platforms. Explore{" "}
+              <Link href="/portfolio" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                our live website portfolio
+              </Link>{" "}
+              to see examples of our delivered projects.
+            </>
+          ),
+        },
+        {
+          q: "How much does web development cost in Noida?",
+          rawText: "Web development cost depends on feature scope, page count, and custom functionality. Starter business websites start from ₹2,999, while custom business portals start from ₹5,999.",
+          a: "Web development cost depends on feature scope, page count, and custom functionality. Starter business websites start from ₹2,999, while custom business portals start from ₹5,999.",
         },
         {
           q: "Do you build custom websites or use templates?",
-          a: "We build tailored websites structured around your business goals, providing custom code and flexible designs tailored to your brand.",
+          rawText: "We build tailored websites structured around your business goals, providing custom code and flexible designs tailored to your brand identity.",
+          a: (
+            <>
+              We build tailored websites structured around your business goals, providing custom code and flexible layout options. If you prefer a managed CMS, we also offer{" "}
+              <Link href="/wordpress-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                WordPress website development
+              </Link>{" "}
+              for easy content updates.
+            </>
+          ),
         },
         {
           q: "How long does a custom web development project take?",
-          a: "Typical delivery takes 7 to 14 working days depending on the project complexity, number of pages, and content availability.",
+          rawText: "Typical delivery takes 7 to 14 working days depending on project complexity, page count, and content availability.",
+          a: "Typical delivery takes 7 to 14 working days depending on project complexity, page count, and content availability.",
         },
         {
           q: "Will my website be mobile-friendly and fast?",
-          a: "Yes, every website is engineered to be fully responsive across mobile phones, tablets, and desktops while adhering to core performance standards.",
+          rawText: "Yes, every website is engineered to be fully responsive across mobile devices and desktops while meeting Core Web Vitals performance standards.",
+          a: "Yes, every website is engineered to be fully responsive across mobile devices and desktops while meeting Core Web Vitals performance standards.",
         },
       ]}
       relatedServices={[
-        { title: "Website Design", href: "/website-design" },
-        { title: "E-commerce Development", href: "/ecommerce-development" },
+        { title: "Website Design Services", href: "/website-design" },
+        { title: "E-commerce Website Development", href: "/ecommerce-development" },
         { title: "WordPress Development", href: "/wordpress-development" },
         { title: "Landing Page Development", href: "/landing-page-development" },
-        { title: "Web Application Development", href: "/web-application-development" },
+        { title: "Custom Web Application Dev", href: "/web-application-development" },
       ]}
     />
   );

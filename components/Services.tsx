@@ -164,20 +164,20 @@ export default function Services() {
               >
                 <div>
                   {/* Service Visual Illustration Image */}
-                  <div className="relative w-full aspect-16/9 rounded-md overflow-hidden mb-6 border border-slate-200/60 shadow-xs">
+                  <Link href={service.link} className="block relative w-full aspect-16/9 rounded-md overflow-hidden mb-6 border border-slate-200/60 shadow-xs group/img">
                     <Image
                       src={service.image}
                       alt={`${service.title} showcase by UrbanTechWebs`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-cover group-hover/img:scale-105 transition-transform duration-500 ease-out"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none" />
                     
                     <span className="absolute bottom-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-950/85 border border-slate-800 text-[10px] font-mono font-bold text-cyan-300 uppercase tracking-wider backdrop-blur-xs">
                       {service.badge}
                     </span>
-                  </div>
+                  </Link>
 
                   <div className="flex items-center justify-between mb-4">
                     <div className={`w-11 h-11 rounded-md ${service.iconBg} flex items-center justify-center transition-all duration-300`}>
@@ -189,7 +189,9 @@ export default function Services() {
                   </div>
 
                   <h3 className={`text-xl font-extrabold mb-2.5 ${service.titleColor} transition-colors leading-snug`}>
-                    {service.title}
+                    <Link href={service.link}>
+                      {service.title}
+                    </Link>
                   </h3>
 
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -217,6 +219,44 @@ export default function Services() {
               </div>
             );
           })}
+        </div>
+
+        {/* SEO Internal Linking Hub Bar */}
+        <div className="mb-16 bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
+          <div className="text-center max-w-2xl mx-auto mb-6">
+            <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 mb-2">
+              Explore Our Dedicated Web Services
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600">
+              Browse our specialized digital service offerings across Noida, Delhi NCR, and India:
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-2.5">
+            <Link href="/web-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              Web Development Services in Noida
+            </Link>
+            <Link href="/website-design" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              Website Design Company Noida
+            </Link>
+            <Link href="/ecommerce-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              E-Commerce Development Noida
+            </Link>
+            <Link href="/wordpress-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              WordPress Development Noida
+            </Link>
+            <Link href="/landing-page-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              Landing Page Development
+            </Link>
+            <Link href="/web-application-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              Web Application Development
+            </Link>
+            <Link href="/seo-services" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              SEO Services in Noida
+            </Link>
+            <Link href="/logo-design" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
+              Logo & Brand Design Noida
+            </Link>
+          </div>
         </div>
       </div>
 

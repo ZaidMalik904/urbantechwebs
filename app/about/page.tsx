@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Stats from "@/components/Stats";
 import WhyUs from "@/components/WhyUs";
@@ -13,9 +14,33 @@ import { Building2, Target, Lightbulb, Users2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us | UrbanTech Webs - Web Development Company in Noida",
   description:
-    "Learn about UrbanTech Webs, a web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
+    "Learn about UrbanTech Webs, a leading web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
   alternates: {
     canonical: "https://urbantechwebs.in/about",
+  },
+  openGraph: {
+    title: "About Us | UrbanTech Webs - Web Development Company in Noida",
+    description:
+      "Learn about UrbanTech Webs, a web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
+    url: "https://urbantechwebs.in/about",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/about_hero_bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About UrbanTech Webs Web Development Company in Noida",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | UrbanTech Webs - Web Development Company in Noida",
+    description:
+      "Specialized web development & design agency serving Noida, Delhi NCR & India.",
+    images: ["/images/about_hero_bg.jpg"],
   },
 };
 
@@ -60,7 +85,23 @@ export default function AboutPage() {
 
             {/* Subtext Description */}
             <p className="text-slate-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-normal">
-              We are a specialized web development and website design company in Noida, Delhi NCR. Our mission is to empower growing businesses with fast, secure, mobile-first, and SEO-optimized digital web solutions.
+              We are a specialized{" "}
+              <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                web development
+              </Link>{" "}
+              and{" "}
+              <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                website design
+              </Link>{" "}
+              company in Noida, Delhi NCR. Our mission is to empower growing businesses with fast, secure, mobile-first, and SEO-optimized digital web solutions. Explore our{" "}
+              <Link href="/portfolio" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                client portfolio
+              </Link>{" "}
+              or{" "}
+              <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                contact our team
+              </Link>{" "}
+              to start your project.
             </p>
 
             {/* Mission & Company Pillars Bar */}

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ShieldCheck, MessageSquare, LayoutGrid, Clock, CheckCircle2 } from "lucide-react";
 
 export default function BusinessValue() {
@@ -83,7 +84,23 @@ export default function BusinessValue() {
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
-            A dedicated website gives your business a professional home online. It helps build credibility with potential clients, explains your services clearly, accepts enquiries 24/7, connects customers directly via WhatsApp, and supports your overall marketing efforts.
+            A dedicated website gives your business a professional home online. It helps build credibility with potential clients, explains your{" "}
+            <Link href="/web-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+              web development services in Noida
+            </Link>{" "}
+            and{" "}
+            <Link href="/website-design" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+              custom website design
+            </Link>{" "}
+            clearly, accepts enquiries 24/7, showcases your{" "}
+            <Link href="/portfolio" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+              web design portfolio
+            </Link>
+            , and allows prospective buyers to{" "}
+            <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+              contact our Noida team
+            </Link>{" "}
+            instantly.
           </p>
         </div>
 

@@ -1,12 +1,37 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "SEO & Website Performance Services in Noida | UrbanTech Webs",
+  title: "SEO Services in Noida | SEO Company & Website Performance | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides technical SEO, speed optimization, and local search visibility services in Noida and Delhi NCR.",
+    "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and local search visibility.",
   alternates: {
     canonical: "https://urbantechwebs.in/seo-services",
+  },
+  openGraph: {
+    title: "SEO Services in Noida | Search Engine & Speed Optimization | UrbanTech Webs",
+    description:
+      "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and local search visibility.",
+    url: "https://urbantechwebs.in/seo-services",
+    siteName: "UrbanTech Webs",
+    images: [
+      {
+        url: "/images/seo_services_hero_bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SEO Services in Noida",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Services in Noida | UrbanTech Webs",
+    description:
+      "Expert technical SEO and speed optimization in Noida & Delhi NCR.",
+    images: ["/images/seo_services_hero_bg.jpg"],
   },
 };
 
@@ -14,70 +39,117 @@ export default function SeoServicesPage() {
   return (
     <ServicePageLayout
       badge="SEO & Performance"
-      h1="SEO & Website Performance Services in Noida"
+      h1="SEO Services & Website Performance Optimization in Noida"
       heroImage="/images/seo_services_hero_bg.jpg"
-      title="SEO & Website Performance Services in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides technical SEO, speed optimization, and local search visibility services in Noida and Delhi NCR."
+      title="SEO Services in Noida | SEO Company & Website Performance"
+      metaDescription="UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and local search visibility."
       introParagraphs={[
-        "UrbanTech Webs provides technical SEO optimization, speed tuning, and local search visibility enhancements for businesses in Noida and Delhi NCR.",
-        "We optimize clean HTML structures, XML sitemaps, meta data, image compressions, and page response times so your business website ranks better on search engines and delivers a fast user experience.",
+        <>
+          UrbanTech Webs provides expert SEO services in Noida, page speed optimization, and local search engine visibility enhancements. We integrate technical search strategies into our{" "}
+          <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            SEO-friendly web development
+          </Link>{" "}
+          and custom layout projects across Noida and Delhi NCR.
+        </>,
+        <>
+          As a performance-focused SEO company in Noida, we tune clean HTML structures, XML sitemaps, JSON-LD schema, and{" "}
+          <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            responsive website design
+          </Link>{" "}
+          elements. You can{" "}
+          <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            get a technical SEO audit
+          </Link>{" "}
+          to evaluate your website search visibility today.
+        </>,
       ]}
       benefits={[
         {
           title: "Technical SEO Foundation",
-          desc: "Proper heading hierarchy, canonical tags, structured JSON-LD schema, and meta tag setup.",
+          desc: "Proper heading hierarchy (H1-H6), canonical tags, structured JSON-LD schema, and robot meta instructions.",
         },
         {
           title: "Page Speed & Core Web Vitals",
-          desc: "Asset optimization, image compression, and script cleanup for fast load times.",
+          desc: "Code minification, image compression (WebP), and script optimization for rapid load times and lower bounce rates.",
         },
         {
-          title: "Local Search Optimization",
-          desc: "Targeted local SEO strategies for Noida, Delhi NCR, and regional customer acquisition.",
+          title: "WordPress & CMS SEO Tuning",
+          desc: (
+            <>
+              Optimization for CMS platforms via our specialized{" "}
+              <Link href="/wordpress-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                WordPress SEO configuration
+              </Link>{" "}
+              services.
+            </>
+          ),
         },
         {
-          title: "Mobile Usability Tuning",
-          desc: "Ensuring zero layout shifts and mobile-friendly rendering for phone visitors.",
+          title: "Web App & SaaS Speed Optimization",
+          desc: (
+            <>
+              Optimizing dynamic single-page portals and server rendering with our{" "}
+              <Link href="/web-application-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                web application performance
+              </Link>{" "}
+              standards.
+            </>
+          ),
         },
         {
           title: "Search Indexing & Sitemaps",
-          desc: "Automated XML sitemap creation and Google Search Console indexing setup.",
+          desc: "Automated XML sitemap generation and Google Search Console property indexing configuration.",
         },
         {
-          title: "Clean Code Architecture",
-          desc: "Semantic HTML5 markup easily readable by Google, Bing, and web crawlers.",
+          title: "Clean Semantic Architecture",
+          desc: "Semantic HTML5 markup easily readable and indexed by Google, Bing, and web search crawlers.",
         },
       ]}
       features={[
-        { title: "On-Page SEO Optimization", desc: "Meta title, meta description, and H1-H6 tags." },
-        { title: "Schema Markup Setup", desc: "JSON-LD structured data for Organization and Services." },
-        { title: "Image Compression & WebP", desc: "Optimized image sizes without quality loss." },
-        { title: "Sitemap & Robots Configuration", desc: "Clean indexing instructions for search engines." },
-        { title: "Speed Audit & Minification", desc: "Reducing render-blocking assets." },
-        { title: "Google Search Console Guidance", desc: "Best practices for property verification and monitoring." },
+        { title: "Meta Title & Description Tuning", desc: "Descriptive meta titles and click-worthy search snippet summaries." },
+        { title: "Structured Data Schema Markup", desc: "Organization, WebSite, Service, BreadcrumbList, and FAQ JSON-LD." },
+        { title: "Canonical URL Configuration", desc: "Prevent duplicate content issues across URL variations." },
+        { title: "Core Web Vitals Optimization", desc: "Faster LCP, low CLS, and swift FID interaction speeds." },
+        { title: "XML Sitemap & Robots.txt Setup", desc: "Clean crawler navigation rules and automated sitemap updates." },
+        { title: "Image Alt Attribute Optimization", desc: "Descriptive image alt attributes for enhanced Google Image visibility." },
       ]}
       processSteps={[
-        { step: "Step 01", title: "Site Audit", desc: "Evaluating current performance, mobile speed, and technical SEO structure." },
-        { step: "Step 02", title: "Optimization", desc: "Cleaning meta tags, fixing heading hierarchy, and compressing images." },
-        { step: "Step 03", title: "Schema & Speed", desc: "Injecting JSON-LD structured data and tuning asset loads." },
-        { step: "Step 04", title: "Submission", desc: "Updating sitemaps and verifying search index status." },
+        { step: "Step 01", title: "Technical Audit", desc: "Analyzing current site speed, metadata, heading hierarchy, and index status." },
+        { step: "Step 02", title: "Keyword Mapping", desc: "Mapping service keywords to targeted landing pages without cannibalization." },
+        { step: "Step 03", title: "Code & Schema Optimization", desc: "Injecting JSON-LD schemas, optimizing images, and tuning canonicals." },
+        { step: "Step 04", title: "Indexing & Verification", desc: "Submitting XML sitemaps to search engines and verifying Search Console." },
+      ]}
+      portfolioExamples={[
+        {
+          title: "UrbanTech Webs Engine",
+          desc: "Our high-speed website engineered with JSON-LD schema, Next.js static rendering, and instant load speeds.",
+          url: "https://urbantechwebs.in/",
+          image: "/images/hero.jpeg",
+        },
       ]}
       faqs={[
         {
-          q: "What is technical SEO?",
-          a: "Technical SEO refers to optimizing website infrastructure, clean code, page speed, mobile responsiveness, and sitemaps so search engine bots can crawl and index your site easily.",
+          q: "What is included in your SEO services in Noida?",
+          rawText: "Our SEO services include technical SEO audits, page speed optimization, structured JSON-LD schema markup, XML sitemaps, canonical tags, heading structure optimization, and local search setup.",
+          a: "Our SEO services include technical SEO audits, page speed optimization, structured JSON-LD schema markup, XML sitemaps, canonical tags, heading structure optimization, and local search setup.",
         },
         {
-          q: "Does website speed affect search rankings?",
-          a: "Yes. Google uses page speed and Core Web Vitals as key ranking factors. Faster loading sites deliver better user experiences and convert more visitors.",
+          q: "How fast will my website load after speed optimization?",
+          rawText: "We target under 2-second load times on mobile 4G and desktop connections by compressing images, minifying code, and optimizing Core Web Vitals.",
+          a: "We target under 2-second load times on mobile 4G and desktop connections by compressing images, minifying code, and optimizing Core Web Vitals.",
+        },
+        {
+          q: "Do you offer SEO for new websites?",
+          rawText: "Yes! Every website built by UrbanTech Webs comes with built-in SEO-ready architecture and schema markup from day one.",
+          a: "Yes! Every website built by UrbanTech Webs comes with built-in SEO-ready architecture and schema markup from day one.",
         },
       ]}
       relatedServices={[
-        { title: "Website Development", href: "/web-development" },
-        { title: "Website Design", href: "/website-design" },
-        { title: "Logo & Branding", href: "/logo-design" },
-        { title: "E-commerce Development", href: "/ecommerce-development" },
+        { title: "Custom Web Development", href: "/web-development" },
+        { title: "Website Design Services", href: "/website-design" },
         { title: "WordPress Development", href: "/wordpress-development" },
+        { title: "Landing Page Development", href: "/landing-page-development" },
+        { title: "E-commerce Store Development", href: "/ecommerce-development" },
       ]}
     />
   );

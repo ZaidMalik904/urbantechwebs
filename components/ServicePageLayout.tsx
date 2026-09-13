@@ -31,12 +31,12 @@ export interface ServicePageProps {
   badge: string;
   h1: string;
   metaDescription: string;
-  introParagraphs: string[];
-  benefits: { title: string; desc: string }[];
-  features: { title: string; desc: string }[];
+  introParagraphs: (string | React.ReactNode)[];
+  benefits: { title: string; desc: string | React.ReactNode }[];
+  features: { title: string; desc: string | React.ReactNode }[];
   processSteps: { step: string; title: string; desc: string }[];
-  faqs: { q: string; a: string }[];
-  relatedServices: { title: string; href: string }[];
+  faqs: { q: string; a: string | React.ReactNode; rawText?: string }[];
+  relatedServices: { title: string; href: string; desc?: string }[];
   portfolioExamples?: { title: string; desc: string; url: string; image: string }[];
   heroImage?: string;
   showStats?: boolean;
@@ -58,8 +58,92 @@ export default function ServicePageLayout({
   const { openQuoteModal } = useQuoteModal();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
+  const schemaBreadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://urbantechwebs.in/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: "https://urbantechwebs.in/#services",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: badge,
+        item: `https://urbantechwebs.in/`,
+      },
+    ],
+  };
+
+  const firstIntroText =
+    typeof introParagraphs[0] === "string"
+      ? introParagraphs[0]
+      : h1;
+
+  const schemaService = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: h1,
+    serviceType: badge,
+    provider: {
+      "@type": "ProfessionalService",
+      name: "UrbanTech Webs",
+      url: "https://urbantechwebs.in/",
+      telephone: "+91-7827775353",
+      email: "urbantechwebs904@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Noida Sector 62",
+        addressLocality: "Noida",
+        addressRegion: "Uttar Pradesh",
+        postalCode: "201309",
+        addressCountry: "IN",
+      },
+    },
+    areaServed: ["Noida", "Delhi NCR", "India"],
+    description: firstIntroText,
+  };
+
+  const schemaFaq =
+    faqs && faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.rawText || (typeof faq.a === "string" ? faq.a : faq.q),
+            },
+          })),
+        }
+      : null;
+
   return (
     <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-600 selection:text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
+      />
+      {schemaFaq && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+        />
+      )}
       <Navbar />
 
       <main>
@@ -430,20 +514,31 @@ export default function ServicePageLayout({
               </div>
             </div>
 
-            {/* Part 2: Explore Other Services (Integrated inside OUR PROMISE section) */}
+            {/* Part 2: Explore Other Services & Internal Linking Hub */}
             <div className="pt-8 border-t border-slate-800/80">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg font-bold text-white">Explore Other Services</h3>
-                  <p className="text-slate-400 text-xs">Custom web solutions tailored for your business</p>
+                  <h3 className="text-lg font-bold text-white mb-1">Explore Other Web Services</h3>
+                  <p className="text-slate-400 text-xs">Custom web solutions tailored for your business across Noida and Delhi NCR</p>
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  {relatedServices.map((rel, idx) => (
+                  {[
+                    { title: "Web Development Services", href: "/web-development" },
+                    { title: "Website Design Company", href: "/website-design" },
+                    { title: "E-Commerce Development", href: "/ecommerce-development" },
+                    { title: "WordPress Development", href: "/wordpress-development" },
+                    { title: "Landing Page Development", href: "/landing-page-development" },
+                    { title: "Web Application Development", href: "/web-application-development" },
+                    { title: "SEO Services Noida", href: "/seo-services" },
+                    { title: "Logo & Brand Design", href: "/logo-design" },
+                    { title: "Portfolio & Case Studies", href: "/portfolio" },
+                    { title: "Get Free Consultation", href: "/contact" },
+                  ].map((rel, idx) => (
                     <Link
                       key={idx}
                       href={rel.href}
-                      className="px-4 py-2 bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg transition-colors"
+                      className="px-3.5 py-2 bg-slate-950 hover:bg-blue-600 hover:text-white border border-slate-800 text-xs font-semibold text-slate-300 rounded-lg transition-all"
                     >
                       {rel.title}
                     </Link>

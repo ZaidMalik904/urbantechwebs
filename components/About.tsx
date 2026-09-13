@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { MessageSquare, Smartphone, ShieldCheck, Sparkles } from "lucide-react";
 import { useQuoteModal } from "./QuoteModalContext";
 
@@ -67,10 +68,29 @@ export default function About() {
 
             <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed font-normal pt-2">
               <p>
-                UrbanTech Webs is a web development and website design company operating in Noida and across Delhi NCR. We build fast, responsive, and user-friendly websites for small businesses, local service providers, e-commerce brands, corporate agencies, and growing startups.
+                UrbanTech Webs is a web development and website design company operating in Noida and across Delhi NCR. We build fast, responsive, and user-friendly websites for small businesses, local service providers,{" "}
+                <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                  e-commerce store development
+                </Link>{" "}
+                clients, corporate agencies, and growing startups.
               </p>
               <p>
-                Our core focus is delivering practical web solutions that look great on mobile devices, load quickly, and make it easy for potential clients to reach you. From custom code development and modern UI/UX design to domain setup and post-launch technical assistance, we handle every stage of your website project.
+                Our core focus is delivering practical web solutions that look great on mobile devices, load quickly, and make it easy for potential clients to reach you. From{" "}
+                <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                  custom web development Noida
+                </Link>{" "}
+                and modern{" "}
+                <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                  UI/UX website design
+                </Link>{" "}
+                to domain setup and post-launch technical assistance, we handle every stage of your digital project. Read more on our{" "}
+                <Link href="/about" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                  company about page
+                </Link>{" "}
+                or{" "}
+                <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+                  contact us for a consultation
+                </Link>.
               </p>
             </div>
           </div>
