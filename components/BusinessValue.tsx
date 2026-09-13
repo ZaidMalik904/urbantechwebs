@@ -39,7 +39,7 @@ export default function BusinessValue() {
       icon: LayoutGrid,
       title: "Showcase Your Services",
       description: "Present services, products, work samples, photos and important business information in one clear place.",
-      image: "/images/value_services_pricing.jpg",
+      image: "/images/value_services_showcase.jpg",
       badge: "Clear Offerings",
       highlights: [
         "Structured overview of all services offered",
