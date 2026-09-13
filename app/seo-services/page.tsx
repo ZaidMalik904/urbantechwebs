@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "SEO Services in Noida | SEO Company & Website Performance | UrbanTech Webs",
+  title: "SEO Services in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and local search visibility.",
+    "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and search visibility.",
   alternates: {
     canonical: "https://urbantechwebs.in/seo-services",
   },
   openGraph: {
-    title: "SEO Services in Noida | Search Engine & Speed Optimization | UrbanTech Webs",
+    title: "SEO Services in Noida | UrbanTech Webs",
     description:
-      "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and local search visibility.",
+      "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and search visibility.",
     url: "https://urbantechwebs.in/seo-services",
     siteName: "UrbanTech Webs",
     images: [
@@ -39,26 +39,26 @@ export default function SeoServicesPage() {
   return (
     <ServicePageLayout
       badge="SEO & Performance"
-      h1="SEO Services & Website Performance Optimization in Noida"
+      h1="SEO Services in Noida"
       heroImage="/images/seo_services_hero_bg.jpg"
-      title="SEO Services in Noida | SEO Company & Website Performance"
-      metaDescription="UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and local search visibility."
+      title="SEO Services in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and search visibility."
       introParagraphs={[
         <>
-          UrbanTech Webs provides expert SEO services in Noida, page speed optimization, and local search engine visibility enhancements. We integrate technical search strategies into our{" "}
+          UrbanTech Webs provides expert SEO services in Noida, page speed optimization, and search engine visibility enhancements. We integrate technical search strategies into our{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             SEO-friendly web development
           </Link>{" "}
           and custom layout projects across Noida and Delhi NCR.
         </>,
         <>
-          As a performance-focused SEO company in Noida, we tune clean HTML structures, XML sitemaps, JSON-LD schema, and{" "}
+          As a performance-focused web team in Noida, we tune clean HTML structures, XML sitemaps, JSON-LD schema, and{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             responsive website design
           </Link>{" "}
           elements. You can{" "}
           <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            get a technical SEO audit
+            get a technical SEO consultation
           </Link>{" "}
           to evaluate your website search visibility today.
         </>,
@@ -147,9 +147,8 @@ export default function SeoServicesPage() {
       relatedServices={[
         { title: "Custom Web Development", href: "/web-development" },
         { title: "Website Design Services", href: "/website-design" },
-        { title: "WordPress Development", href: "/wordpress-development" },
-        { title: "Landing Page Development", href: "/landing-page-development" },
-        { title: "E-commerce Store Development", href: "/ecommerce-development" },
+        { title: "E-Commerce Store Development", href: "/ecommerce-development" },
+        { title: "Contact Us", href: "/contact" },
       ]}
     />
   );

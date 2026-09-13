@@ -115,6 +115,36 @@ export default function Services() {
       numColor: "text-teal-600 font-black",
       footerBorder: "border-teal-200/80",
     },
+    {
+      num: "07",
+      icon: Search,
+      title: "SEO Services",
+      description: "Technical search engine optimization, page speed tuning, structured data, and search visibility.",
+      link: "/seo-services",
+      image: "/images/seo_services_hero_bg.jpg",
+      badge: "Search Optimization",
+      highlights: ["Technical SEO Setup", "Core Web Vitals Speed", "Structured Data Schema"],
+      cardBg: "bg-cyan-50/90 hover:bg-cyan-100/90 border-cyan-200 shadow-cyan-500/5",
+      iconBg: "bg-cyan-600 text-white shadow-md shadow-cyan-600/30",
+      titleColor: "text-cyan-950 group-hover:text-cyan-700",
+      numColor: "text-cyan-600 font-black",
+      footerBorder: "border-cyan-200/80",
+    },
+    {
+      num: "08",
+      icon: Sparkles,
+      title: "Logo & Brand Design",
+      description: "Custom vector logos, color brand guides, and visual identity design for business identity.",
+      link: "/logo-design",
+      image: "/images/logo_design_hero_bg.jpg",
+      badge: "Brand Identity",
+      highlights: ["Vector Logo Assets", "Color Palette Guide", "Visual Identity Kits"],
+      cardBg: "bg-rose-50/90 hover:bg-rose-100/90 border-rose-200 shadow-rose-500/5",
+      iconBg: "bg-rose-600 text-white shadow-md shadow-rose-600/30",
+      titleColor: "text-rose-950 group-hover:text-rose-700",
+      numColor: "text-rose-600 font-black",
+      footerBorder: "border-rose-200/80",
+    },
   ];
 
   const secondaryCapabilities = [
@@ -219,44 +249,6 @@ export default function Services() {
               </div>
             );
           })}
-        </div>
-
-        {/* SEO Internal Linking Hub Bar */}
-        <div className="mb-16 bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
-          <div className="text-center max-w-2xl mx-auto mb-6">
-            <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 mb-2">
-              Explore Our Dedicated Web Services
-            </h3>
-            <p className="text-xs sm:text-sm text-slate-600">
-              Browse our specialized digital service offerings across Noida, Delhi NCR, and India:
-            </p>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-2.5">
-            <Link href="/web-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              Web Development Services in Noida
-            </Link>
-            <Link href="/website-design" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              Website Design Company Noida
-            </Link>
-            <Link href="/ecommerce-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              E-Commerce Development Noida
-            </Link>
-            <Link href="/wordpress-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              WordPress Development Noida
-            </Link>
-            <Link href="/landing-page-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              Landing Page Development
-            </Link>
-            <Link href="/web-application-development" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              Web Application Development
-            </Link>
-            <Link href="/seo-services" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              SEO Services in Noida
-            </Link>
-            <Link href="/logo-design" className="px-3.5 py-2 bg-white hover:bg-blue-600 hover:text-white border border-slate-200 rounded-lg text-xs font-bold text-slate-800 transition-all shadow-xs">
-              Logo & Brand Design Noida
-            </Link>
-          </div>
         </div>
       </div>
 

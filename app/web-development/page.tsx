@@ -3,14 +3,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Web Development Services in Noida | Custom Business Websites | UrbanTech Webs",
+  title: "Web Development Services in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides top-rated custom web development services in Noida and Delhi NCR. We build fast, responsive business websites, web applications, and API integrations.",
+    "UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-development",
   },
   openGraph: {
-    title: "Web Development Services in Noida | Custom Websites | UrbanTech Webs",
+    title: "Web Development Services in Noida | UrbanTech Webs",
     description:
       "UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations.",
     url: "https://urbantechwebs.in/web-development",
@@ -39,9 +39,9 @@ export default function WebDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="Web Development"
-      h1="Custom Web Development Services in Noida"
-      title="Web Development Services in Noida | Custom Business Websites | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides top-rated custom web development services in Noida and Delhi NCR. We build fast, responsive business websites, web applications, and API integrations."
+      h1="Web Development Services in Noida"
+      title="Web Development Services in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations."
       heroImage="/images/web_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
@@ -148,9 +148,17 @@ export default function WebDevelopmentPage() {
           ),
         },
         {
-          q: "How much does web development cost in Noida?",
-          rawText: "Web development cost depends on feature scope, page count, and custom functionality. Starter business websites start from ₹2,999, while custom business portals start from ₹5,999.",
-          a: "Web development cost depends on feature scope, page count, and custom functionality. Starter business websites start from ₹2,999, while custom business portals start from ₹5,999.",
+          q: "What is included in your web development services?",
+          rawText: "Our web development services include responsive UI design, frontend and backend development, database setup, performance optimization, and SEO-friendly code structure.",
+          a: (
+            <>
+              Our web development services include responsive UI design, clean code architecture, database integration, SEO-friendly structure, and post-launch support. Explore our{" "}
+              <Link href="/website-design" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                website design solutions
+              </Link>{" "}
+              for complete branding and layout options.
+            </>
+          ),
         },
         {
           q: "Do you build custom websites or use templates?",
@@ -178,10 +186,11 @@ export default function WebDevelopmentPage() {
       ]}
       relatedServices={[
         { title: "Website Design Services", href: "/website-design" },
-        { title: "E-commerce Website Development", href: "/ecommerce-development" },
-        { title: "WordPress Development", href: "/wordpress-development" },
-        { title: "Landing Page Development", href: "/landing-page-development" },
-        { title: "Custom Web Application Dev", href: "/web-application-development" },
+        { title: "E-Commerce Store Development", href: "/ecommerce-development" },
+        { title: "Web Application Development", href: "/web-application-development" },
+        { title: "SEO Services", href: "/seo-services" },
+        { title: "View Our Work Portfolio", href: "/portfolio" },
+        { title: "Get in Touch", href: "/contact" },
       ]}
     />
   );

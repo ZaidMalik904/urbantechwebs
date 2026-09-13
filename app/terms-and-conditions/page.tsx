@@ -71,7 +71,7 @@ export default function TermsAndConditionsPage() {
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white">2. Scope of Services</h2>
           <p className="leading-relaxed text-sm sm:text-base">
-            UrbanTechWebs provides custom website design, web development, e-commerce stores, landing pages, WordPress development, UI/UX optimization, and related technical setup services. Specific deliverables, delivery timelines (typically 7–14 working days), costs, and inclusions are defined per individual project scope or package agreement.
+            UrbanTechWebs provides custom website design, web development, e-commerce stores, landing pages, WordPress development, UI/UX optimization, and related technical setup services. Specific deliverables, delivery timelines (typically 7–14 working days), and inclusions are defined per individual project scope agreement.
           </p>
         </section>
 
@@ -92,7 +92,7 @@ export default function TermsAndConditionsPage() {
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white">5. Revisions &amp; Post-Launch Support</h2>
           <p className="leading-relaxed text-sm sm:text-base">
-            Revisions are performed within the agreed project scope prior to deployment. Post-launch support, domain connection, and ongoing technical assistance are provided according to the selected package or agreed support period.
+            Revisions are performed within the agreed project scope prior to deployment. Post-launch support, domain connection, and ongoing technical assistance are provided according to your agreed support terms or project scope.
           </p>
         </section>
 

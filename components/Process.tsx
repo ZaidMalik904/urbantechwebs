@@ -113,7 +113,7 @@ export default function Process() {
 
   const categories = [
     { name: "Restaurants", icon: Utensils, desc: "Food menus, location maps, and online enquiries." },
-    { name: "Salons", icon: Scissors, desc: "Service lists, price showcase, and booking buttons." },
+    { name: "Salons", icon: Scissors, desc: "Service lists, package details, and booking buttons." },
     { name: "Retail Businesses", icon: ShoppingBag, desc: "Product displays and business information." },
     { name: "Service Businesses", icon: Briefcase, desc: "Lead generation, forms, and service pages." },
     { name: "Startups", icon: Rocket, desc: "Landing pages, product features, and lead forms." },

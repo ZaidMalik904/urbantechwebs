@@ -37,7 +37,7 @@ export default function Portfolio() {
         "Fleet gallery with vehicle specifications",
         "Direct WhatsApp inquiry routing",
         "Responsive design across mobile devices",
-        "Clear pricing & rental terms structure"
+        "Clear vehicle specifications & rental terms"
       ],
       liveUrl: "https://jindacarrentals.com/",
       isFeatured: false,

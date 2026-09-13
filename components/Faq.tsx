@@ -7,8 +7,8 @@ import { ChevronDown, HelpCircle, MessageCircle } from "lucide-react";
 export default function Faq() {
   const faqs = [
     {
-      q: "How much does it cost to build a website?",
-      a: "Website development cost depends on the number of pages, custom design work, features and integrations required. Our packages start from ₹2,999 for Starter websites and ₹5,999 for Business websites.",
+      q: "What type of websites do you develop?",
+      a: "We build custom business websites, e-commerce stores, landing pages, WordPress websites, and custom web applications tailored to your specific business requirements.",
     },
     {
       q: "How long does it take to build a website?",
@@ -32,7 +32,7 @@ export default function Faq() {
     },
     {
       q: "Will I get support after the website is launched?",
-      a: "Yes, post-launch support is available according to your selected package or project agreement.",
+      a: "Yes, post-launch support is available according to your agreed support terms or project scope.",
     },
     {
       q: "Can I update my website later?",

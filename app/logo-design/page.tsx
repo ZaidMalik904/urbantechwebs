@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Logo Design Services Noida | Brand Identity & Logo Designer",
+  title: "Logo Design Services in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides professional logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding.",
+    "UrbanTech Webs provides logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding.",
   alternates: {
     canonical: "https://urbantechwebs.in/logo-design",
   },
   openGraph: {
-    title: "Logo Design Services Noida | Brand Identity Design | UrbanTech Webs",
+    title: "Logo Design Services in Noida | UrbanTech Webs",
     description:
-      "UrbanTech Webs provides custom logo design services in Noida and Delhi NCR. Custom brand logos, vector files, color guidelines, and full copyright ownership.",
+      "UrbanTech Webs provides logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding.",
     url: "https://urbantechwebs.in/logo-design",
     siteName: "UrbanTech Webs",
     images: [
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Logo Design Services Noida | UrbanTech Webs",
+    title: "Logo Design Services in Noida | UrbanTech Webs",
     description:
-      "Professional logo designer & brand identity design company serving Noida & Delhi NCR.",
+      "Professional logo design services in Noida and Delhi NCR.",
     images: ["/images/logo_design_hero_bg.jpg"],
   },
 };
@@ -39,17 +39,17 @@ export default function LogoDesignPage() {
   return (
     <ServicePageLayout
       badge="Logo & Branding"
-      h1="Professional Logo Design Services in Noida"
+      h1="Logo Design Services in Noida"
       heroImage="/images/logo_design_hero_bg.jpg"
-      title="Logo Design Services Noida | Brand Identity & Logo Designer"
-      metaDescription="UrbanTech Webs provides professional logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding."
+      title="Logo Design Services in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding."
       introParagraphs={[
         <>
-          UrbanTech Webs provides professional logo design services in Noida, crafting distinct logo marks and brand identity packages. We align custom visual assets directly with our{" "}
+          UrbanTech Webs provides logo design services in Noida, crafting distinct logo marks and brand identity packages. We align custom visual assets directly with our{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            website design services Noida
+            website design services in Noida
           </Link>{" "}
-          to establish instant corporate authority.
+          to establish corporate authority.
         </>,
         <>
           As a creative branding team, we design clean vector marks, define color palettes, and create social media kits. You can explore{" "}
@@ -66,7 +66,7 @@ export default function LogoDesignPage() {
       benefits={[
         {
           title: "Memorable Visual Brand Mark",
-          desc: "Custom logo concepts engineered by our logo design services Noida team to leave a lasting impression on target customers.",
+          desc: "Custom logo concepts engineered by our logo design team to leave a lasting impression on target customers.",
         },
         {
           title: "Vector Scalability",
@@ -80,7 +80,7 @@ export default function LogoDesignPage() {
           title: "Landing Page & Ad Integration",
           desc: (
             <>
-              Logos formatted specifically for high-impact visual conversion on targeted{" "}
+              Logos formatted specifically for visual conversion on targeted{" "}
               <Link href="/landing-page-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                 branding for landing pages
               </Link>.
@@ -93,7 +93,7 @@ export default function LogoDesignPage() {
         },
         {
           title: "Seamless Website Integration",
-          desc: "Logos designed specifically to integrate cleanly into modern web navigation headers, sticky navbars, and mobile favicon displays.",
+          desc: "Logos formatted in light, dark, and transparent background variations optimized for web headers and mobile footers.",
         },
       ]}
       features={[
@@ -117,11 +117,6 @@ export default function LogoDesignPage() {
           a: "We craft versatile vector logos designed to look sharp on both digital websites and physical print collateral, backed by 100% full copyright transfer.",
         },
         {
-          q: "How much does a custom logo design cost in Noida?",
-          rawText: "Logo design pricing starts from ₹1,999 for essential brand logo marks, or bundled with website design packages for maximum value.",
-          a: "Logo design pricing starts from ₹1,999 for essential brand logo marks, or bundled with website design packages for maximum value.",
-        },
-        {
           q: "What file formats will I receive with my logo design?",
           rawText: "You will receive high-resolution vector source files (SVG, EPS, PDF) as well as transparent background PNGs and web-optimized files (JPEG, WebP).",
           a: "You will receive high-resolution vector source files (SVG, EPS, PDF) as well as transparent background PNGs and web-optimized files (JPEG, WebP).",
@@ -134,10 +129,8 @@ export default function LogoDesignPage() {
       ]}
       relatedServices={[
         { title: "Website Design Services", href: "/website-design" },
-        { title: "Custom Web Development", href: "/web-development" },
-        { title: "SEO & Website Performance", href: "/seo-services" },
-        { title: "High-Converting Landing Pages", href: "/landing-page-development" },
-        { title: "E-commerce Development", href: "/ecommerce-development" },
+        { title: "View Our Work Portfolio", href: "/portfolio" },
+        { title: "Contact Us", href: "/contact" },
       ]}
     />
   );

@@ -265,7 +265,7 @@ export default function WhatYouGet({ onOpenQuoteModal }: WhatYouGetProps) {
           <div className="flex items-center gap-3 text-slate-300 text-xs sm:text-sm">
             <ShieldCheck className="w-5 h-5 text-cyan-400 flex-shrink-0" />
             <span>
-              <strong className="text-white font-bold">Package Note:</strong> Specific features, page count and integrations depend on the selected package or custom scope.
+              <strong className="text-white font-bold">Project Note:</strong> Specific features, page count and integrations depend on your custom project requirements.
             </span>
           </div>
 

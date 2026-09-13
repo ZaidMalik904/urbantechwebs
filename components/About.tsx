@@ -22,7 +22,7 @@ export default function About() {
     {
       icon: ShieldCheck,
       title: "Clear Scope & Help",
-      desc: "Upfront pricing without hidden costs, plus support after your website is deployed.",
+      desc: "Clear project scope agreements with full transparency, plus support after your website is deployed.",
     },
   ];
 

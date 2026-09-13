@@ -18,9 +18,9 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Web Development Company in Noida | Website Design & Services | UrbanTech Webs",
+  title: "Web Development & Website Design Company in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a premier web development company in Noida & Delhi NCR. We build custom websites, e-commerce stores, landing pages, and web applications.",
+    "UrbanTech Webs is a web development and website design company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages, and web applications.",
   alternates: {
     canonical: "https://urbantechwebs.in/",
   },

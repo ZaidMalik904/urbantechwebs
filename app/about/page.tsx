@@ -14,7 +14,7 @@ import { Building2, Target, Lightbulb, Users2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "About Us | UrbanTech Webs - Web Development Company in Noida",
   description:
-    "Learn about UrbanTech Webs, a leading web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
+    "Learn about UrbanTech Webs, a web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
   alternates: {
     canonical: "https://urbantechwebs.in/about",
   },

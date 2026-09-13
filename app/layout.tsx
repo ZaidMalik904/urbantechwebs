@@ -133,7 +133,6 @@ export default function RootLayout({
           longitude: 77.3649,
         },
         areaServed: ["Noida", "Delhi NCR", "India"],
-        priceRange: "₹₹",
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+91-7827775353",
@@ -156,10 +155,10 @@ export default function RootLayout({
         mainEntity: [
           {
             "@type": "Question",
-            name: "How much does it cost to build a website?",
+            name: "What type of websites do you develop?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Website development cost depends on the number of pages, custom design work, features and integrations required. Our packages start from ₹2,999 for Starter websites and ₹5,999 for Business websites.",
+              text: "We develop custom business websites, landing pages, e-commerce stores, WordPress websites, and custom web applications tailored to your scope.",
             },
           },
           {
@@ -207,7 +206,7 @@ export default function RootLayout({
             name: "Will I get support after the website is launched?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, post-launch support is available according to your selected package or project agreement.",
+              text: "Yes, post-launch support is available according to your agreed project support terms.",
             },
           },
           {

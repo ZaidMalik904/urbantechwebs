@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "WordPress Development Company in Noida | Services | UrbanTech Webs",
+  title: "WordPress Development Company in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a leading WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
+    "UrbanTech Webs is a WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
   alternates: {
     canonical: "https://urbantechwebs.in/wordpress-development",
   },
   openGraph: {
     title: "WordPress Development Company in Noida | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a trusted WordPress development company in Noida. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
+      "UrbanTech Webs is a WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
     url: "https://urbantechwebs.in/wordpress-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -30,23 +30,23 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WordPress Development Company in Noida | UrbanTech Webs",
     description:
-      "Custom WordPress development services and theme customization in Noida & Delhi NCR.",
+      "Custom WordPress theme development, plugin configuration, and CMS administration in Noida.",
     images: ["/images/wordpress_dev_hero_bg.jpg"],
   },
 };
 
-export default function WordPressDevelopmentPage() {
+export default function WordpressDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="WordPress Development"
       h1="WordPress Development Company in Noida"
-      title="WordPress Development Company in Noida | Services | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is a leading WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups."
+      title="WordPress Development Company in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs is a WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups."
       heroImage="/images/wordpress_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a trusted WordPress development company in Noida offering professional WordPress website development for businesses in Noida and Delhi NCR. We craft flexible Content Management Systems paired with modern{" "}
+          UrbanTech Webs is a WordPress development company in Noida offering professional WordPress website development for businesses in Noida and Delhi NCR. We craft flexible Content Management Systems paired with modern{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom website design
           </Link>{" "}
@@ -114,9 +114,9 @@ export default function WordPressDevelopmentPage() {
         { title: "Mobile Responsive Layouts", desc: "Flawless rendering across mobile, tablet, and desktop displays." },
       ]}
       processSteps={[
-        { step: "Step 01", title: "Setup & Database", desc: "Configuring WordPress core files, server hosting, and SSL certificates." },
-        { step: "Step 02", title: "Theme Customization", desc: "Building custom page templates, header layouts, and styling elements." },
-        { step: "Step 03", title: "Plugin Integration", desc: "Setting up security, SEO, contact forms, and caching plugins." },
+        { step: "Step 01", title: "CMS Scope Audit", desc: "Analyzing content requirements, custom post types, and plugin needs." },
+        { step: "Step 02", title: "Theme Crafting", desc: "Designing responsive page templates and header/footer structures." },
+        { step: "Step 03", title: "WordPress Coding", desc: "Setting up WordPress database, custom fields, and plugin configurations." },
         { step: "Step 04", title: "Client Handover", desc: "Conducting QA testing and providing admin dashboard access training." },
       ]}
       faqs={[
@@ -124,11 +124,6 @@ export default function WordPressDevelopmentPage() {
           q: "Why hire UrbanTech Webs as your WordPress development company in Noida?",
           rawText: "We combine custom WordPress theme design, speed optimization, technical security hardening, and on-page SEO setup to ensure your WordPress site runs fast, safe, and efficiently.",
           a: "We combine custom WordPress theme design, speed optimization, technical security hardening, and on-page SEO setup to ensure your WordPress site runs fast, safe, and efficiently.",
-        },
-        {
-          q: "How much does WordPress website development cost in Noida?",
-          rawText: "WordPress website development pricing depends on theme customization, plugin requirements, and page count. Starter WordPress sites start from ₹2,999, while custom business setups start from ₹5,999.",
-          a: "WordPress website development pricing depends on theme customization, plugin requirements, and page count. Starter WordPress sites start from ₹2,999, while custom business setups start from ₹5,999.",
         },
         {
           q: "Is WordPress a good choice for my business website?",
@@ -147,11 +142,10 @@ export default function WordPressDevelopmentPage() {
         },
       ]}
       relatedServices={[
-        { title: "Custom Web Development", href: "/web-development" },
         { title: "Website Design Services", href: "/website-design" },
-        { title: "E-commerce Website Development", href: "/ecommerce-development" },
-        { title: "High-Converting Landing Pages", href: "/landing-page-development" },
-        { title: "SEO & Website Performance", href: "/seo-services" },
+        { title: "E-Commerce Development", href: "/ecommerce-development" },
+        { title: "SEO Services", href: "/seo-services" },
+        { title: "Contact Us", href: "/contact" },
       ]}
     />
   );

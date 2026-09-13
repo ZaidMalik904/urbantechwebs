@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Web Application Development Company Noida | Custom Web Apps",
+  title: "Web Application Development Company in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a leading web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
+    "UrbanTech Webs is a web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-application-development",
   },
   openGraph: {
-    title: "Web Application Development Company Noida | Custom Web Systems | UrbanTech Webs",
+    title: "Web Application Development Company in Noida | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a custom web application development company in Noida. We build SaaS dashboards, client portals, booking engines, and web applications.",
+      "UrbanTech Webs is a web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
     url: "https://urbantechwebs.in/web-application-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Application Development Company Noida | UrbanTech Webs",
+    title: "Web Application Development Company in Noida | UrbanTech Webs",
     description:
-      "Custom web app development services, SaaS dashboards, and web systems in Noida & Delhi NCR.",
+      "Custom web applications, client dashboards, and booking portals built in Noida.",
     images: ["/images/web_app_dev_hero_bg.jpg"],
   },
 };
@@ -39,15 +39,16 @@ export default function WebApplicationDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="Web Application Development"
-      h1="Custom Web Application Development Services in Noida"
+      h1="Web Application Development Company in Noida"
+      title="Web Application Development Company in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs is a web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems."
       heroImage="/images/web_app_dev_hero_bg.jpg"
-      title="Web Application Development Company Noida | Custom Web Apps"
-      metaDescription="UrbanTech Webs is a leading web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems."
+      showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a premier web application development company in Noida engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}
+          UrbanTech Webs is a web application development company in Noida engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            custom web development Noida
+            custom web development in Noida
           </Link>{" "}
           practices to build enterprise-grade web tools.
         </>,
@@ -98,24 +99,24 @@ export default function WebApplicationDevelopmentPage() {
       ]}
       features={[
         { title: "Custom Admin Control Panels", desc: "Manage business workflows, inventory data, and user accounts." },
-        { title: "Booking & Reservation Engines", desc: "Real-time date selection, slot scheduling systems, and payments." },
-        { title: "Customer Account Portals", desc: "Secure user authentication, profile settings, and order history." },
-        { title: "Real-Time Data Processing", desc: "Live status updates, notification triggers, and order tracking flows." },
-        { title: "Third-Party API Connections", desc: "Integration with payment gateways, SMS portals, email, or CRM systems." },
-        { title: "Cloud Deployment & Hardened Security", desc: "Hosted on cloud infrastructure with SSL encryption and automated backups." },
+        { title: "REST API & Microservices", desc: "Fast JSON data exchange endpoints for web and mobile apps." },
+        { title: "User Authentication & RBAC", desc: "Secure password hashing, JWT tokens, and multi-level permissions." },
+        { title: "Database Architecture", desc: "Optimized database design, indexing, and data security." },
+        { title: "Automated Reporting Tools", desc: "Generate PDF reports, CSV exports, and analytics metrics." },
+        { title: "Cloud Hosting & Deployment", desc: "AWS, Vercel, or Render deployment with SSL and domain setup." },
       ]}
       processSteps={[
-        { step: "Step 01", title: "Workflow Mapping", desc: "Documenting business logic, user permissions, and database schemas." },
-        { step: "Step 02", title: "UI & UX Prototyping", desc: "Designing interactive screens, dashboard wireframes, and data flows." },
-        { step: "Step 03", title: "Full-Stack Dev", desc: "Developing database models, REST API endpoints, and frontend UI." },
-        { step: "Step 04", title: "Testing & Deployment", desc: "Security auditing, load testing, and live cloud server deployment." },
+        { step: "Step 01", title: "Logic Mapping", desc: "Defining user roles, data schemas, and software architecture." },
+        { step: "Step 02", title: "App UI Design", desc: "Wireframing intuitive dashboard interfaces and customer workflows." },
+        { step: "Step 03", title: "Full-Stack Coding", desc: "Writing frontend React components, backend APIs, and database schemas." },
+        { step: "Step 04", title: "Testing & Handover", desc: "Stress testing concurrency, security validation, and deployment." },
       ]}
       portfolioExamples={[
         {
-          title: "YumGo Admin Control Panel",
-          desc: "Comprehensive admin control panel for real-time order processing, inventory, and analytics.",
-          url: "https://yum-go-ad.onrender.com/",
-          image: "/images/yumgo_admin_screenshot_v2.png",
+          title: "YumGo Marketplace Portal",
+          desc: "Full-stack food ordering platform with customer cart, vendor dashboard, and order management.",
+          url: "https://yum-go-fr.onrender.com/",
+          image: "/images/yumgo_marketplace_v2.png",
         },
         {
           title: "Sheriff Foundation Portal",
@@ -129,11 +130,6 @@ export default function WebApplicationDevelopmentPage() {
           q: "Why choose UrbanTech Webs as your web application development company in Noida?",
           rawText: "We engineer scalable full-stack web applications using Next.js, React, Node.js, and modern databases, delivering high-performance platforms tailored to complex business logic.",
           a: "We engineer scalable full-stack web applications using Next.js, React, Node.js, and modern databases, delivering high-performance platforms tailored to complex business logic.",
-        },
-        {
-          q: "How much does custom web application development cost?",
-          rawText: "Web application development cost varies based on feature complexity, database schemas, and multi-user roles. Basic web app portals start from ₹9,999.",
-          a: "Web application development cost varies based on feature complexity, database schemas, and multi-user roles. Basic web app portals start from ₹9,999.",
         },
         {
           q: "What types of web applications do you develop?",
@@ -154,9 +150,7 @@ export default function WebApplicationDevelopmentPage() {
       relatedServices={[
         { title: "Custom Web Development", href: "/web-development" },
         { title: "Website Design Services", href: "/website-design" },
-        { title: "E-commerce Development", href: "/ecommerce-development" },
-        { title: "WordPress Development", href: "/wordpress-development" },
-        { title: "SEO & Website Performance", href: "/seo-services" },
+        { title: "Contact Us", href: "/contact" },
       ]}
     />
   );

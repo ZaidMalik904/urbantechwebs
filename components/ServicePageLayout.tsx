@@ -514,38 +514,29 @@ export default function ServicePageLayout({
               </div>
             </div>
 
-            {/* Part 2: Explore Other Services & Internal Linking Hub */}
-            <div className="pt-8 border-t border-slate-800/80">
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Explore Other Web Services</h3>
-                  <p className="text-slate-400 text-xs">Custom web solutions tailored for your business across Noida and Delhi NCR</p>
-                </div>
+            {/* Part 2: Related Services */}
+            {relatedServices && relatedServices.length > 0 && (
+              <div className="pt-8 border-t border-slate-800/80">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                  <div>
+                    <h3 className="text-base font-bold text-white mb-1">Related Services</h3>
+                    <p className="text-slate-400 text-xs">Explore complementary web solutions for your business</p>
+                  </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    { title: "Web Development Services", href: "/web-development" },
-                    { title: "Website Design Company", href: "/website-design" },
-                    { title: "E-Commerce Development", href: "/ecommerce-development" },
-                    { title: "WordPress Development", href: "/wordpress-development" },
-                    { title: "Landing Page Development", href: "/landing-page-development" },
-                    { title: "Web Application Development", href: "/web-application-development" },
-                    { title: "SEO Services Noida", href: "/seo-services" },
-                    { title: "Logo & Brand Design", href: "/logo-design" },
-                    { title: "Portfolio & Case Studies", href: "/portfolio" },
-                    { title: "Get Free Consultation", href: "/contact" },
-                  ].map((rel, idx) => (
-                    <Link
-                      key={idx}
-                      href={rel.href}
-                      className="px-3.5 py-2 bg-slate-950 hover:bg-blue-600 hover:text-white border border-slate-800 text-xs font-semibold text-slate-300 rounded-lg transition-all"
-                    >
-                      {rel.title}
-                    </Link>
-                  ))}
+                  <div className="flex flex-wrap gap-2">
+                    {relatedServices.map((rel, idx) => (
+                      <Link
+                        key={idx}
+                        href={rel.href}
+                        className="px-3.5 py-2 bg-slate-950 hover:bg-blue-600 hover:text-white border border-slate-800 text-xs font-semibold text-slate-300 rounded-lg transition-all"
+                      >
+                        {rel.title}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
           </div>
         </section>

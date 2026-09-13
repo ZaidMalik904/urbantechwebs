@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Website Design Company in Noida | Web Design Services | UrbanTech Webs",
+  title: "Website Design Company in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a professional website design company in Noida & Delhi NCR. We craft modern, responsive, and conversion-focused UI/UX layouts for businesses.",
+    "UrbanTech Webs is a website design company in Noida & Delhi NCR. We craft modern, responsive, and conversion-focused UI/UX layouts for businesses.",
   alternates: {
     canonical: "https://urbantechwebs.in/website-design",
   },
   openGraph: {
-    title: "Website Design Company in Noida | Professional Web Design | UrbanTech Webs",
+    title: "Website Design Company in Noida | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a professional website design company in Noida. We craft modern, responsive UI/UX web designs for business growth.",
+      "UrbanTech Webs is a website design company in Noida. We craft modern, responsive UI/UX web designs for business growth.",
     url: "https://urbantechwebs.in/website-design",
     siteName: "UrbanTech Webs",
     images: [
@@ -39,14 +39,14 @@ export default function WebsiteDesignPage() {
   return (
     <ServicePageLayout
       badge="Website Design"
-      h1="Website Design Company in Noida & Delhi NCR"
-      title="Website Design Company in Noida | Web Design Services | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is a professional website design company in Noida & Delhi NCR. We craft modern, responsive, and conversion-focused UI/UX layouts for businesses."
+      h1="Website Design Company in Noida"
+      title="Website Design Company in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs is a website design company in Noida & Delhi NCR. We craft modern, responsive, and conversion-focused UI/UX layouts for businesses."
       heroImage="/images/website_design_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a top-tier website design company in Noida creating modern, visually engaging layouts for businesses across Delhi NCR. Our design approach blends intuitive user interface (UI) principles with comprehensive{" "}
+          UrbanTech Webs is a website design company in Noida creating modern, visually engaging layouts for businesses across Delhi NCR. Our design approach blends intuitive user interface (UI) principles with comprehensive{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             web development services
           </Link>{" "}
@@ -134,7 +134,7 @@ export default function WebsiteDesignPage() {
       ]}
       faqs={[
         {
-          q: "What makes UrbanTech Webs a leading website design company in Noida?",
+          q: "What makes UrbanTech Webs a reliable website design company in Noida?",
           rawText: "We focus on conversion-oriented UI/UX design, custom visual branding, fast mobile response times, and clean page structures tailored specifically for Indian and international businesses.",
           a: (
             <>
@@ -147,27 +147,24 @@ export default function WebsiteDesignPage() {
           ),
         },
         {
-          q: "How much do website design services cost in Noida?",
-          rawText: "Website design pricing depends on page complexity, visual assets, and UI customization. Our Starter business website packages begin at ₹2,999, while full Business site designs begin at ₹5,999.",
-          a: "Website design pricing depends on page complexity, visual assets, and UI customization. Our Starter business website packages begin at ₹2,999, while full Business site designs begin at ₹5,999.",
-        },
-        {
           q: "What is the difference between website design and web development?",
           rawText: "Website design focuses on visual aesthetics, UI layout, visual hierarchy, and user experience. Web development focuses on coding the design into a fully functional, responsive website.",
           a: "Website design focuses on visual aesthetics, UI layout, visual hierarchy, and user experience. Web development focuses on coding the design into a fully functional, responsive website.",
         },
         {
-          q: "Can you redesign an existing outdated website?",
+          q: "Can you redesign an existing website?",
           rawText: "Yes! We offer complete website redesign services to modernize outdated layouts, enhance mobile usability, and boost lead conversions.",
           a: "Yes! We offer complete website redesign services to modernize outdated layouts, enhance mobile usability, and boost lead conversions.",
         },
       ]}
       relatedServices={[
         { title: "Custom Web Development", href: "/web-development" },
-        { title: "High-Converting Landing Pages", href: "/landing-page-development" },
-        { title: "E-commerce Store Development", href: "/ecommerce-development" },
-        { title: "WordPress Website Development", href: "/wordpress-development" },
-        { title: "Custom Web Applications", href: "/web-application-development" },
+        { title: "Landing Page Development", href: "/landing-page-development" },
+        { title: "E-Commerce Development", href: "/ecommerce-development" },
+        { title: "WordPress Development", href: "/wordpress-development" },
+        { title: "Logo & Brand Design", href: "/logo-design" },
+        { title: "View Portfolio", href: "/portfolio" },
+        { title: "Contact Us", href: "/contact" },
       ]}
     />
   );

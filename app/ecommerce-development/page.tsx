@@ -3,14 +3,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Ecommerce Website Development Company in Noida | UrbanTech Webs",
+  title: "E-commerce Website Development Company in Noida | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a leading e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
+    "UrbanTech Webs is an e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
   alternates: {
     canonical: "https://urbantechwebs.in/ecommerce-development",
   },
   openGraph: {
-    title: "Ecommerce Website Development Company in Noida | UrbanTech Webs",
+    title: "E-commerce Website Development Company in Noida | UrbanTech Webs",
     description:
       "UrbanTech Webs is an e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
     url: "https://urbantechwebs.in/ecommerce-development",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "/images/ecommerce_dev_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Ecommerce Website Development Company in Noida",
+        alt: "E-commerce Website Development Company in Noida",
       },
     ],
     locale: "en_IN",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ecommerce Website Development Company in Noida | UrbanTech Webs",
+    title: "E-commerce Website Development Company in Noida | UrbanTech Webs",
     description:
-      "Build high-converting online stores with secure payment integration in Noida & Delhi NCR.",
+      "Online store development, shopping carts, and payment gateway setup in Noida.",
     images: ["/images/ecommerce_dev_hero_bg.jpg"],
   },
 };
@@ -40,13 +40,13 @@ export default function EcommerceDevelopmentPage() {
     <ServicePageLayout
       badge="E-commerce Development"
       h1="E-commerce Website Development Company in Noida"
-      title="Ecommerce Website Development Company in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is a leading e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup."
+      title="E-commerce Website Development Company in Noida | UrbanTech Webs"
+      metaDescription="UrbanTech Webs is an e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup."
       heroImage="/images/ecommerce_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a specialized ecommerce website development company in Noida building secure, responsive, and conversion-focused online stores. We combine custom storefront layouts with full-stack{" "}
+          UrbanTech Webs is an ecommerce website development company in Noida building secure, responsive, and conversion-focused online stores. We combine custom storefront layouts with full-stack{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom web development
           </Link>{" "}
@@ -57,7 +57,7 @@ export default function EcommerceDevelopmentPage() {
           to help brands sell products online seamlessly.
         </>,
         <>
-          From structured product catalogs and shopping carts to secure payment gateway integrations (Razorpay, Paytm, UPI, Cards), our experienced developers deliver robust storefronts. You can also{" "}
+          From structured product catalogs and shopping carts to secure payment gateway integrations (Razorpay, Paytm, UPI, Cards), our developers deliver robust storefronts. You can also{" "}
           <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             discuss your online store project
           </Link>{" "}
@@ -67,7 +67,7 @@ export default function EcommerceDevelopmentPage() {
       benefits={[
         {
           title: "Structured Product Catalogs",
-          desc: "Organized online inventory listings with high-resolution image galleries, dynamic pricing structures, variant selectors, and product detail specs.",
+          desc: "Organized online inventory listings with high-resolution image galleries, variant selectors, and detailed product specs.",
         },
         {
           title: "Seamless Shopping Cart & Checkout",
@@ -90,7 +90,7 @@ export default function EcommerceDevelopmentPage() {
         },
         {
           title: "Order & Inventory Controls",
-          desc: "Intuitive admin management panel to track customer orders, update product stock, modify prices, and manage discounts.",
+          desc: "Intuitive admin management panel to track customer orders, update product stock, modify descriptions, and manage inventory.",
         },
         {
           title: "Direct WhatsApp Ordering",
@@ -98,11 +98,11 @@ export default function EcommerceDevelopmentPage() {
         },
       ]}
       features={[
-        { title: "Product Grid & Filtering", desc: "Filter by category, price range, size, color, or custom attributes." },
+        { title: "Product Grid & Filtering", desc: "Filter by category, brand, size, color, or custom attributes." },
         { title: "Shopping Cart & Checkout System", desc: "Dynamic cart item count, automatic tax/shipping logic, and promo codes." },
         { title: "Payment Gateway Setup", desc: "Razorpay, Paytm, UPI, Cashfree, Credit/Debit card payment endpoints." },
         { title: "Order Dispatch & Customer Inquiry", desc: "Automated inquiry routing and order notification dispatch." },
-        { title: "Admin Catalog Management", desc: "Easy dashboard to add, edit, or remove products and update pricing." },
+        { title: "Admin Catalog Management", desc: "Easy dashboard to add, edit, or remove products and update details." },
         { title: "SSL Security & Encrypted Checkout", desc: "256-bit HTTPS encryption for secure online transactions and customer privacy." },
       ]}
       processSteps={[
@@ -140,19 +140,14 @@ export default function EcommerceDevelopmentPage() {
           ),
         },
         {
-          q: "How much does an e-commerce website cost in Noida?",
-          rawText: "E-commerce website pricing depends on product count, custom catalog features, and payment gateway complexity. E-commerce development packages typically start from ₹5,999.",
-          a: "E-commerce website pricing depends on product count, custom catalog features, and payment gateway complexity. E-commerce development packages typically start from ₹5,999.",
-        },
-        {
           q: "What payment gateways can you integrate into an e-commerce website?",
           rawText: "We integrate all major Indian payment gateways including Razorpay, Paytm, PhonePe, Cashfree, UPI, as well as international options like PayPal or Stripe.",
           a: "We integrate all major Indian payment gateways including Razorpay, Paytm, PhonePe, Cashfree, UPI, as well as international options like PayPal or Stripe.",
         },
         {
-          q: "Can I manage products and pricing myself after launch?",
-          rawText: "Yes. We provide easy-to-use content management setups or admin dashboards allowing you to update product descriptions, images, prices, and inventory stock.",
-          a: "Yes. We provide easy-to-use content management setups or admin dashboards allowing you to update product descriptions, images, prices, and inventory stock.",
+          q: "Can I manage products myself after launch?",
+          rawText: "Yes. We provide easy-to-use content management setups or admin dashboards allowing you to update product descriptions, images, and inventory stock.",
+          a: "Yes. We provide easy-to-use content management setups or admin dashboards allowing you to update product descriptions, images, and inventory stock.",
         },
         {
           q: "Do you support WhatsApp ordering for local Indian online stores?",
@@ -164,8 +159,8 @@ export default function EcommerceDevelopmentPage() {
         { title: "Custom Web Development", href: "/web-development" },
         { title: "Website Design Services", href: "/website-design" },
         { title: "WordPress Development", href: "/wordpress-development" },
-        { title: "High-Converting Landing Pages", href: "/landing-page-development" },
-        { title: "Custom Web Applications", href: "/web-application-development" },
+        { title: "SEO Services", href: "/seo-services" },
+        { title: "Contact Us", href: "/contact" },
       ]}
     />
   );
