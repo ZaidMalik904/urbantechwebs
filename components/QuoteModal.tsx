@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import {
   X,
   User,
@@ -39,6 +40,7 @@ export default function QuoteModal({
   onClose,
   initialService = "",
 }: QuoteModalProps) {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -141,7 +143,14 @@ export default function QuoteModal({
       console.error("Privyr Webhook submission error:", err);
     } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
+      const queryParams = new URLSearchParams({
+        name: formData.name,
+        service: formData.service,
+        phone: formData.phone,
+        email: formData.email,
+      });
+      onClose();
+      router.push(`/thank-you?${queryParams.toString()}`);
     }
   };
 
