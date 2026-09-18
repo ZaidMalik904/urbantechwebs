@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "WordPress Development Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -44,6 +44,28 @@ export default function WordpressDevelopmentPage() {
       metaDescription="UrbanTech Webs provides WordPress development services. We build custom WordPress themes, business sites, plugins, and easy CMS setups."
       heroImage="/images/wordpress_dev_hero_bg.jpg"
       showStats={true}
+      statsItems={[
+        {
+          iconName: "Wrench",
+          title: "Custom Gutenberg Themes",
+          desc: "Lightweight block themes without heavy pre-made page builders.",
+        },
+        {
+          iconName: "Sliders",
+          title: "Easy Admin Management",
+          desc: "Intuitive content editing dashboard for effortless site updates.",
+        },
+        {
+          iconName: "ShieldCheck",
+          title: "Hardened Security",
+          desc: "Firewall protection, malware scanning, and SSL configuration.",
+        },
+        {
+          iconName: "Zap",
+          title: "Zero Plugin Bloat",
+          desc: "Clean codebase optimized for rapid page load speeds.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs offers professional WordPress website development for growing businesses. We craft flexible Content Management Systems paired with modern{" "}

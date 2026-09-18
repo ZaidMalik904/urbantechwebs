@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "Landing Page Design & Development Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -44,6 +44,28 @@ export default function LandingPageDevelopmentPage() {
       metaDescription="UrbanTech Webs provides landing page design & development services for lead generation, ad campaigns, Google Ads, and product launches."
       heroImage="/images/landing_page_hero_bg.jpg"
       showStats={true}
+      statsItems={[
+        {
+          iconName: "Target",
+          title: "Max Lead Conversion ROI",
+          desc: "Engineered copy & CTA flow to capture maximum ad traffic leads.",
+        },
+        {
+          iconName: "Zap",
+          title: "Lightning Speed Load",
+          desc: "Instant page rendering to prevent bounce rates on paid ads.",
+        },
+        {
+          iconName: "Split",
+          title: "A/B Test Ready Layout",
+          desc: "Modular section architecture designed for rapid campaign iterations.",
+        },
+        {
+          iconName: "MessageSquare",
+          title: "Instant Form & WhatsApp",
+          desc: "Direct lead capture synced to email and WhatsApp messaging.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs specializes in landing page development, crafting high-converting landing page designs tailored for digital ad campaigns (Google Ads, Meta Ads), lead generation, and targeted product launches. We combine UI expertise from our{" "}

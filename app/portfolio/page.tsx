@@ -9,7 +9,7 @@ import WorkProcess from "@/components/WorkProcess";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
-import { FolderCheck, CheckCircle2, ChevronRight } from "lucide-react";
+import { FolderCheck, CheckCircle2, ChevronRight, Briefcase, TrendingUp, Layers, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Portfolio & Projects | UrbanTech Webs - Web Design Showcase",
@@ -125,7 +125,30 @@ export default function PortfolioPage() {
 
         {/* Highlights Stats Section */}
         <section className="bg-white text-slate-900 border-b border-slate-200 relative">
-          <Stats />
+          <Stats
+            items={[
+              {
+                iconName: "Briefcase",
+                title: "100+ Live Websites",
+                desc: "Real-world projects delivered across multiple industries.",
+              },
+              {
+                iconName: "TrendingUp",
+                title: "Proven Conversion Results",
+                desc: "Designed to turn casual visitors into paying clients.",
+              },
+              {
+                iconName: "Layers",
+                title: "Diverse Project Range",
+                desc: "Business, e-commerce, portal, and custom web app projects.",
+              },
+              {
+                iconName: "Sparkles",
+                title: "Modern Aesthetics",
+                desc: "Premium visual designs with responsive layouts.",
+              },
+            ]}
+          />
         </section>
 
         {/* Portfolio Showcase */}

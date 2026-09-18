@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "Custom Web Application Development Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -44,6 +44,28 @@ export default function WebApplicationDevelopmentPage() {
       metaDescription="UrbanTech Webs provides custom web application development services. We build custom web apps, SaaS dashboards, booking portals, and admin systems."
       heroImage="/images/web_app_dev_hero_bg.jpg"
       showStats={true}
+      statsItems={[
+        {
+          iconName: "Server",
+          title: "Scalable Cloud Architecture",
+          desc: "Enterprise Next.js, Node.js & database cloud infrastructure.",
+        },
+        {
+          iconName: "LayoutDashboard",
+          title: "Custom Admin Dashboards",
+          desc: "Intuitive management panels and analytics reporting tools.",
+        },
+        {
+          iconName: "ShieldCheck",
+          title: "Secure Session Auth",
+          desc: "Encrypted user login sessions and role-based access control.",
+        },
+        {
+          iconName: "Network",
+          title: "REST & GraphQL APIs",
+          desc: "Fast data endpoints and third-party SaaS integrations.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs is a web application development company engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}

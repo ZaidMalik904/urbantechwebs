@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "Website Design & Development Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -44,6 +44,28 @@ export default function WebsiteDesignPage() {
       metaDescription="UrbanTech Webs provides professional website design and UI/UX development services. We craft modern, responsive, and conversion-focused layouts for businesses."
       heroImage="/images/website_design_hero_bg.jpg"
       showStats={true}
+      statsItems={[
+        {
+          iconName: "Palette",
+          title: "Modern UI/UX Aesthetics",
+          desc: "Sleek, engaging visual layouts designed for your brand identity.",
+        },
+        {
+          iconName: "MousePointerClick",
+          title: "Conversion-Focused",
+          desc: "Strategic CTA placement engineered to generate maximum leads.",
+        },
+        {
+          iconName: "Layout",
+          title: "Pixel-Perfect Layouts",
+          desc: "High-contrast typography and polished visual micro-interactions.",
+        },
+        {
+          iconName: "Eye",
+          title: "Cross-Browser Tested",
+          desc: "Flawless rendering on Chrome, Safari, Firefox, and Edge browsers.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs is a website design company creating modern, visually engaging layouts for businesses. Our design approach blends intuitive user interface (UI) principles with comprehensive{" "}

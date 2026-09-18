@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "Custom Web Development Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -44,6 +44,28 @@ export default function WebDevelopmentPage() {
       metaDescription="UrbanTech Webs provides custom web development services. We build responsive business websites, web applications, and API integrations."
       heroImage="/images/web_dev_hero_bg.jpg"
       showStats={true}
+      statsItems={[
+        {
+          iconName: "Code2",
+          title: "Custom Full-Stack Code",
+          desc: "Clean Next.js & React architecture built without bloated themes.",
+        },
+        {
+          iconName: "Cpu",
+          title: "Fast Server Response",
+          desc: "Optimized server-side rendering for lightning quick page load.",
+        },
+        {
+          iconName: "Globe2",
+          title: "API & Database Sync",
+          desc: "Seamless connection to custom backend endpoints and REST APIs.",
+        },
+        {
+          iconName: "Smartphone",
+          title: "100% Mobile Responsive",
+          desc: "Fluid layout across smartphones, tablets, laptops, and desktops.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs delivers professional web development services tailored to the operational goals of growing businesses. We combine custom frontend layout engineering with robust backend infrastructure to build high-converting platforms, seamless{" "}

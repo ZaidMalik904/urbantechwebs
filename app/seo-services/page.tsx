@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "SEO & Website Performance Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -43,6 +43,29 @@ export default function SeoServicesPage() {
       heroImage="/images/seo_services_hero_bg.jpg"
       title="SEO & Website Performance Services | UrbanTech Webs"
       metaDescription="UrbanTech Webs provides SEO and website performance services. Technical SEO, speed optimization, structured schema, and search visibility."
+      showStats={true}
+      statsItems={[
+        {
+          iconName: "Search",
+          title: "Technical On-Page SEO",
+          desc: "Semantic HTML5 hierarchy, schema markup & meta tag setup.",
+        },
+        {
+          iconName: "Gauge",
+          title: "Core Web Vitals Tuning",
+          desc: "90+ Lighthouse performance scores for search engine rankings.",
+        },
+        {
+          iconName: "FileCode",
+          title: "Search Indexing Setup",
+          desc: "Automated XML sitemaps, robots.txt & canonical URL structure.",
+        },
+        {
+          iconName: "BarChart",
+          title: "Content & Keyword Audit",
+          desc: "Clean content structure optimized for targeted search terms.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs provides expert SEO services, page speed optimization, and search engine visibility enhancements. We integrate technical search strategies into our{" "}

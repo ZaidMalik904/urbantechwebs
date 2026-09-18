@@ -9,7 +9,7 @@ import Process from "@/components/Process";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
-import { Building2, Target, Lightbulb, Users2 } from "lucide-react";
+import { Building2, Target, Lightbulb, Users2, Globe, Users, Headphones } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | UrbanTech Webs - Professional Web Development Agency",
@@ -125,7 +125,30 @@ export default function AboutPage() {
 
         {/* Highlights Stats Section (Attached directly below Hero) */}
         <section className="bg-slate-950 pt-2 pb-10 sm:pb-12 border-b border-slate-800/80 relative z-20">
-          <Stats />
+          <Stats
+            items={[
+              {
+                iconName: "Building2",
+                title: "Dedicated Web Agency",
+                desc: "Team of experienced web developers & UI design specialists.",
+              },
+              {
+                iconName: "Users",
+                title: "Client-First Focus",
+                desc: "Clear communication and project milestone transparency.",
+              },
+              {
+                iconName: "Globe",
+                title: "Global Standards",
+                desc: "Delivering modern digital solutions for clients worldwide.",
+              },
+              {
+                iconName: "Headphones",
+                title: "Long-Term Partnership",
+                desc: "Ongoing technical support, updates, and site maintenance.",
+              },
+            ]}
+          />
         </section>
 
         {/* Why Choose Us */}

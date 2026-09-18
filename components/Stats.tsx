@@ -1,31 +1,122 @@
 "use client";
 
 import React from "react";
-import { Zap, Smartphone, Search, ShieldCheck } from "lucide-react";
+import {
+  CheckCircle2,
+  Clock,
+  LayoutGrid,
+  ShieldCheck,
+  Code2,
+  Cpu,
+  Globe2,
+  Smartphone,
+  Palette,
+  MousePointerClick,
+  Layout,
+  Eye,
+  Lock,
+  ShoppingBag,
+  PackageCheck,
+  Wrench,
+  Sliders,
+  Zap,
+  Target,
+  Split,
+  MessageSquare,
+  Server,
+  LayoutDashboard,
+  Network,
+  Search,
+  Gauge,
+  FileCode,
+  BarChart,
+  Sparkles,
+  Maximize,
+  Building2,
+  Users,
+  Globe,
+  Headphones,
+  Briefcase,
+  TrendingUp,
+  Layers,
+} from "lucide-react";
 
-export default function Stats() {
-  const highlights = [
+const ICON_MAP: Record<string, React.ElementType> = {
+  CheckCircle2,
+  Clock,
+  LayoutGrid,
+  ShieldCheck,
+  Code2,
+  Cpu,
+  Globe2,
+  Smartphone,
+  Palette,
+  MousePointerClick,
+  Layout,
+  Eye,
+  Lock,
+  ShoppingBag,
+  PackageCheck,
+  Wrench,
+  Sliders,
+  Zap,
+  Target,
+  Split,
+  MessageSquare,
+  Server,
+  LayoutDashboard,
+  Network,
+  Search,
+  Gauge,
+  FileCode,
+  BarChart,
+  Sparkles,
+  Maximize,
+  Building2,
+  Users,
+  Globe,
+  Headphones,
+  Briefcase,
+  TrendingUp,
+  Layers,
+};
+
+export interface StatItem {
+  iconName?: string;
+  icon?: React.ElementType;
+  title: string;
+  desc: string;
+}
+
+interface StatsProps {
+  items?: StatItem[];
+}
+
+export default function Stats({ items }: StatsProps) {
+  const defaultHighlights: StatItem[] = [
     {
-      icon: Zap,
-      title: "Fast Page Loading",
-      desc: "Optimized image sizes and code structure for quick page load times.",
+      iconName: "CheckCircle2",
+      title: "100+ Delivered Projects",
+      desc: "High-performance websites & custom web applications.",
     },
     {
-      icon: Smartphone,
-      title: "100% Mobile Responsive",
-      desc: "Designed and tested to work smoothly across smartphones and tablets.",
+      iconName: "Clock",
+      title: "7–14 Days Fast Delivery",
+      desc: "Efficient development workflow from concept to live deployment.",
     },
     {
-      icon: Search,
-      title: "SEO-Friendly Setup",
-      desc: "Clean semantic HTML structure that helps search engines index your pages.",
+      iconName: "LayoutGrid",
+      title: "Custom UI/UX & Code",
+      desc: "Tailored web design built specifically for high visitor conversion.",
     },
     {
-      icon: ShieldCheck,
-      title: "Post-Launch Support",
-      desc: "Ongoing assistance for updates and maintenance after deployment.",
+      iconName: "ShieldCheck",
+      title: "24/7 Technical Support",
+      desc: "Direct developer assistance and ongoing post-launch support.",
     },
   ];
+
+  const highlights = items && items.length > 0 ? items : defaultHighlights;
 
   return (
     <section className="relative z-30 -mt-10 sm:-mt-12 md:-mt-14 py-0 pointer-events-auto w-full">
@@ -59,7 +150,7 @@ export default function Stats() {
               ...highlights,
               ...highlights,
             ].map((item, idx) => {
-              const Icon = item.icon;
+              const Icon = item.iconName ? ICON_MAP[item.iconName] || CheckCircle2 : item.icon || CheckCircle2;
               return (
                 <div
                   key={idx}
@@ -85,7 +176,7 @@ export default function Stats() {
         {/* Tablet & Desktop Grid (Content aligned inside max-w-7xl) */}
         <div className="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-6 items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {highlights.map((item, idx) => {
-            const Icon = item.icon;
+            const Icon = item.iconName ? ICON_MAP[item.iconName] || CheckCircle2 : item.icon || CheckCircle2;
             return (
               <div key={idx} className="flex items-start gap-3.5 sm:pr-4 sm:border-r border-red-500/60 last:border-0">
                 <div className="w-10 h-10 rounded-md bg-white/20 text-white border border-white/30 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">

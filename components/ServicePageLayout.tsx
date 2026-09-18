@@ -23,7 +23,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
-import Stats from "@/components/Stats";
+import Stats, { StatItem } from "@/components/Stats";
 import { useQuoteModal } from "@/components/QuoteModalContext";
 
 export interface ServicePageProps {
@@ -40,6 +40,7 @@ export interface ServicePageProps {
   portfolioExamples?: { title: string; desc: string; url: string; image: string }[];
   heroImage?: string;
   showStats?: boolean;
+  statsItems?: StatItem[];
 }
 
 export default function ServicePageLayout({
@@ -54,6 +55,7 @@ export default function ServicePageLayout({
   portfolioExamples,
   heroImage,
   showStats = true,
+  statsItems,
 }: ServicePageProps) {
   const { openQuoteModal } = useQuoteModal();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -207,7 +209,7 @@ export default function ServicePageLayout({
         {/* Benefits Section (KEY ADVANTAGES) - Clean White Background */}
         <section className="bg-white text-slate-900 border-b border-slate-200 relative">
           {/* Stats Highlights Banner placed inside White Section for seamless white bottom background */}
-          {showStats && <Stats />}
+          {showStats && <Stats items={statsItems} />}
 
           <div className="pt-12 sm:pt-16 pb-16 sm:pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">

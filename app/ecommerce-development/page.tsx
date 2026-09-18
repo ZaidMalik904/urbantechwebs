@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "E-commerce Website Development Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -44,6 +44,28 @@ export default function EcommerceDevelopmentPage() {
       metaDescription="UrbanTech Webs provides e-commerce website development services. We build online stores with product catalogs, shopping carts, and payment gateway setup."
       heroImage="/images/ecommerce_dev_hero_bg.jpg"
       showStats={true}
+      statsItems={[
+        {
+          iconName: "Lock",
+          title: "Secure Payment Gateway",
+          desc: "Integrated Stripe, PayPal, Razorpay, or custom checkout setups.",
+        },
+        {
+          iconName: "ShoppingBag",
+          title: "High-Speed Catalog",
+          desc: "Fast searching, category filters, and instant cart updates.",
+        },
+        {
+          iconName: "Smartphone",
+          title: "Mobile Checkout Ready",
+          desc: "Frictionless buying experience optimized for mobile shoppers.",
+        },
+        {
+          iconName: "PackageCheck",
+          title: "Inventory Management",
+          desc: "Simple administrative dashboard to track orders and stock.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs is an e-commerce website development company building secure, responsive, and conversion-focused online stores. We combine custom storefront layouts with full-stack{" "}

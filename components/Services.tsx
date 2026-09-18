@@ -150,7 +150,7 @@ export default function Services() {
   const secondaryCapabilities = [
     { title: "WhatsApp integration", icon: MessageSquare },
     { title: "Contact forms", icon: Mail },
-    { title: "Google Maps", icon: MapPin },
+    { title: "Maps & Location Integration", icon: MapPin },
     { title: "Online booking", icon: Rocket },
     { title: "Payment gateway integration", icon: CreditCard },
     { title: "Product catalogues", icon: ShoppingCart },

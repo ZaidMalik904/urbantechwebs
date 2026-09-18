@@ -63,8 +63,8 @@ export default function WhatYouGet({ onOpenQuoteModal }: WhatYouGetProps) {
     {
       id: "maps",
       icon: Globe,
-      title: "Google Maps Integration",
-      desc: "Embedded map showcasing your physical store or office location clearly.",
+      title: "Maps & Location Integration",
+      desc: "Add maps and location-based features when required for your business.",
     },
     {
       id: "social",

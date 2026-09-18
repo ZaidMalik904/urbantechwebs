@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         alt: "Logo & Brand Design Services",
       },
     ],
-    locale: "en",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -43,6 +43,29 @@ export default function LogoDesignPage() {
       heroImage="/images/logo_design_hero_bg.jpg"
       title="Logo & Brand Design Services | UrbanTech Webs"
       metaDescription="UrbanTech Webs provides logo & brand design services. Custom logo design, brand identity, vector assets, and visual branding."
+      showStats={true}
+      statsItems={[
+        {
+          iconName: "Sparkles",
+          title: "Vector Master Files",
+          desc: "High-res SVG, AI, EPS, PNG & PDF asset deliverables.",
+        },
+        {
+          iconName: "Palette",
+          title: "Complete Brand Guide",
+          desc: "Typography palettes, color hex codes & usage guidelines.",
+        },
+        {
+          iconName: "Maximize",
+          title: "Versatile Scalability",
+          desc: "Looks crisp on business cards, websites & large signage.",
+        },
+        {
+          iconName: "ShieldCheck",
+          title: "100% Original Concept",
+          desc: "Unique visual brand identity crafted specifically for you.",
+        },
+      ]}
       introParagraphs={[
         <>
           UrbanTech Webs provides logo design services, crafting distinct logo marks and brand identity packages. We align custom visual assets directly with our{" "}
