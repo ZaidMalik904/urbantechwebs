@@ -21,7 +21,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm pt-2">
-              UrbanTech Webs is a web development and website design company in Noida, Delhi NCR. We build custom, responsive, and performance-driven digital solutions.
+              UrbanTech Webs is a professional web development and website design company. We build custom, responsive, and performance-driven digital solutions.
             </p>
           </div>
 
@@ -82,13 +82,13 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2.5 text-slate-300">
                 <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <a href="mailto:urbantechwebs904@gmail.com" className="hover:text-cyan-400 transition-colors">
+                <a href="mailto:urbantechwebs904@gmail.com" data-gtm="email-link" className="hover:text-cyan-400 transition-colors">
                   urbantechwebs904@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-slate-300">
                 <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <a href="tel:+917827775353" className="hover:text-cyan-400 transition-colors">
+                <a href="tel:+917827775353" data-gtm="phone-link" className="hover:text-cyan-400 transition-colors">
                   +91 78277 75353
                 </a>
               </li>
@@ -98,6 +98,7 @@ export default function Footer() {
                   href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20am%20interested%20in%20your%20services."
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-gtm="whatsapp-link"
                   className="hover:text-cyan-400 transition-colors font-bold text-emerald-400"
                 >
                   WhatsApp Chat
@@ -105,7 +106,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5 text-slate-300">
                 <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                <span>Noida Sector 62, Uttar Pradesh, India</span>
+                <span>Available Worldwide | Online Web Services</span>
               </li>
             </ul>
           </div>

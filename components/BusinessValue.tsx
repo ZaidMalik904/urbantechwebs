@@ -86,7 +86,7 @@ export default function BusinessValue() {
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-normal">
             A dedicated website gives your business a professional home online. It helps build credibility with potential clients, explains your{" "}
             <Link href="/web-development" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-              web development services in Noida
+              web development services
             </Link>{" "}
             and{" "}
             <Link href="/website-design" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
@@ -98,7 +98,7 @@ export default function BusinessValue() {
             </Link>
             , and allows prospective buyers to{" "}
             <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-              contact our Noida team
+              contact our team
             </Link>{" "}
             instantly.
           </p>

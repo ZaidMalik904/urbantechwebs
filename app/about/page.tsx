@@ -12,16 +12,16 @@ import FloatingActions from "@/components/WhatsAppButton";
 import { Building2, Target, Lightbulb, Users2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | UrbanTech Webs - Web Development Company in Noida",
+  title: "About Us | UrbanTech Webs - Professional Web Development Agency",
   description:
-    "Learn about UrbanTech Webs, a web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
+    "Learn about UrbanTech Webs, a leading web development and website design agency. Discover our team values, expertise, and client focus.",
   alternates: {
     canonical: "https://urbantechwebs.in/about",
   },
   openGraph: {
-    title: "About Us | UrbanTech Webs - Web Development Company in Noida",
+    title: "About Us | UrbanTech Webs - Professional Web Development Agency",
     description:
-      "Learn about UrbanTech Webs, a web development and website design company in Noida, Delhi NCR. Discover our team values, expertise, and client focus.",
+      "Learn about UrbanTech Webs, a leading web development and website design agency. Discover our team values, expertise, and client focus.",
     url: "https://urbantechwebs.in/about",
     siteName: "UrbanTech Webs",
     images: [
@@ -29,17 +29,17 @@ export const metadata: Metadata = {
         url: "/images/about_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "About UrbanTech Webs Web Development Company in Noida",
+        alt: "About UrbanTech Webs Web Development Agency",
       },
     ],
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | UrbanTech Webs - Web Development Company in Noida",
+    title: "About Us | UrbanTech Webs - Professional Web Development Agency",
     description:
-      "Specialized web development & design agency serving Noida, Delhi NCR & India.",
+      "Specialized web development & design agency dedicated to building high-converting websites.",
     images: ["/images/about_hero_bg.jpg"],
   },
 };
@@ -93,7 +93,7 @@ export default function AboutPage() {
               <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
                 website design
               </Link>{" "}
-              company in Noida, Delhi NCR. Our mission is to empower growing businesses with fast, secure, mobile-first, and SEO-optimized digital web solutions. Explore our{" "}
+              agency. Our mission is to empower growing businesses with fast, secure, mobile-first, and SEO-optimized digital web solutions. Explore our{" "}
               <Link href="/portfolio" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
                 client portfolio
               </Link>{" "}

@@ -9,16 +9,16 @@ import FloatingActions from "@/components/WhatsAppButton";
 import { MessageSquare, Phone, Mail, MapPin, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | UrbanTech Webs - Web Development Company in Noida",
+  title: "Contact Us | UrbanTech Webs - Get a Free Web Consultation",
   description:
-    "Contact UrbanTech Webs for custom website development and website design in Noida & Delhi NCR. Phone: +91 78277 75353, Email: urbantechwebs904@gmail.com.",
+    "Contact UrbanTech Webs for custom website development and website design. Phone: +91 78277 75353, Email: urbantechwebs904@gmail.com.",
   alternates: {
     canonical: "https://urbantechwebs.in/contact",
   },
   openGraph: {
-    title: "Contact Us | UrbanTech Webs - Web Development Company in Noida",
+    title: "Contact Us | UrbanTech Webs - Get a Free Web Consultation",
     description:
-      "Contact UrbanTech Webs for website development, website design, and web applications in Noida & Delhi NCR.",
+      "Contact UrbanTech Webs for website development, website design, and web applications.",
     url: "https://urbantechwebs.in/contact",
     siteName: "UrbanTech Webs",
     images: [
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
         url: "/images/contact_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact UrbanTech Webs Web Development Company in Noida",
+        alt: "Contact UrbanTech Webs Web Development Agency",
       },
     ],
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | UrbanTech Webs - Web Development Company in Noida",
+    title: "Contact Us | UrbanTech Webs - Get a Free Web Consultation",
     description:
-      "Get a free consultation and project quote for custom web development in Noida.",
+      "Get a free consultation and project quote for custom web development.",
     images: ["/images/contact_hero_bg.jpg"],
   },
 };
@@ -103,7 +103,7 @@ export default function ContactPage() {
               <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
                 e-commerce solutions
               </Link>
-              ? Reach out to our team in Noida for instant quotes, technical guidance, and free consultation. View our{" "}
+              ? Reach out to our team for instant technical guidance and free consultation. View our{" "}
               <Link href="/portfolio" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
                 completed projects
               </Link>
@@ -118,6 +118,7 @@ export default function ContactPage() {
                 href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20consultation%20and%20quote%20for%20my%20website%20project."
                 target="_blank"
                 rel="noopener noreferrer"
+                data-gtm="whatsapp-link"
                 className="flex-1 w-full px-8 py-4 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-xl shadow-emerald-950/50 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-3 group cursor-pointer"
               >
                 <Image src="/images/whatsapp.svg" alt="WhatsApp" width={20} height={20} className="w-5 h-5 flex-shrink-0" />
@@ -128,6 +129,7 @@ export default function ContactPage() {
               {/* Direct Phone CTA */}
               <a
                 href="tel:+917827775353"
+                data-gtm="phone-link"
                 className="flex-1 w-full px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-xl shadow-blue-950/50 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
               >
                 <Phone className="w-5 h-5 flex-shrink-0" />
@@ -137,6 +139,7 @@ export default function ContactPage() {
               {/* Email CTA */}
               <a
                 href="mailto:urbantechwebs904@gmail.com"
+                data-gtm="email-link"
                 className="flex-1 w-full px-8 py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-bold text-sm sm:text-base uppercase tracking-wider transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
               >
                 <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
@@ -149,7 +152,7 @@ export default function ContactPage() {
             <div className="pt-6 border-t border-slate-800/80 max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-300 font-medium">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span>Noida & Delhi NCR (Serving India)</span>
+                <span>Available Worldwide | Online Web Services</span>
               </div>
               <span className="hidden sm:inline text-slate-700">•</span>
               <div className="flex items-center gap-2">

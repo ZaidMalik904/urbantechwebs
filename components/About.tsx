@@ -68,7 +68,7 @@ export default function About() {
 
             <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed font-normal pt-2">
               <p>
-                UrbanTech Webs is a web development and website design company operating in Noida and across Delhi NCR. We build fast, responsive, and user-friendly websites for small businesses, local service providers,{" "}
+                UrbanTech Webs is a professional web development and website design company. We build fast, responsive, and user-friendly websites for small businesses, local service providers,{" "}
                 <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
                   e-commerce store development
                 </Link>{" "}
@@ -77,7 +77,7 @@ export default function About() {
               <p>
                 Our core focus is delivering practical web solutions that look great on mobile devices, load quickly, and make it easy for potential clients to reach you. From{" "}
                 <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-                  custom web development Noida
+                  custom web development
                 </Link>{" "}
                 and modern{" "}
                 <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">

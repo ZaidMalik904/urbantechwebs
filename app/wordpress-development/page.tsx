@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "WordPress Development Company in Noida | UrbanTech Webs",
+  title: "WordPress Development Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
+    "UrbanTech Webs provides WordPress development services. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
   alternates: {
     canonical: "https://urbantechwebs.in/wordpress-development",
   },
   openGraph: {
-    title: "WordPress Development Company in Noida | UrbanTech Webs",
+    title: "WordPress Development Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
+      "UrbanTech Webs provides WordPress development services. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
     url: "https://urbantechwebs.in/wordpress-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/wordpress_dev_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "WordPress Development Company in Noida",
+        alt: "WordPress Development Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WordPress Development Company in Noida | UrbanTech Webs",
+    title: "WordPress Development Services | UrbanTech Webs",
     description:
-      "Custom WordPress theme development, plugin configuration, and CMS administration in Noida.",
+      "Custom WordPress theme development, plugin configuration, and CMS administration.",
     images: ["/images/wordpress_dev_hero_bg.jpg"],
   },
 };
@@ -39,14 +39,14 @@ export default function WordpressDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="WordPress Development"
-      h1="WordPress Development Company in Noida"
-      title="WordPress Development Company in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is a WordPress development company in Noida & Delhi NCR. We build custom WordPress themes, business sites, plugins, and easy CMS setups."
+      h1="WordPress Development Services"
+      title="WordPress Development Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides WordPress development services. We build custom WordPress themes, business sites, plugins, and easy CMS setups."
       heroImage="/images/wordpress_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a WordPress development company in Noida offering professional WordPress website development for businesses in Noida and Delhi NCR. We craft flexible Content Management Systems paired with modern{" "}
+          UrbanTech Webs offers professional WordPress website development for growing businesses. We craft flexible Content Management Systems paired with modern{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom website design
           </Link>{" "}
@@ -55,7 +55,7 @@ export default function WordpressDevelopmentPage() {
         <>
           Our developers build clean custom WordPress themes, configure plugins for security and speed, set up user-friendly admin panels, and integrate technical{" "}
           <Link href="/seo-services" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            SEO services in Noida
+            SEO services
           </Link>
           . Feel free to{" "}
           <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
@@ -121,7 +121,7 @@ export default function WordpressDevelopmentPage() {
       ]}
       faqs={[
         {
-          q: "Why hire UrbanTech Webs as your WordPress development company in Noida?",
+          q: "Why hire UrbanTech Webs for WordPress development?",
           rawText: "We combine custom WordPress theme design, speed optimization, technical security hardening, and on-page SEO setup to ensure your WordPress site runs fast, safe, and efficiently.",
           a: "We combine custom WordPress theme design, speed optimization, technical security hardening, and on-page SEO setup to ensure your WordPress site runs fast, safe, and efficiently.",
         },

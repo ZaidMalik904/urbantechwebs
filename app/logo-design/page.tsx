@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Logo Design Services in Noida | UrbanTech Webs",
+  title: "Logo & Brand Design Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding.",
+    "UrbanTech Webs provides logo & brand design services. Custom logo design, brand identity, vector assets, and visual branding.",
   alternates: {
     canonical: "https://urbantechwebs.in/logo-design",
   },
   openGraph: {
-    title: "Logo Design Services in Noida | UrbanTech Webs",
+    title: "Logo & Brand Design Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs provides logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding.",
+      "UrbanTech Webs provides logo & brand design services. Custom logo design, brand identity, vector assets, and visual branding.",
     url: "https://urbantechwebs.in/logo-design",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/logo_design_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Logo Design Services in Noida",
+        alt: "Logo & Brand Design Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Logo Design Services in Noida | UrbanTech Webs",
+    title: "Logo & Brand Design Services | UrbanTech Webs",
     description:
-      "Professional logo design services in Noida and Delhi NCR.",
+      "Professional logo design services and brand identity development.",
     images: ["/images/logo_design_hero_bg.jpg"],
   },
 };
@@ -39,15 +39,15 @@ export default function LogoDesignPage() {
   return (
     <ServicePageLayout
       badge="Logo & Branding"
-      h1="Logo Design Services in Noida"
+      h1="Logo & Brand Design Services"
       heroImage="/images/logo_design_hero_bg.jpg"
-      title="Logo Design Services in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides logo design services in Noida & Delhi NCR. Custom logo design, brand identity, vector assets, and visual branding."
+      title="Logo & Brand Design Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides logo & brand design services. Custom logo design, brand identity, vector assets, and visual branding."
       introParagraphs={[
         <>
-          UrbanTech Webs provides logo design services in Noida, crafting distinct logo marks and brand identity packages. We align custom visual assets directly with our{" "}
+          UrbanTech Webs provides logo design services, crafting distinct logo marks and brand identity packages. We align custom visual assets directly with our{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            website design services in Noida
+            website design services
           </Link>{" "}
           to establish corporate authority.
         </>,
@@ -112,7 +112,7 @@ export default function LogoDesignPage() {
       ]}
       faqs={[
         {
-          q: "Why hire UrbanTech Webs for logo design services in Noida?",
+          q: "Why hire UrbanTech Webs for logo design services?",
           rawText: "We craft versatile vector logos designed to look sharp on both digital websites and physical print collateral, backed by 100% full copyright transfer.",
           a: "We craft versatile vector logos designed to look sharp on both digital websites and physical print collateral, backed by 100% full copyright transfer.",
         },

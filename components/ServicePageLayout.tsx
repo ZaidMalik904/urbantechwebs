@@ -99,16 +99,7 @@ export default function ServicePageLayout({
       url: "https://urbantechwebs.in/",
       telephone: "+91-7827775353",
       email: "urbantechwebs904@gmail.com",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Noida Sector 62",
-        addressLocality: "Noida",
-        addressRegion: "Uttar Pradesh",
-        postalCode: "201309",
-        addressCountry: "IN",
-      },
     },
-    areaServed: ["Noida", "Delhi NCR", "India"],
     description: firstIntroText,
   };
 
@@ -599,7 +590,7 @@ export default function ServicePageLayout({
                   Ready to Discuss Your Project?
                 </h2>
                 <p className="text-slate-300 text-xs sm:text-sm font-normal leading-relaxed">
-                  Based in Noida / Delhi NCR, UrbanTech Webs builds fast, responsive, and conversion-focused websites for businesses across India.
+                  UrbanTech Webs builds fast, responsive, and conversion-focused websites tailored to your business goals.
                 </p>
               </div>
 
@@ -609,6 +600,7 @@ export default function ServicePageLayout({
                   href="https://wa.me/917827775353?text=Hi%20UrbanTech%20Webs%2C%20I%20am%20interested%20in%20a%20website."
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-gtm="service-whatsapp-cta"
                   className="w-full sm:w-auto px-6 py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:shadow-emerald-600/20 flex items-center justify-center gap-2 transition-all flex-shrink-0 cursor-pointer"
                 >
                   <Image src="/images/whatsapp.svg" alt="WhatsApp" width={18} height={18} className="w-4.5 h-4.5" />
@@ -617,6 +609,7 @@ export default function ServicePageLayout({
 
                 <Link
                   href="/contact"
+                  data-gtm="service-enquiry-cta"
                   className="w-full sm:w-auto px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:shadow-blue-600/30 flex items-center justify-center gap-2 transition-all flex-shrink-0 cursor-pointer"
                 >
                   <Mail className="w-4 h-4" />

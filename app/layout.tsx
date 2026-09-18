@@ -22,9 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const siteTitle =
-  "Web Development & Website Design Company in Noida | UrbanTech Webs";
+  "Website Development Company | UrbanTech Webs";
 const siteDescription =
-  "UrbanTech Webs is a web development and website design company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages and web applications.";
+  "UrbanTech Webs provides professional website design, web development, e-commerce, WordPress and custom web application solutions for businesses.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://urbantechwebs.in"),
@@ -34,24 +34,18 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   keywords: [
-    "Web Development & Website Design Company in Noida",
-    "Web Development Company in Noida",
-    "Web Development Services in Noida",
-    "Website Design Company in Noida",
-    "Custom Web Development Noida",
-    "Website Design Services Noida",
-    "Web Design Company in Delhi NCR",
-    "E-commerce Website Development Noida",
-    "WordPress Development Noida",
-    "WordPress Web Development in Noida",
-    "Landing Page Design Noida",
-    "Web Application Development Delhi NCR",
-    "Business Website Design Noida",
-    "Business Website Design Delhi NCR",
-    "Business Grow Website Delhi NCR",
+    "Website Development Company",
+    "Website Development Services",
+    "Web Development Services",
+    "Website Design Company",
+    "Custom Website Development",
+    "Website Design Services",
+    "E-commerce Website Development",
+    "WordPress Development Services",
+    "Landing Page Design",
+    "Web Application Development",
+    "Business Website Design",
     "UrbanTech Webs",
-    "Web Design Company in Noida",
-    "Web Design Company in Delhi NCR",
   ],
   authors: [{ name: "UrbanTech Webs", url: "https://urbantechwebs.in" }],
   creator: "UrbanTech Webs",
@@ -71,7 +65,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
+    locale: "en",
     url: "https://urbantechwebs.in/",
     title: siteTitle,
     description: siteDescription,
@@ -81,7 +75,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "UrbanTech Webs Web Development and Website Design Company in Noida",
+        alt: "UrbanTech Webs Professional Web Development and Website Design Company",
       },
     ],
   },
@@ -119,25 +113,11 @@ export default function RootLayout({
         description: siteDescription,
         telephone: "+91-7827775353",
         email: "urbantechwebs904@gmail.com",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Noida Sector 62",
-          addressLocality: "Noida",
-          addressRegion: "Uttar Pradesh",
-          postalCode: "201309",
-          addressCountry: "IN",
-        },
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: 28.628,
-          longitude: 77.3649,
-        },
-        areaServed: ["Noida", "Delhi NCR", "India"],
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+91-7827775353",
           contactType: "customer service",
-          availableLanguage: ["English", "Hindi"],
+          availableLanguage: ["English"],
         },
       },
       {

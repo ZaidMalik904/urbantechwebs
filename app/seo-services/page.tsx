@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "SEO Services in Noida | UrbanTech Webs",
+  title: "SEO & Website Performance Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and search visibility.",
+    "UrbanTech Webs provides SEO and website performance services. Technical SEO, speed optimization, structured schema, and search visibility.",
   alternates: {
     canonical: "https://urbantechwebs.in/seo-services",
   },
   openGraph: {
-    title: "SEO Services in Noida | UrbanTech Webs",
+    title: "SEO & Website Performance Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and search visibility.",
+      "UrbanTech Webs provides SEO and website performance services. Technical SEO, speed optimization, structured schema, and search visibility.",
     url: "https://urbantechwebs.in/seo-services",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/seo_services_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "SEO Services in Noida",
+        alt: "SEO & Website Performance Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO Services in Noida | UrbanTech Webs",
+    title: "SEO & Website Performance Services | UrbanTech Webs",
     description:
-      "Expert technical SEO and speed optimization in Noida & Delhi NCR.",
+      "Expert technical SEO and website performance optimization.",
     images: ["/images/seo_services_hero_bg.jpg"],
   },
 };
@@ -39,20 +39,20 @@ export default function SeoServicesPage() {
   return (
     <ServicePageLayout
       badge="SEO & Performance"
-      h1="SEO Services in Noida"
+      h1="SEO & Website Performance Services"
       heroImage="/images/seo_services_hero_bg.jpg"
-      title="SEO Services in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides expert SEO services in Noida & Delhi NCR. Technical SEO, speed optimization, structured schema, and search visibility."
+      title="SEO & Website Performance Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides SEO and website performance services. Technical SEO, speed optimization, structured schema, and search visibility."
       introParagraphs={[
         <>
-          UrbanTech Webs provides expert SEO services in Noida, page speed optimization, and search engine visibility enhancements. We integrate technical search strategies into our{" "}
+          UrbanTech Webs provides expert SEO services, page speed optimization, and search engine visibility enhancements. We integrate technical search strategies into our{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             SEO-friendly web development
           </Link>{" "}
-          and custom layout projects across Noida and Delhi NCR.
+          and custom layout projects.
         </>,
         <>
-          As a performance-focused web team in Noida, we tune clean HTML structures, XML sitemaps, JSON-LD schema, and{" "}
+          As a performance-focused web team, we tune clean HTML structures, XML sitemaps, JSON-LD schema, and{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             responsive website design
           </Link>{" "}
@@ -129,9 +129,9 @@ export default function SeoServicesPage() {
       ]}
       faqs={[
         {
-          q: "What is included in your SEO services in Noida?",
-          rawText: "Our SEO services include technical SEO audits, page speed optimization, structured JSON-LD schema markup, XML sitemaps, canonical tags, heading structure optimization, and local search setup.",
-          a: "Our SEO services include technical SEO audits, page speed optimization, structured JSON-LD schema markup, XML sitemaps, canonical tags, heading structure optimization, and local search setup.",
+          q: "What is included in your SEO & performance services?",
+          rawText: "Our SEO services include technical SEO audits, page speed optimization, structured JSON-LD schema markup, XML sitemaps, canonical tags, heading structure optimization, and search engine index setup.",
+          a: "Our SEO services include technical SEO audits, page speed optimization, structured JSON-LD schema markup, XML sitemaps, canonical tags, heading structure optimization, and search engine index setup.",
         },
         {
           q: "How fast will my website load after speed optimization?",

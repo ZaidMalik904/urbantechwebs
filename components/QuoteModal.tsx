@@ -306,7 +306,7 @@ export default function QuoteModal({
               </div>
 
               {/* 2-Column Form */}
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} data-gtm="contact-form" className="space-y-4">
                 {/* Row 1: Name & Phone Number */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Name Field */}
@@ -455,6 +455,7 @@ export default function QuoteModal({
                   <button
                     type="submit"
                     disabled={isSubmitting}
+                    data-gtm="quote-submit-btn"
                     className="w-full py-4 rounded-none bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 hover:from-blue-500 hover:to-cyan-400 text-white font-black text-sm sm:text-base uppercase tracking-wider shadow-lg shadow-cyan-500/25 transition-all hover:scale-[1.005] active:scale-98 flex items-center justify-center gap-2.5 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
@@ -464,7 +465,7 @@ export default function QuoteModal({
                       </>
                     ) : (
                       <>
-                        <span>Submit Request</span>
+                        <span>Get a Free Consultation</span>
                         <ArrowRight className="w-5 h-5" />
                       </>
                     )}

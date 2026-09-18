@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Website Design Company in Noida | UrbanTech Webs",
+  title: "Website Design & Development Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a website design company in Noida & Delhi NCR. We craft modern, responsive, and conversion-focused UI/UX layouts for businesses.",
+    "UrbanTech Webs provides professional website design and UI/UX development services. We craft modern, responsive, and conversion-focused layouts for businesses.",
   alternates: {
     canonical: "https://urbantechwebs.in/website-design",
   },
   openGraph: {
-    title: "Website Design Company in Noida | UrbanTech Webs",
+    title: "Website Design & Development Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a website design company in Noida. We craft modern, responsive UI/UX web designs for business growth.",
+      "UrbanTech Webs provides professional website design and UI/UX development services. We craft modern, responsive, and conversion-focused layouts for businesses.",
     url: "https://urbantechwebs.in/website-design",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/website_design_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Website Design Company in Noida",
+        alt: "Website Design & Development Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Design Company in Noida | UrbanTech Webs",
+    title: "Website Design & Development Services | UrbanTech Webs",
     description:
-      "Professional website design services in Noida and Delhi NCR.",
+      "Professional website design and UI/UX development services for growing businesses.",
     images: ["/images/website_design_hero_bg.jpg"],
   },
 };
@@ -39,14 +39,14 @@ export default function WebsiteDesignPage() {
   return (
     <ServicePageLayout
       badge="Website Design"
-      h1="Website Design Company in Noida"
-      title="Website Design Company in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is a website design company in Noida & Delhi NCR. We craft modern, responsive, and conversion-focused UI/UX layouts for businesses."
+      h1="Website Design & Development"
+      title="Website Design & Development Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides professional website design and UI/UX development services. We craft modern, responsive, and conversion-focused layouts for businesses."
       heroImage="/images/website_design_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a website design company in Noida creating modern, visually engaging layouts for businesses across Delhi NCR. Our design approach blends intuitive user interface (UI) principles with comprehensive{" "}
+          UrbanTech Webs is a website design company creating modern, visually engaging layouts for businesses. Our design approach blends intuitive user interface (UI) principles with comprehensive{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             web development services
           </Link>{" "}
@@ -69,7 +69,7 @@ export default function WebsiteDesignPage() {
           title: "Brand-Aligned Visual Identity",
           desc: (
             <>
-              Custom layouts crafted by an experienced web design company in Noida to reflect your brand palette and paired with professional{" "}
+              Custom layouts crafted by an experienced web design team to reflect your brand palette and paired with professional{" "}
               <Link href="/logo-design" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
                 logo and brand identity design
               </Link>.
@@ -134,8 +134,8 @@ export default function WebsiteDesignPage() {
       ]}
       faqs={[
         {
-          q: "What makes UrbanTech Webs a reliable website design company in Noida?",
-          rawText: "We focus on conversion-oriented UI/UX design, custom visual branding, fast mobile response times, and clean page structures tailored specifically for Indian and international businesses.",
+          q: "What makes UrbanTech Webs a reliable website design company?",
+          rawText: "We focus on conversion-oriented UI/UX design, custom visual branding, fast mobile response times, and clean page structures tailored specifically for modern businesses.",
           a: (
             <>
               We focus on conversion-oriented UI/UX design, custom visual branding, fast mobile response times, and clean page structures. View{" "}

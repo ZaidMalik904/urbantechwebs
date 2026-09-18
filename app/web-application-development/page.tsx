@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Web Application Development Company in Noida | UrbanTech Webs",
+  title: "Custom Web Application Development Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
+    "UrbanTech Webs provides custom web application development services. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-application-development",
   },
   openGraph: {
-    title: "Web Application Development Company in Noida | UrbanTech Webs",
+    title: "Custom Web Application Development Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
+      "UrbanTech Webs provides custom web application development services. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
     url: "https://urbantechwebs.in/web-application-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/web_app_dev_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Web Application Development Company in Noida",
+        alt: "Custom Web Application Development Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Application Development Company in Noida | UrbanTech Webs",
+    title: "Custom Web Application Development Services | UrbanTech Webs",
     description:
-      "Custom web applications, client dashboards, and booking portals built in Noida.",
+      "Custom web applications, client dashboards, and booking portals.",
     images: ["/images/web_app_dev_hero_bg.jpg"],
   },
 };
@@ -39,16 +39,16 @@ export default function WebApplicationDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="Web Application Development"
-      h1="Web Application Development Company in Noida"
-      title="Web Application Development Company in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is a web application development company in Noida. We build custom web apps, SaaS dashboards, booking portals, and admin systems."
+      h1="Custom Web Application Development"
+      title="Custom Web Application Development Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides custom web application development services. We build custom web apps, SaaS dashboards, booking portals, and admin systems."
       heroImage="/images/web_app_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is a web application development company in Noida engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}
+          UrbanTech Webs is a web application development company engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            custom web development in Noida
+            custom web development
           </Link>{" "}
           practices to build enterprise-grade web tools.
         </>,
@@ -127,7 +127,7 @@ export default function WebApplicationDevelopmentPage() {
       ]}
       faqs={[
         {
-          q: "Why choose UrbanTech Webs as your web application development company in Noida?",
+          q: "Why choose UrbanTech Webs for web application development?",
           rawText: "We engineer scalable full-stack web applications using Next.js, React, Node.js, and modern databases, delivering high-performance platforms tailored to complex business logic.",
           a: "We engineer scalable full-stack web applications using Next.js, React, Node.js, and modern databases, delivering high-performance platforms tailored to complex business logic.",
         },

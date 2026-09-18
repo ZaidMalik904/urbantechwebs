@@ -28,7 +28,7 @@ export default function Services() {
     {
       num: "01",
       icon: Code,
-      title: "Website Development",
+      title: "Custom Web Development Services",
       description: "Fast, responsive and SEO-friendly websites engineered for business growth and credible online presence.",
       link: "/web-development",
       image: "/images/service_web_dev_real.jpg",
@@ -43,7 +43,7 @@ export default function Services() {
     {
       num: "02",
       icon: Layout,
-      title: "Website Design",
+      title: "Website Design & Development",
       description: "Modern, visually engaging UI/UX design tailored around your brand identity and conversion goals.",
       link: "/website-design",
       image: "/images/service_redesign_real.jpg",
@@ -58,7 +58,7 @@ export default function Services() {
     {
       num: "03",
       icon: ShoppingCart,
-      title: "E-commerce Development",
+      title: "E-commerce Website Development",
       description: "Complete online stores with product catalogs, shopping cart workflow, and secure payment integrations.",
       link: "/ecommerce-development",
       image: "/images/service_ecommerce_real.jpg",
@@ -73,7 +73,7 @@ export default function Services() {
     {
       num: "04",
       icon: Globe,
-      title: "WordPress Development",
+      title: "WordPress Development Services",
       description: "Custom WordPress websites for businesses seeking easy content administration and theme flexibility.",
       link: "/wordpress-development",
       image: "/images/service_wordpress_real.jpg",
@@ -88,7 +88,7 @@ export default function Services() {
     {
       num: "05",
       icon: Rocket,
-      title: "Landing Page Development",
+      title: "Landing Page Design & Development",
       description: "High-converting landing pages tailored for ad campaigns, product promotions, and lead generation.",
       link: "/landing-page-development",
       image: "/images/service_landing_page_real.jpg",
@@ -103,7 +103,7 @@ export default function Services() {
     {
       num: "06",
       icon: Cpu,
-      title: "Web Application Development",
+      title: "Custom Web Application Development",
       description: "Custom web portals, client dashboards, booking engines, and scalable web applications.",
       link: "/web-application-development",
       image: "/images/service_custom_app_real.jpg",
@@ -118,7 +118,7 @@ export default function Services() {
     {
       num: "07",
       icon: Search,
-      title: "SEO Services",
+      title: "SEO & Website Performance Services",
       description: "Technical search engine optimization, page speed tuning, structured data, and search visibility.",
       link: "/seo-services",
       image: "/images/seo_services_hero_bg.jpg",
@@ -133,7 +133,7 @@ export default function Services() {
     {
       num: "08",
       icon: Sparkles,
-      title: "Logo & Brand Design",
+      title: "Logo & Brand Design Services",
       description: "Custom vector logos, color brand guides, and visual identity design for business identity.",
       link: "/logo-design",
       image: "/images/logo_design_hero_bg.jpg",

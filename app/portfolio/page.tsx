@@ -12,7 +12,7 @@ import FloatingActions from "@/components/WhatsAppButton";
 import { FolderCheck, CheckCircle2, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Portfolio & Projects | UrbanTech Webs - Website Design Noida",
+  title: "Portfolio & Projects | UrbanTech Webs - Web Design Showcase",
   description:
     "Explore website design and development projects by UrbanTech Webs. Business websites, e-commerce stores, car rental portals, and custom web applications.",
   alternates: {
@@ -32,12 +32,12 @@ export const metadata: Metadata = {
         alt: "UrbanTech Webs Web Development & Website Design Portfolio",
       },
     ],
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio & Projects | UrbanTech Webs - Website Design Noida",
+    title: "Portfolio & Projects | UrbanTech Webs - Web Design Showcase",
     description:
       "Explore real client websites and web applications built by UrbanTech Webs.",
     images: ["/images/portfolio_hero_workspace.jpg"],

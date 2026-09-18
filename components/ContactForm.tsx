@@ -31,10 +31,10 @@ export default function ContactForm() {
         {/* Heading & Subtext */}
         <div className="space-y-3.5 max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Ready to Build Your Business Website?
+            Ready to Build Your Website?
           </h2>
           <p className="text-slate-600 text-base sm:text-xl max-w-3xl mx-auto font-normal leading-relaxed">
-            Get a custom, high-converting website engineered for your business goals. Connect directly with our team for an instant quote and consultation.
+            Let&apos;s discuss your project and create a website tailored to your business needs. Connect directly with our team for a free consultation.
           </p>
         </div>
 
@@ -46,6 +46,7 @@ export default function ContactForm() {
             href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20consultation%20and%20quote%20for%20my%20website%20project."
             target="_blank"
             rel="noopener noreferrer"
+            data-gtm="whatsapp-link"
             className="flex-1 w-full px-8 sm:px-10 py-4.5 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-3 group cursor-pointer"
           >
             <Image src="/images/whatsapp.svg" alt="WhatsApp" width={20} height={20} className="w-5 h-5 flex-shrink-0" />
@@ -56,6 +57,7 @@ export default function ContactForm() {
           {/* Direct Phone CTA */}
           <a
             href="tel:+917827775353"
+            data-gtm="phone-link"
             className="flex-1 w-full px-8 sm:px-10 py-4.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-md shadow-blue-600/20 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
           >
             <Phone className="w-5 h-5 flex-shrink-0" />
@@ -65,6 +67,7 @@ export default function ContactForm() {
           {/* Email CTA */}
           <a
             href="mailto:urbantechwebs904@gmail.com"
+            data-gtm="email-link"
             className="flex-1 w-full px-8 sm:px-10 py-4.5 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 font-bold text-sm sm:text-base uppercase tracking-wider transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
           >
             <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />

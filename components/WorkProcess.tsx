@@ -21,7 +21,7 @@ export default function WorkProcess() {
       num: "01",
       title: "Discovery & Requirement Analysis",
       icon: Search,
-      desc: "We analyze your business objectives, target market in Noida/Delhi NCR, brand identity, and key functional requirements to build a clear project roadmap.",
+      desc: "We analyze your business objectives, target audience, brand identity, and key functional requirements to build a clear project roadmap.",
       badge: "Step 1: Planning",
       highlights: ["Business Goal Alignment", "Competitor Research", "Sitemap & Wireframing"],
       color: "from-blue-500/20 to-cyan-500/10 border-blue-500/40 text-cyan-400",

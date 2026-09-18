@@ -2,9 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Phone } from "lucide-react";
+import { Phone, FileText } from "lucide-react";
+import { useQuoteModal } from "./QuoteModalContext";
 
 export default function FloatingActions() {
+  const { openQuoteModal } = useQuoteModal();
   const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
   const [showScrollActions, setShowScrollActions] = useState(false);
 
@@ -45,6 +47,7 @@ export default function FloatingActions() {
 
           <a
             href="tel:+917827775353"
+            data-gtm="floating-phone"
             aria-label="Call Us Now"
             onMouseEnter={() => setActiveTooltip("call")}
             onMouseLeave={() => setActiveTooltip(null)}
@@ -70,6 +73,7 @@ export default function FloatingActions() {
             href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20am%20interested%20in%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
+            data-gtm="floating-whatsapp"
             aria-label="Chat on WhatsApp"
             onMouseEnter={() => setActiveTooltip("whatsapp")}
             onMouseLeave={() => setActiveTooltip(null)}
@@ -81,7 +85,7 @@ export default function FloatingActions() {
         </div>
       </div>
 
-      {/* 2. Original Mobile Bottom Action Bar (Left: Call Now, Right: WhatsApp — Shown ONLY on scroll) */}
+      {/* 2. Mobile Sticky Bottom Action Bar (WhatsApp, Call, Get Quote — Shown ONLY on scroll) */}
       <div
         className={`flex sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-950 border-t border-slate-800 p-0 gap-0 shadow-2xl mobile-bottom-actions transition-all duration-300 ${
           showScrollActions
@@ -90,22 +94,33 @@ export default function FloatingActions() {
         }`}
       >
         <a
-          href="tel:+917827775353"
-          className="flex-1 h-14 px-3 rounded-none bg-blue-600 active:bg-blue-700 text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-colors cursor-pointer"
-        >
-          <Phone className="w-5.5 h-5.5 fill-white/20 flex-shrink-0" />
-          <span>Call Now</span>
-        </a>
-
-        <a
           href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20am%20interested%20in%20your%20services."
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 h-14 px-3 rounded-none bg-[#25D366] active:bg-[#20ba59] text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2.5 transition-colors cursor-pointer"
+          data-gtm="mobile-bar-whatsapp"
+          className="flex-1 h-14 px-2 rounded-none bg-[#25D366] active:bg-[#20ba59] text-white font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer border-r border-emerald-600/50"
         >
-          <Image src="/images/whatsapp.svg" alt="WhatsApp" width={22} height={22} className="w-5.5 h-5.5 flex-shrink-0" />
+          <Image src="/images/whatsapp.svg" alt="WhatsApp" width={18} height={18} className="w-4.5 h-4.5 flex-shrink-0" />
           <span>WhatsApp</span>
         </a>
+
+        <a
+          href="tel:+917827775353"
+          data-gtm="mobile-bar-phone"
+          className="flex-1 h-14 px-2 rounded-none bg-blue-600 active:bg-blue-700 text-white font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer border-r border-blue-500/50"
+        >
+          <Phone className="w-4.5 h-4.5 fill-white/20 flex-shrink-0" />
+          <span>Call</span>
+        </a>
+
+        <button
+          onClick={() => openQuoteModal()}
+          data-gtm="mobile-bar-quote"
+          className="flex-1 h-14 px-2 rounded-none bg-slate-900 active:bg-slate-800 text-cyan-400 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer border-l border-slate-800"
+        >
+          <FileText className="w-4.5 h-4.5 flex-shrink-0" />
+          <span>Get Quote</span>
+        </button>
       </div>
     </>
   );

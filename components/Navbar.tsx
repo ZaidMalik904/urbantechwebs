@@ -90,6 +90,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
             {/* Left: Mail ID */}
             <a
               href="mailto:urbantechwebs904@gmail.com"
+              data-gtm="email-link"
               className="flex items-center gap-1.5 hover:text-cyan-400 transition-colors font-medium truncate"
             >
               <Mail className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
@@ -99,6 +100,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
             {/* Right: Phone Number */}
             <a
               href="tel:+917827775353"
+              data-gtm="phone-link"
               className="flex items-center gap-1.5 hover:text-cyan-400 transition-colors font-semibold flex-shrink-0"
             >
               <Phone className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
@@ -153,7 +155,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
                         <Sparkles className="w-3.5 h-3.5 text-blue-600" />
                         <span className="text-slate-700 font-bold">Web Development Services</span>
                       </div>
-                      <span className="text-[10px] text-blue-600 font-bold font-sans">Noida & Delhi NCR</span>
+                      <span className="text-[10px] text-blue-600 font-bold font-sans">Custom Digital Solutions</span>
                     </div>
 
                     {/* 2 Services Per Row Grid (6 Services total = 3 rows x 2 columns) */}
@@ -230,6 +232,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
           <div className="hidden md:flex items-center">
             <button
               onClick={handleQuote}
+              data-gtm="header-quote-cta"
               className="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-md shadow-blue-600/30 transition-all hover:shadow-lg hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
               <span>Get a Free Consultation</span>

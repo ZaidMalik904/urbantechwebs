@@ -44,17 +44,17 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
         {/* Small Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide shadow-xs backdrop-blur-md">
           <Zap className="w-4 h-4 text-cyan-400 fill-cyan-400/20" />
-          <span>Web Development & Website Design Services in Noida</span>
+          <span>Web Development & Website Design Services</span>
         </div>
 
         {/* Main Heading (Single H1 for SEO) */}
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight max-w-4xl mx-auto">
-          Web Development & Website Design Company in Noida
+          Professional Website Development Services
         </h1>
 
         {/* Supporting Copy */}
         <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto font-normal leading-relaxed">
-          UrbanTech Webs builds fast, responsive and conversion-focused{" "}
+          We design and develop fast, responsive and conversion-focused{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             web development
           </Link>{" "}
@@ -70,25 +70,30 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
           <Link href="/web-application-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom web applications
           </Link>{" "}
-          for businesses in Noida and across Delhi NCR.
+          tailored to your business goals.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
           <button
             onClick={handleQuote}
+            data-gtm="hero-quote-cta"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group cursor-pointer"
           >
             <span>Get a Free Consultation</span>
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
           </button>
 
-          <Link
-            href="/portfolio"
-            className="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/90 hover:bg-slate-800 text-white border border-slate-700/80 font-semibold text-sm sm:text-base shadow-xs backdrop-blur-xs transition-all text-center"
+          <a
+            href="https://wa.me/917827775353?text=Hi%20UrbanTech%20Webs%2C%20I%20am%20interested%20in%20getting%20a%20free%20consultation%20for%20a%20website."
+            target="_blank"
+            rel="noopener noreferrer"
+            data-gtm="hero-whatsapp-cta"
+            className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2.5 cursor-pointer text-center"
           >
-            View Our Work
-          </Link>
+            <Image src="/images/whatsapp.svg" alt="WhatsApp" width={20} height={20} className="w-5 h-5 flex-shrink-0" />
+            <span>WhatsApp Us</span>
+          </a>
         </div>
 
         {/* Single-Line Trust / Value Bar below CTA */}

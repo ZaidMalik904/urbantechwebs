@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Web Development Services in Noida | UrbanTech Webs",
+  title: "Custom Web Development Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations.",
+    "UrbanTech Webs provides custom web development services. We build responsive business websites, web applications, and API integrations.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-development",
   },
   openGraph: {
-    title: "Web Development Services in Noida | UrbanTech Webs",
+    title: "Custom Web Development Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations.",
+      "UrbanTech Webs provides custom web development services. We build responsive business websites, web applications, and API integrations.",
     url: "https://urbantechwebs.in/web-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/web_dev_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Custom Web Development Services in Noida",
+        alt: "Custom Web Development Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Development Services in Noida | UrbanTech Webs",
+    title: "Custom Web Development Services | UrbanTech Webs",
     description:
-      "Professional custom website development solutions for businesses in Noida & Delhi NCR.",
+      "Professional custom website development solutions for growing businesses.",
     images: ["/images/web_dev_hero_bg.jpg"],
   },
 };
@@ -39,18 +39,18 @@ export default function WebDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="Web Development"
-      h1="Web Development Services in Noida"
-      title="Web Development Services in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides custom web development services in Noida and Delhi NCR. We build responsive business websites, web applications, and API integrations."
+      h1="Custom Web Development Services"
+      title="Custom Web Development Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides custom web development services. We build responsive business websites, web applications, and API integrations."
       heroImage="/images/web_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs delivers professional web development services in Noida tailored to the operational goals of growing businesses. We combine custom frontend layout engineering with robust backend infrastructure to build high-converting platforms, seamless{" "}
+          UrbanTech Webs delivers professional web development services tailored to the operational goals of growing businesses. We combine custom frontend layout engineering with robust backend infrastructure to build high-converting platforms, seamless{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             website design solutions
           </Link>
-          , and scalable digital portals for clients across Noida and Delhi NCR.
+          , and scalable digital portals for clients globally.
         </>,
         <>
           Whether you require custom code for a corporate site, an{" "}
@@ -136,7 +136,7 @@ export default function WebDevelopmentPage() {
       faqs={[
         {
           q: "What types of websites do you build under web development services?",
-          rawText: "We build corporate business websites, custom web applications, product catalogues, customer service portals, and custom API-driven platforms for clients in Noida and Delhi NCR.",
+          rawText: "We build corporate business websites, custom web applications, product catalogues, customer service portals, and custom API-driven platforms for modern businesses.",
           a: (
             <>
               We build corporate business websites, custom web portals, product catalogues, customer service systems, and custom API-driven platforms. Explore{" "}

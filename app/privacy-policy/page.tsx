@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-3 text-sm">
             <div className="flex items-center gap-3">
               <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-              <span>UrbanTechWebs, Noida Sector 62, Uttar Pradesh, India</span>
+              <span>UrbanTechWebs | Online Web Services</span>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />

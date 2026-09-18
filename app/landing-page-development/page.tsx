@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Landing Page Development in Noida | UrbanTech Webs",
+  title: "Landing Page Design & Development Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs provides landing page development in Noida & Delhi NCR for lead generation, ad campaigns, Google Ads, and product launches.",
+    "UrbanTech Webs provides landing page design & development services for lead generation, ad campaigns, Google Ads, and product launches.",
   alternates: {
     canonical: "https://urbantechwebs.in/landing-page-development",
   },
   openGraph: {
-    title: "Landing Page Development in Noida | UrbanTech Webs",
+    title: "Landing Page Design & Development Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs provides landing page development in Noida & Delhi NCR for lead generation, ad campaigns, Google Ads, and product launches.",
+      "UrbanTech Webs provides landing page design & development services for lead generation, ad campaigns, Google Ads, and product launches.",
     url: "https://urbantechwebs.in/landing-page-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/landing_page_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Landing Page Development in Noida",
+        alt: "Landing Page Design & Development Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landing Page Development in Noida | UrbanTech Webs",
+    title: "Landing Page Design & Development Services | UrbanTech Webs",
     description:
-      "High-converting landing page design & development in Noida for ad campaigns & lead generation.",
+      "High-converting landing page design & development for ad campaigns & lead generation.",
     images: ["/images/landing_page_hero_bg.jpg"],
   },
 };
@@ -39,14 +39,14 @@ export default function LandingPageDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="Landing Page Development"
-      h1="Landing Page Development in Noida"
-      title="Landing Page Development in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs provides landing page development in Noida & Delhi NCR for lead generation, ad campaigns, Google Ads, and product launches."
+      h1="Landing Page Design & Development"
+      title="Landing Page Design & Development Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides landing page design & development services for lead generation, ad campaigns, Google Ads, and product launches."
       heroImage="/images/landing_page_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs specializes in landing page development in Noida, crafting high converting landing page designs tailored for digital ad campaigns (Google Ads, Meta Ads), lead generation, and targeted product launches. We combine UI expertise from our{" "}
+          UrbanTech Webs specializes in landing page development, crafting high-converting landing page designs tailored for digital ad campaigns (Google Ads, Meta Ads), lead generation, and targeted product launches. We combine UI expertise from our{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             professional website design
           </Link>{" "}
@@ -55,7 +55,7 @@ export default function LandingPageDevelopmentPage() {
         <>
           Our landing page solutions work hand-in-hand with our overall{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-            web development services in Noida
+            web development services
           </Link>{" "}
           standards to eliminate navigation distraction, highlight your key offer, and guide prospective clients to convert. You can also{" "}
           <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
@@ -122,7 +122,7 @@ export default function LandingPageDevelopmentPage() {
       ]}
       faqs={[
         {
-          q: "Why invest in professional landing page development in Noida?",
+          q: "Why invest in professional landing page development?",
           rawText: "Dedicated landing pages focus entirely on one specific service or ad campaign offer, delivering significantly higher conversion rates and stronger visitor engagement than generic homepages.",
           a: "Dedicated landing pages focus entirely on one specific service or ad campaign offer, delivering significantly higher conversion rates and stronger visitor engagement than generic homepages.",
         },

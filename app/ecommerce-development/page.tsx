@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "E-commerce Website Development Company in Noida | UrbanTech Webs",
+  title: "E-commerce Website Development Services | UrbanTech Webs",
   description:
-    "UrbanTech Webs is an e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
+    "UrbanTech Webs provides e-commerce website development services. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
   alternates: {
     canonical: "https://urbantechwebs.in/ecommerce-development",
   },
   openGraph: {
-    title: "E-commerce Website Development Company in Noida | UrbanTech Webs",
+    title: "E-commerce Website Development Services | UrbanTech Webs",
     description:
-      "UrbanTech Webs is an e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
+      "UrbanTech Webs provides e-commerce website development services. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
     url: "https://urbantechwebs.in/ecommerce-development",
     siteName: "UrbanTech Webs",
     images: [
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
         url: "/images/ecommerce_dev_hero_bg.jpg",
         width: 1200,
         height: 630,
-        alt: "E-commerce Website Development Company in Noida",
+        alt: "E-commerce Website Development Services",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-commerce Website Development Company in Noida | UrbanTech Webs",
+    title: "E-commerce Website Development Services | UrbanTech Webs",
     description:
-      "Online store development, shopping carts, and payment gateway setup in Noida.",
+      "Online store development, shopping carts, and payment gateway setup.",
     images: ["/images/ecommerce_dev_hero_bg.jpg"],
   },
 };
@@ -39,14 +39,14 @@ export default function EcommerceDevelopmentPage() {
   return (
     <ServicePageLayout
       badge="E-commerce Development"
-      h1="E-commerce Website Development Company in Noida"
-      title="E-commerce Website Development Company in Noida | UrbanTech Webs"
-      metaDescription="UrbanTech Webs is an e-commerce website development company in Noida. We build online stores with product catalogs, shopping carts, and payment gateway setup."
+      h1="E-commerce Website Development"
+      title="E-commerce Website Development Services | UrbanTech Webs"
+      metaDescription="UrbanTech Webs provides e-commerce website development services. We build online stores with product catalogs, shopping carts, and payment gateway setup."
       heroImage="/images/ecommerce_dev_hero_bg.jpg"
       showStats={true}
       introParagraphs={[
         <>
-          UrbanTech Webs is an ecommerce website development company in Noida building secure, responsive, and conversion-focused online stores. We combine custom storefront layouts with full-stack{" "}
+          UrbanTech Webs is an e-commerce website development company building secure, responsive, and conversion-focused online stores. We combine custom storefront layouts with full-stack{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom web development
           </Link>{" "}
@@ -57,11 +57,11 @@ export default function EcommerceDevelopmentPage() {
           to help brands sell products online seamlessly.
         </>,
         <>
-          From structured product catalogs and shopping carts to secure payment gateway integrations (Razorpay, Paytm, UPI, Cards), our developers deliver robust storefronts. You can also{" "}
+          From structured product catalogs and shopping carts to secure payment gateway integrations (Razorpay, Paytm, Stripe, Credit/Debit Cards), our developers deliver robust storefronts. You can also{" "}
           <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             discuss your online store project
           </Link>{" "}
-          with our Noida team today.
+          with our team today.
         </>,
       ]}
       benefits={[
@@ -75,7 +75,7 @@ export default function EcommerceDevelopmentPage() {
         },
         {
           title: "Payment Gateway Integration",
-          desc: "Secure integration with Indian and international payment gateway providers (Razorpay, Paytm, PhonePe, UPI, Debit/Credit Cards, NetBanking).",
+          desc: "Secure integration with leading payment gateway providers (Razorpay, Paytm, Stripe, Credit/Debit Cards, Digital Wallets).",
         },
         {
           title: "CMS & WooCommerce Options",
@@ -100,7 +100,7 @@ export default function EcommerceDevelopmentPage() {
       features={[
         { title: "Product Grid & Filtering", desc: "Filter by category, brand, size, color, or custom attributes." },
         { title: "Shopping Cart & Checkout System", desc: "Dynamic cart item count, automatic tax/shipping logic, and promo codes." },
-        { title: "Payment Gateway Setup", desc: "Razorpay, Paytm, UPI, Cashfree, Credit/Debit card payment endpoints." },
+        { title: "Payment Gateway Setup", desc: "Razorpay, Paytm, Stripe, Credit/Debit card payment endpoints." },
         { title: "Order Dispatch & Customer Inquiry", desc: "Automated inquiry routing and order notification dispatch." },
         { title: "Admin Catalog Management", desc: "Easy dashboard to add, edit, or remove products and update details." },
         { title: "SSL Security & Encrypted Checkout", desc: "256-bit HTTPS encryption for secure online transactions and customer privacy." },
@@ -127,7 +127,7 @@ export default function EcommerceDevelopmentPage() {
       ]}
       faqs={[
         {
-          q: "Why choose UrbanTech Webs as your ecommerce website development company in Noida?",
+          q: "Why choose UrbanTech Webs for e-commerce website development?",
           rawText: "We engineer online stores tailored for fast load speeds, secure payment gateway processing, mobile usability, and clean product navigation designed to boost store sales.",
           a: (
             <>
@@ -141,8 +141,8 @@ export default function EcommerceDevelopmentPage() {
         },
         {
           q: "What payment gateways can you integrate into an e-commerce website?",
-          rawText: "We integrate all major Indian payment gateways including Razorpay, Paytm, PhonePe, Cashfree, UPI, as well as international options like PayPal or Stripe.",
-          a: "We integrate all major Indian payment gateways including Razorpay, Paytm, PhonePe, Cashfree, UPI, as well as international options like PayPal or Stripe.",
+          rawText: "We integrate major payment gateways including Razorpay, Paytm, PhonePe, Stripe, PayPal, as well as Credit/Debit card options.",
+          a: "We integrate major payment gateways including Razorpay, Paytm, PhonePe, Stripe, PayPal, as well as Credit/Debit card options.",
         },
         {
           q: "Can I manage products myself after launch?",
@@ -150,7 +150,7 @@ export default function EcommerceDevelopmentPage() {
           a: "Yes. We provide easy-to-use content management setups or admin dashboards allowing you to update product descriptions, images, and inventory stock.",
         },
         {
-          q: "Do you support WhatsApp ordering for local Indian online stores?",
+          q: "Do you support WhatsApp ordering for online stores?",
           rawText: "Yes! For businesses targeting direct customer interactions, we set up instant WhatsApp product ordering buttons and pre-filled order chats.",
           a: "Yes! For businesses targeting direct customer interactions, we set up instant WhatsApp product ordering buttons and pre-filled order chats.",
         },

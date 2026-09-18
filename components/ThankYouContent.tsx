@@ -149,6 +149,7 @@ export default function ThankYouContent() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
+            data-gtm="whatsapp-link"
             className="w-full sm:w-auto flex-1 px-8 py-4 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-xl shadow-emerald-950/40 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-3 group cursor-pointer"
           >
             <Image src="/images/whatsapp.svg" alt="WhatsApp" width={22} height={22} className="w-5 h-5 flex-shrink-0" />
@@ -158,6 +159,7 @@ export default function ThankYouContent() {
 
           <a
             href="tel:+917827775353"
+            data-gtm="phone-link"
             className="w-full sm:w-auto flex-1 px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-xl shadow-blue-950/40 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2.5 cursor-pointer"
           >
             <Phone className="w-5 h-5 flex-shrink-0" />

@@ -18,16 +18,16 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Web Development & Website Design Company in Noida | UrbanTech Webs",
+  title: "Website Development Company | UrbanTech Webs",
   description:
-    "UrbanTech Webs is a web development and website design company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages, and web applications.",
+    "UrbanTech Webs provides professional website design, web development, e-commerce, WordPress and custom web application solutions for businesses.",
   alternates: {
     canonical: "https://urbantechwebs.in/",
   },
   openGraph: {
-    title: "Web Development Company in Noida | Website Design | UrbanTech Webs",
+    title: "Website Development Company | UrbanTech Webs",
     description:
-      "UrbanTech Webs is a web development company in Noida, Delhi NCR. We build custom websites, e-commerce stores, landing pages, and web applications.",
+      "UrbanTech Webs provides professional website design, web development, e-commerce, WordPress and custom web application solutions for businesses.",
     url: "https://urbantechwebs.in/",
     siteName: "UrbanTech Webs",
     images: [
@@ -35,17 +35,17 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "UrbanTech Webs Web Development Company in Noida",
+        alt: "UrbanTech Webs Website Development Company",
       },
     ],
-    locale: "en_IN",
+    locale: "en",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Development Company in Noida | UrbanTech Webs",
+    title: "Website Development Company | UrbanTech Webs",
     description:
-      "Web development and website design company serving Noida, Delhi NCR, and India.",
+      "Professional website design, web development, e-commerce, WordPress and custom web application solutions.",
     images: ["/images/og-image.jpg"],
   },
 };

@@ -106,12 +106,12 @@ export default function TermsAndConditionsPage() {
         <section className="space-y-4 border-t border-slate-800 pt-6">
           <h2 className="text-xl sm:text-2xl font-bold text-white">7. Governing Law &amp; Contact Information</h2>
           <p className="leading-relaxed text-sm sm:text-base">
-            These terms are governed by the laws of India. For questions or service enquiries, contact:
+            These terms are governed by applicable laws. For questions or service enquiries, contact:
           </p>
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-3 text-sm">
             <div className="flex items-center gap-3">
               <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-              <span>UrbanTechWebs, Noida Sector 62, Uttar Pradesh, India</span>
+              <span>UrbanTechWebs | Online Web Services</span>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="w-4 h-4 text-cyan-400 flex-shrink-0" />
