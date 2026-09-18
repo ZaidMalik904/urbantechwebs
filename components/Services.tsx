@@ -312,83 +312,24 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Full-Bleed Edge-to-Edge Marquee Wrapper (Zero Padding/Margins) */}
-        <div className="w-full relative z-10 space-y-6 sm:space-y-8 feature-marquee-wrapper overflow-hidden px-0 mx-0">
-          
-          {/* Row 1 Infinite Marquee (Leftward) */}
-          <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
-            <div className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-left items-center">
-              {secondaryCapabilities.slice(0, 7).map((item, i) => {
-                const CapIcon = item.icon;
-                return (
-                  <div
-                    key={i}
-                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                      <CapIcon className="w-5 h-5 stroke-[2]" />
-                    </div>
-                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
+        {/* Feature Options Clean Grid */}
+        <div className="w-full max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            {secondaryCapabilities.map((item, i) => {
+              const CapIcon = item.icon;
+              return (
+                <div
+                  key={i}
+                  className="bg-slate-900/90 border border-slate-800 rounded-md p-4 sm:p-5 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all shadow-lg group cursor-pointer"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <CapIcon className="w-5 h-5 stroke-[2]" />
                   </div>
-                );
-              })}
-            </div>
-
-            <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-left items-center">
-              {secondaryCapabilities.slice(0, 7).map((item, i) => {
-                const CapIcon = item.icon;
-                return (
-                  <div
-                    key={`dup1-${i}`}
-                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                      <CapIcon className="w-5 h-5 stroke-[2]" />
-                    </div>
-                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
-                  </div>
-                );
-              })}
-            </div>
+                  <span className="leading-snug">{item.title}</span>
+                </div>
+              );
+            })}
           </div>
-
-          {/* Row 2 Infinite Marquee (Rightward) */}
-          <div className="flex overflow-hidden w-full select-none gap-4 sm:gap-6 py-2">
-            <div className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-right items-center">
-              {secondaryCapabilities.slice(7).map((item, i) => {
-                const CapIcon = item.icon;
-                return (
-                  <div
-                    key={i}
-                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                      <CapIcon className="w-5 h-5 stroke-[2]" />
-                    </div>
-                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 min-w-full animate-feature-right items-center">
-              {secondaryCapabilities.slice(7).map((item, i) => {
-                const CapIcon = item.icon;
-                return (
-                  <div
-                    key={`dup2-${i}`}
-                    className="bg-slate-900/90 border border-slate-800 rounded-md px-6 py-5 sm:px-7 sm:py-6 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all flex-shrink-0 min-w-[240px] sm:min-w-[280px] min-h-[72px] sm:min-h-[80px] shadow-lg group cursor-pointer"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                      <CapIcon className="w-5 h-5 stroke-[2]" />
-                    </div>
-                    <span className="leading-snug whitespace-nowrap">{item.title}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

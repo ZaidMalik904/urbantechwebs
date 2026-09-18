@@ -260,119 +260,33 @@ export default function Process() {
           </p>
         </div>
 
-        {/* Full-Bleed Edge-to-Edge 2-Row Marquee Wrapper (Zero Padding/Margins) */}
-        <div className="w-full relative z-10 space-y-5 industry-marquee-wrapper overflow-hidden px-0 mx-0 mb-12">
-          
-          {/* Row 1 Infinite Marquee (Leftward) */}
-          <div className="flex overflow-hidden w-full select-none gap-4 py-2">
-            <div className="flex shrink-0 gap-4 animate-industry-left items-center min-w-full">
-              {categories.slice(0, 5).map((item, idx) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={idx}
-                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                  >
-                    <div>
-                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <Icon className="w-5 h-5 stroke-[2]" />
-                      </div>
-
-                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                        {item.name}
-                      </h3>
-
-                      <p className="text-xs text-slate-400 leading-relaxed">
-                        {item.desc}
-                      </p>
+        {/* Industries Clean Grid */}
+        <div className="w-full max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6">
+            {categories.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="bg-slate-900/90 border border-slate-800 p-4 sm:p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group shadow-md cursor-pointer"
+                >
+                  <div>
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                      <Icon className="w-5 h-5 stroke-[2]" />
                     </div>
+
+                    <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                      {item.name}
+                    </h3>
+
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-                );
-              })}
-            </div>
-
-            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-left items-center min-w-full">
-              {categories.slice(0, 5).map((item, idx) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={`dup1-${idx}`}
-                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                  >
-                    <div>
-                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <Icon className="w-5 h-5 stroke-[2]" />
-                      </div>
-
-                      <p className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                        {item.name}
-                      </p>
-
-                      <p className="text-xs text-slate-400 leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
-
-          {/* Row 2 Infinite Marquee (Rightward) */}
-          <div className="flex overflow-hidden w-full select-none gap-4 py-2">
-            <div className="flex shrink-0 gap-4 animate-industry-right items-center min-w-full">
-              {categories.slice(5).map((item, idx) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={idx}
-                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                  >
-                    <div>
-                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <Icon className="w-5 h-5 stroke-[2]" />
-                      </div>
-
-                      <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                        {item.name}
-                      </h3>
-
-                      <p className="text-xs text-slate-400 leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div aria-hidden="true" className="flex shrink-0 gap-4 animate-industry-right items-center min-w-full">
-              {categories.slice(5).map((item, idx) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={`dup2-${idx}`}
-                    className="bg-slate-900/90 border border-slate-800 p-5 rounded-md flex flex-col justify-between hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group flex-shrink-0 min-w-[240px] sm:min-w-[280px] max-w-[320px] shadow-md cursor-pointer"
-                  >
-                    <div>
-                      <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <Icon className="w-5 h-5 stroke-[2]" />
-                      </div>
-
-                      <p className="text-sm font-bold text-white mb-1 group-hover:text-cyan-300 transition-colors">
-                        {item.name}
-                      </p>
-
-                      <p className="text-xs text-slate-400 leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
         </div>
 
         {/* Bottom Prompt */}

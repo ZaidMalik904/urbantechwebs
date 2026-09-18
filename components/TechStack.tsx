@@ -146,81 +146,23 @@ export default function TechStack() {
         </div>
       </div>
 
-      {/* Technology Cards Container: Marquee on Mobile/Tablet, Clean Static Grid on Desktop */}
-      <div className="w-full max-w-7xl mx-auto relative z-10 space-y-6 sm:space-y-8 marquee-container overflow-hidden lg:overflow-visible px-4 sm:px-6 lg:px-8">
-        
-        {/* Row 1 Technology Cards */}
-        <div className="flex overflow-hidden lg:overflow-visible w-full select-none gap-4 sm:gap-6 py-2 justify-center">
-          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left desktop-static-row items-center justify-center min-w-full lg:min-w-0">
-            {row1Tech.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
-              >
-                <div className="flex items-center justify-center flex-shrink-0 mb-2">
-                  {item.logo}
-                </div>
-                <span className="text-xs font-bold text-slate-700 group-hover:text-blue-600 transition-colors">
-                  {item.name}
-                </span>
+      {/* Technology Cards Grid */}
+      <div className="w-full max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6">
+          {[...row1Tech, ...row2Tech].map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white border border-slate-200 hover:border-blue-500/60 p-4 sm:p-5 rounded-md flex flex-col items-center justify-center group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 shadow-xs text-center"
+            >
+              <div className="flex items-center justify-center flex-shrink-0 mb-3 h-12">
+                {item.logo}
               </div>
-            ))}
-          </div>
-
-          {/* Duplicate Row for Seamless Mobile Marquee Only (Hidden on Desktop) */}
-          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-left items-center min-w-full lg:hidden">
-            {row1Tech.map((item, idx) => (
-              <div
-                key={`dup1-${idx}`}
-                className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
-              >
-                <div className="flex items-center justify-center flex-shrink-0 mb-2">
-                  {item.logo}
-                </div>
-                <span className="text-xs font-bold text-slate-700 group-hover:text-blue-600 transition-colors">
-                  {item.name}
-                </span>
-              </div>
-            ))}
-          </div>
+              <span className="text-xs sm:text-sm font-bold text-slate-700 group-hover:text-blue-600 transition-colors">
+                {item.name}
+              </span>
+            </div>
+          ))}
         </div>
-
-        {/* Row 2 Technology Cards */}
-        <div className="flex overflow-hidden lg:overflow-visible w-full select-none gap-4 sm:gap-6 py-2 justify-center">
-          <div className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right desktop-static-row items-center justify-center min-w-full lg:min-w-0">
-            {row2Tech.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
-              >
-                <div className="flex items-center justify-center flex-shrink-0 mb-2">
-                  {item.logo}
-                </div>
-                <span className="text-xs font-bold text-slate-700 group-hover:text-blue-600 transition-colors">
-                  {item.name}
-                </span>
-              </div>
-            ))}
-          </div>
-
-          {/* Duplicate Row for Seamless Mobile Marquee Only (Hidden on Desktop) */}
-          <div aria-hidden="true" className="flex shrink-0 gap-4 sm:gap-6 animate-tech-right items-center min-w-full lg:hidden">
-            {row2Tech.map((item, idx) => (
-              <div
-                key={`dup2-${idx}`}
-                className="bg-white border border-slate-200 hover:border-blue-500/60 px-6 py-4 rounded-md flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 min-w-[150px] sm:min-w-[180px] shadow-xs"
-              >
-                <div className="flex items-center justify-center flex-shrink-0 mb-2">
-                  {item.logo}
-                </div>
-                <span className="text-xs font-bold text-slate-700 group-hover:text-blue-600 transition-colors">
-                  {item.name}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
       </div>
     </section>
   );
