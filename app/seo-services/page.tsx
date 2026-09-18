@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function SeoServicesPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs provides expert SEO services, page speed optimization, and search engine visibility enhancements. We integrate technical search strategies into our{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             SEO-friendly web development
           </Link>{" "}
           and custom layout projects.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           As a performance-focused web team, we tune clean HTML structures, XML sitemaps, JSON-LD schema, and{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             responsive website design
@@ -84,7 +85,7 @@ export default function SeoServicesPage() {
             get a technical SEO consultation
           </Link>{" "}
           to evaluate your website search visibility today.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

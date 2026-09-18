@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function WebApplicationDevelopmentPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs is a web application development company engineering custom web applications, administrative control dashboards, booking engines, and interactive web portals. We combine backend software logic with clean{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom web development
           </Link>{" "}
           practices to build enterprise-grade web tools.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           Whether you need a full SaaS system, a custom booking portal, or specialized{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             web portal UI/UX design
@@ -84,7 +85,7 @@ export default function WebApplicationDevelopmentPage() {
             consult our web application developers
           </Link>{" "}
           to scope your project requirements.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

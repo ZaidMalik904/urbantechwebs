@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function LogoDesignPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs provides logo design services, crafting distinct logo marks and brand identity packages. We align custom visual assets directly with our{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             website design services
           </Link>{" "}
           to establish corporate authority.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           As a creative branding team, we design clean vector marks, define color palettes, and create social media kits. You can explore{" "}
           <Link href="/portfolio" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             our visual brand portfolio
@@ -84,7 +85,7 @@ export default function LogoDesignPage() {
             start your logo design project
           </Link>{" "}
           with us today.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

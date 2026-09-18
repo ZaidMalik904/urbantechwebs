@@ -1,17 +1,8 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
-import { Phone, Mail, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, ArrowRight, Sparkles } from "lucide-react";
 
 export default function ContactForm() {
-  const trustPoints = [
-    "7–14 Days Fast Delivery",
-    "100% Mobile Responsive",
-    "Local SEO Ready",
-    "Free SSL Certificate",
-  ];
-
   return (
     <section id="contact" className="py-14 sm:py-20 bg-white text-slate-900 relative overflow-hidden border-b border-slate-200">
 
@@ -74,16 +65,6 @@ export default function ContactForm() {
             <span className="whitespace-nowrap">Email Us</span>
           </a>
 
-        </div>
-
-        {/* Trust Highlights Line */}
-        <div className="pt-6 border-t border-slate-200 max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-slate-600 font-medium">
-          {trustPoints.map((point, i) => (
-            <div key={i} className="flex items-center gap-2 flex-shrink-0">
-              <CheckCircle2 className="w-4.5 h-4.5 text-blue-600 flex-shrink-0" />
-              <span>{point}</span>
-            </div>
-          ))}
         </div>
 
       </div>

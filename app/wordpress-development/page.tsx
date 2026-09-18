@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function WordpressDevelopmentPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs offers professional WordPress website development for growing businesses. We craft flexible Content Management Systems paired with modern{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom website design
           </Link>{" "}
           to power your corporate blog and service pages.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           Our developers build clean custom WordPress themes, configure plugins for security and speed, set up user-friendly admin panels, and integrate technical{" "}
           <Link href="/seo-services" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             SEO services
@@ -84,7 +85,7 @@ export default function WordpressDevelopmentPage() {
             contact us for WordPress support
           </Link>{" "}
           and custom setup inquiries.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

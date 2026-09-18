@@ -42,13 +42,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const trustPoints = [
-    "7–14 Days Fast Delivery",
-    "100% Mobile Responsive",
-    "Local SEO Ready",
-    "Free SSL Certificate",
-  ];
-
   return (
     <div className="min-h-screen bg-slate-950 text-white font-sans selection:bg-blue-600 selection:text-white">
       <Navbar />
@@ -159,16 +152,6 @@ export default function ContactPage() {
                 <Clock className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                 <span>Working Hours: Mon – Sat (9 AM – 8 PM)</span>
               </div>
-            </div>
-
-            {/* Trust Highlights Line */}
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-slate-400 font-medium pt-2">
-              {trustPoints.map((point, i) => (
-                <div key={i} className="flex items-center gap-1.5 flex-shrink-0">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
-                  <span>{point}</span>
-                </div>
-              ))}
             </div>
 
           </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function WebsiteDesignPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs is a website design company creating modern, visually engaging layouts for businesses. Our design approach blends intuitive user interface (UI) principles with comprehensive{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             web development services
           </Link>{" "}
           to ensure your digital brand looks stunning and performs effortlessly.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           Whether you need a full corporate site refresh or high-converting{" "}
           <Link href="/landing-page-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             conversion landing pages
@@ -84,7 +85,7 @@ export default function WebsiteDesignPage() {
             contact us for a design consultation
           </Link>{" "}
           anytime.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

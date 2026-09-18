@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function LandingPageDevelopmentPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs specializes in landing page development, crafting high-converting landing page designs tailored for digital ad campaigns (Google Ads, Meta Ads), lead generation, and targeted product launches. We combine UI expertise from our{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             professional website design
           </Link>{" "}
           team with robust backend lead capture.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           Our landing page solutions work hand-in-hand with our overall{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             web development services
@@ -84,7 +85,7 @@ export default function LandingPageDevelopmentPage() {
             request a custom landing page consultation
           </Link>{" "}
           for your next ad campaign.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

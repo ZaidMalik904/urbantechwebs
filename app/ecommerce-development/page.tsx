@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,7 +68,7 @@ export default function EcommerceDevelopmentPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs is an e-commerce website development company building secure, responsive, and conversion-focused online stores. We combine custom storefront layouts with full-stack{" "}
           <Link href="/web-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             custom web development
@@ -77,14 +78,14 @@ export default function EcommerceDevelopmentPage() {
             website design
           </Link>{" "}
           to help brands sell products online seamlessly.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           From structured product catalogs and shopping carts to secure payment gateway integrations (Razorpay, Paytm, Stripe, Credit/Debit Cards), our developers deliver robust storefronts. You can also{" "}
           <Link href="/contact" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             discuss your online store project
           </Link>{" "}
           with our team today.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

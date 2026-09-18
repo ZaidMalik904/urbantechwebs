@@ -33,13 +33,6 @@ export default function ThankYouContent() {
 
   const whatsappUrl = `https://wa.me/917827775353?text=${whatsappMessage}`;
 
-  const trustPoints = [
-    "7–14 Days Fast Delivery",
-    "100% Mobile Responsive",
-    "Local SEO Ready",
-    "Free SSL Certificate",
-  ];
-
   const steps = [
     {
       step: "01",
@@ -218,16 +211,6 @@ export default function ThankYouContent() {
             <Briefcase className="w-4 h-4 text-cyan-400" />
             <span>Explore Our Portfolio</span>
           </Link>
-        </div>
-
-        {/* Trust Highlights Line */}
-        <div className="pt-6 border-t border-slate-800/80 max-w-3xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs text-slate-400 font-medium">
-          {trustPoints.map((point, i) => (
-            <div key={i} className="flex items-center gap-2 flex-shrink-0">
-              <ShieldCheck className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-              <span>{point}</span>
-            </div>
-          ))}
         </div>
 
       </div>

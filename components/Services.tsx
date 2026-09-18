@@ -14,13 +14,6 @@ import {
   ArrowRight,
   Sparkles,
   Search,
-  Zap,
-  MessageSquare,
-  Mail,
-  MapPin,
-  CreditCard,
-  Database,
-  ShieldCheck,
 } from "lucide-react";
 
 export default function Services() {
@@ -147,22 +140,6 @@ export default function Services() {
     },
   ];
 
-  const secondaryCapabilities = [
-    { title: "WhatsApp integration", icon: MessageSquare },
-    { title: "Contact forms", icon: Mail },
-    { title: "Maps & Location Integration", icon: MapPin },
-    { title: "Online booking", icon: Rocket },
-    { title: "Payment gateway integration", icon: CreditCard },
-    { title: "Product catalogues", icon: ShoppingCart },
-    { title: "Image galleries", icon: Globe },
-    { title: "Social media integration", icon: Sparkles },
-    { title: "Customer enquiry systems", icon: Mail },
-    { title: "Admin panels", icon: Database },
-    { title: "API integrations", icon: Code },
-    { title: "Basic SEO setup", icon: Search },
-    { title: "Performance optimization", icon: Zap },
-  ];
-
   return (
     <section id="services" className="py-20 sm:py-24 bg-white relative border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -249,87 +226,6 @@ export default function Services() {
               </div>
             );
           })}
-        </div>
-      </div>
-
-      {/* Section 5: Features We Can Add to Your Website (Full-Width Dark Section with 2-Row Auto-Animating Infinite Marquee) */}
-      <div id="features" className="w-full bg-slate-950 text-white pt-16 sm:pt-20 pb-16 sm:pb-20 border-t border-slate-800 relative overflow-hidden">
-        
-        {/* Background Image Layer */}
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          <Image
-            src="/images/process_bg.jpg"
-            alt="UrbanTechWebs website feature capabilities background"
-            fill
-            className="object-cover object-center opacity-30 scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/95 via-slate-950/90 to-slate-950/95" />
-        </div>
-
-        {/* Interior Dot Grid Pattern Overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(#38bdf8_1.2px,transparent_1.2px)] [background-size:28px_28px] opacity-15 pointer-events-none z-0" />
-
-        {/* Ambient Glowing Orbs */}
-        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none z-0" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none z-0" />
-
-        {/* Style Keyframes for 100% Seamless Infinite Marquee */}
-        <style jsx>{`
-          @keyframes featureMarqueeLeft {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(calc(-100% - 1.5rem)); }
-          }
-          @keyframes featureMarqueeRight {
-            0% { transform: translateX(calc(-100% - 1.5rem)); }
-            100% { transform: translateX(0%); }
-          }
-          .animate-feature-left {
-            animation: featureMarqueeLeft 25s linear infinite;
-          }
-          .animate-feature-right {
-            animation: featureMarqueeRight 25s linear infinite;
-          }
-          .feature-marquee-wrapper:hover .animate-feature-left,
-          .feature-marquee-wrapper:hover .animate-feature-right {
-            animation-play-state: paused;
-          }
-        `}</style>
-
-        {/* Header (Centered Container) */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider rounded-full backdrop-blur-md">
-              FEATURE OPTIONS
-            </span>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white">
-              Features We Can Add to Your Website
-            </h2>
-
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-normal">
-              Available based on your project requirements.
-            </p>
-          </div>
-        </div>
-
-        {/* Feature Options Clean Grid */}
-        <div className="w-full max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-            {secondaryCapabilities.map((item, i) => {
-              const CapIcon = item.icon;
-              return (
-                <div
-                  key={i}
-                  className="bg-slate-900/90 border border-slate-800 rounded-md p-4 sm:p-5 flex items-center gap-4 text-sm sm:text-base font-semibold text-slate-200 hover:border-blue-500/60 hover:bg-slate-900 transition-all shadow-lg group cursor-pointer"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                    <CapIcon className="w-5 h-5 stroke-[2]" />
-                  </div>
-                  <span className="leading-snug">{item.title}</span>
-                </div>
-              );
-            })}
-          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
@@ -67,14 +68,14 @@ export default function WebDevelopmentPage() {
         },
       ]}
       introParagraphs={[
-        <>
+        <React.Fragment key="intro-1">
           UrbanTech Webs delivers professional web development services tailored to the operational goals of growing businesses. We combine custom frontend layout engineering with robust backend infrastructure to build high-converting platforms, seamless{" "}
           <Link href="/website-design" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             website design solutions
           </Link>
           , and scalable digital portals for clients globally.
-        </>,
-        <>
+        </React.Fragment>,
+        <React.Fragment key="intro-2">
           Whether you require custom code for a corporate site, an{" "}
           <Link href="/ecommerce-development" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
             online store development
@@ -88,7 +89,7 @@ export default function WebDevelopmentPage() {
             get in touch for a free quote
           </Link>{" "}
           to discuss your exact scope.
-        </>,
+        </React.Fragment>,
       ]}
       benefits={[
         {

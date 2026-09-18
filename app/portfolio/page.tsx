@@ -3,13 +3,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Stats from "@/components/Stats";
 import Portfolio from "@/components/Portfolio";
 import WorkProcess from "@/components/WorkProcess";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/WhatsAppButton";
-import { FolderCheck, CheckCircle2, ChevronRight, Briefcase, TrendingUp, Layers, Sparkles } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Portfolio & Projects | UrbanTech Webs - Web Design Showcase",
@@ -51,7 +50,7 @@ export default function PortfolioPage() {
 
       <main>
         {/* Hero Banner Section with Background Image */}
-        <section className="relative overflow-hidden bg-slate-950 text-white min-h-[580px] sm:min-h-[600px] lg:min-h-[650px] flex items-center justify-center pt-16 sm:pt-20 md:pt-24 pb-28 sm:pb-36 lg:pb-40">
+        <section className="relative overflow-hidden bg-slate-950 text-white min-h-[480px] sm:min-h-[520px] lg:min-h-[560px] flex items-center justify-center pt-16 sm:pt-20 md:pt-24 pb-16 sm:pb-20">
 
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
@@ -104,51 +103,7 @@ export default function PortfolioPage() {
               .
             </p>
 
-            {/* Single-Line Trust Bar */}
-            <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-3 sm:gap-5 lg:gap-7 pt-3 border-t border-slate-800/80 max-w-3xl mx-auto text-xs sm:text-sm">
-              {[
-                "100+ Delivered Projects",
-                "100% Mobile Responsive",
-                "Local SEO & Speed Optimized",
-                "24/7 Dedicated Support",
-              ].map((feature, i) => (
-                <div key={i} className="flex items-center gap-2 flex-shrink-0 font-medium text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                  <span>{feature}</span>
-                  {i < 3 && <span className="hidden md:inline-block text-slate-700 ml-2 sm:ml-4">•</span>}
-                </div>
-              ))}
-            </div>
-
           </div>
-        </section>
-
-        {/* Highlights Stats Section */}
-        <section className="bg-white text-slate-900 border-b border-slate-200 relative">
-          <Stats
-            items={[
-              {
-                iconName: "Briefcase",
-                title: "100+ Live Websites",
-                desc: "Real-world projects delivered across multiple industries.",
-              },
-              {
-                iconName: "TrendingUp",
-                title: "Proven Conversion Results",
-                desc: "Designed to turn casual visitors into paying clients.",
-              },
-              {
-                iconName: "Layers",
-                title: "Diverse Project Range",
-                desc: "Business, e-commerce, portal, and custom web app projects.",
-              },
-              {
-                iconName: "Sparkles",
-                title: "Modern Aesthetics",
-                desc: "Premium visual designs with responsive layouts.",
-              },
-            ]}
-          />
         </section>
 
         {/* Portfolio Showcase */}
