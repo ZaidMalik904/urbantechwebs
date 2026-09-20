@@ -92,57 +92,6 @@ export default function Portfolio() {
       ],
       liveUrl: "https://portfolio-8qup.onrender.com/",
       isFeatured: true,
-    },
-    {
-      id: 6,
-      title: "YumGo Food & Grocery Marketplace",
-      category: "E-Commerce & Digital Platform",
-      domain: "yum-go-fr.onrender.com",
-      image: "/images/yumgo_marketplace_v2.png",
-      tags: ["Full-Stack", "Food Marketplace", "Web Platform", "Render Deployed"],
-      description: "Full-featured online food & grocery marketplace platform with real-time ordering, dynamic catalog, and secure checkout workflow.",
-      features: [
-        "Dynamic food & grocery catalog browsing",
-        "Shopping cart & real-time checkout workflow",
-        "Mobile-optimized customer interface",
-        "Integrated admin management dashboard"
-      ],
-      liveUrl: "https://yum-go-fr.onrender.com/",
-      isFeatured: false,
-    },
-    {
-      id: 7,
-      title: "YumGo Admin Control Panel",
-      category: "Admin Dashboard & Operations",
-      domain: "yum-go-ad.onrender.com",
-      image: "/images/yumgo_admin_screenshot_v2.png",
-      tags: ["Admin Dashboard", "Order Tracking", "Analytics", "Live App"],
-      description: "Comprehensive admin control panel for inventory management, real-time order processing, customer analytics, and reporting.",
-      features: [
-        "Real-time order tracking & status management",
-        "Product inventory & catalog control",
-        "Customer analytics & sales reporting",
-        "Role-based administrative settings"
-      ],
-      liveUrl: "https://yum-go-ad.onrender.com/",
-      isFeatured: false,
-    },
-    {
-      id: 8,
-      title: "ADL UPVC Manufacturing Website",
-      category: "Industrial Manufacturing",
-      domain: "upvc-project.onrender.com",
-      image: "/images/upvc-project.png",
-      tags: ["Industrial", "UPVC Manufacturing", "Responsive", "Live Site"],
-      description: "Corporate manufacturing website showcasing UPVC window and door systems, technical specs, and project galleries.",
-      features: [
-        "UPVC product catalog & technical specs",
-        "Project gallery & installation photos",
-        "Business quote enquiry form",
-        "Responsive industrial design"
-      ],
-      liveUrl: "https://upvc-project.onrender.com",
-      isFeatured: false,
     }
   ];
 
@@ -262,7 +211,7 @@ export default function Portfolio() {
         </div>
 
         {/* Show More / Show Less Button */}
-        {projects.length > 4 && (
+        {projects.length > 5 && (
           <div className="mt-14 text-center">
             <button
               onClick={() => setShowAll(!showAll)}

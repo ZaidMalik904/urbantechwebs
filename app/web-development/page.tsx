@@ -150,10 +150,10 @@ export default function WebDevelopmentPage() {
           image: "/images/karma_business.png",
         },
         {
-          title: "ADL UPVC Manufacturing Website",
-          desc: "Corporate manufacturing site showcasing UPVC window & door systems with technical specs.",
-          url: "https://upvc-project.onrender.com",
-          image: "/images/upvc-project.png",
+          title: "Narayana Vacation Booking",
+          desc: "Tour & vacation booking website featuring holiday package listings and inquiry management.",
+          url: "https://narayanavacation.com/",
+          image: "/images/narayana_vacation.png",
         },
       ]}
       faqs={[

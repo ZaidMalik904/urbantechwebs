@@ -290,8 +290,8 @@ export default function Process() {
         </div>
 
         {/* Bottom Prompt */}
-        <div className="text-center bg-slate-900/90 border border-slate-800 p-6 rounded-xl max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-4 sm:px-6 mb-16">
-          <p className="text-slate-300 text-xs sm:text-sm font-medium text-left">
+        <div className="text-center bg-slate-900/90 border border-slate-800 p-6 rounded-xl max-w-2xl mx-4 sm:mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-6 sm:px-6 mb-16">
+          <p className="text-slate-300 text-xs sm:text-sm font-medium text-center sm:text-left">
             Have a different requirement? Tell us what you need and we&apos;ll discuss the right approach for your project.
           </p>
 
@@ -299,7 +299,7 @@ export default function Process() {
             href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20discuss%20a%20website%20for%20my%20business%20industry."
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 flex-shrink-0 shadow-md"
+            className="w-full sm:w-auto justify-center px-6 py-3 sm:py-2.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 flex-shrink-0 shadow-md"
           >
             <Image src="/images/whatsapp.svg" alt="WhatsApp" width={16} height={16} className="w-4 h-4" />
             <span>Discuss on WhatsApp</span>

@@ -49,7 +49,7 @@ export default function ContactPage() {
       <main>
         {/* Expanded Hero Section with Integrated Direct Contact Action Buttons */}
         <section className="relative overflow-hidden bg-slate-950 text-white -mt-[108px] pt-36 sm:pt-44 pb-20 sm:pb-24 text-center flex flex-col justify-center min-h-[520px] sm:min-h-[600px] border-b border-slate-800">
-          
+
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -68,7 +68,7 @@ export default function ContactPage() {
 
           {/* Hero Content Container */}
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center space-y-6 sm:space-y-8">
-            
+
             {/* Badge: GET IN TOUCH */}
             <div>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-cyan-400 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
@@ -105,7 +105,7 @@ export default function ContactPage() {
 
             {/* Direct Contact Action Buttons (Integrated into Hero) */}
             <div className="flex flex-col md:flex-row items-stretch justify-center gap-4 sm:gap-6 max-w-4xl mx-auto pt-2 w-full">
-              
+
               {/* WhatsApp CTA */}
               <a
                 href="https://wa.me/917827775353?text=Hi%20UrbanTechWebs%2C%20I%20want%20to%20get%20a%20free%20consultation%20and%20quote%20for%20my%20website%20project."
@@ -145,7 +145,7 @@ export default function ContactPage() {
             <div className="pt-6 border-t border-slate-800/80 max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-300 font-medium">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span>Available Worldwide | Online Web Services</span>
+                <span>Noida Sector 62, Uttar Pradesh, India</span>
               </div>
               <span className="hidden sm:inline text-slate-700">•</span>
               <div className="flex items-center gap-2">

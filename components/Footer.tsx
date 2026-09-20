@@ -106,7 +106,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5 text-slate-300">
                 <MapPin className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                <span>Available Worldwide | Online Web Services</span>
+                <span>Noida Sector 62, Uttar Pradesh, India</span>
               </li>
             </ul>
           </div>

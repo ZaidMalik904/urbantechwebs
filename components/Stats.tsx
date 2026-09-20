@@ -121,13 +121,35 @@ export default function Stats({ items }: StatsProps) {
   return (
     <section className="relative z-30 -mt-10 sm:-mt-12 md:-mt-14 py-0 pointer-events-auto w-full">
       {/* Floating Bold Red Banner Box (100% Edge-to-Edge Full Width) */}
-      <div className="w-full bg-gradient-to-r from-red-600 via-red-600 to-rose-700 border-y border-red-500/90 shadow-2xl shadow-red-600/35 py-4 sm:py-6 rounded-none overflow-hidden">
-        {/* Single Unified Responsive Grid (Mobile, Tablet & Desktop) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full bg-gradient-to-r from-red-600 via-red-600 to-rose-700 border-y border-red-500/90 shadow-2xl shadow-red-600/35 py-3.5 sm:py-5 lg:py-6 rounded-none overflow-hidden relative">
+        
+        {/* Style Keyframes for Responsive Single-Line Marquee Animation */}
+        <style jsx>{`
+          @keyframes statsMarquee {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-stats-marquee {
+            animation: statsMarquee 22s linear infinite;
+          }
+          .stats-marquee-wrapper:hover .animate-stats-marquee {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        {/* Desktop View: Static 4-Column Grid (lg screens and above) */}
+        <div className="hidden lg:grid lg:grid-cols-4 gap-6 items-center max-w-7xl mx-auto px-6 lg:px-8">
           {highlights.map((item, idx) => {
             const Icon = item.iconName ? ICON_MAP[item.iconName] || CheckCircle2 : item.icon || CheckCircle2;
             return (
-              <div key={idx} className="flex items-start gap-3.5 sm:pr-4 sm:border-r border-red-500/60 last:border-0 bg-white/10 sm:bg-transparent p-3 sm:p-0 rounded-lg sm:rounded-none">
+              <div
+                key={idx}
+                className="flex items-start gap-3.5 pr-4 border-r border-red-500/60 last:border-0"
+              >
                 <div className="w-10 h-10 rounded-md bg-white/20 text-white border border-white/30 flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
                   <Icon className="w-5 h-5 stroke-[2.5]" />
                 </div>
@@ -143,6 +165,35 @@ export default function Stats({ items }: StatsProps) {
             );
           })}
         </div>
+
+        {/* Responsive/Mobile View: Single Line Marquee Animation (< lg screens) */}
+        <div className="lg:hidden flex overflow-hidden relative w-full select-none stats-marquee-wrapper py-1">
+          <div className="flex items-center gap-6 flex-nowrap animate-stats-marquee w-max">
+            {/* Duplicate highlights twice so translateX(-50%) creates a 100% seamless infinite scroll */}
+            {[...highlights, ...highlights].map((item, idx) => {
+              const Icon = item.iconName ? ICON_MAP[item.iconName] || CheckCircle2 : item.icon || CheckCircle2;
+              return (
+                <div
+                  key={idx}
+                  className="flex items-center gap-3.5 bg-white/10 border border-white/20 px-4 py-2.5 rounded-xl flex-shrink-0 shadow-sm"
+                >
+                  <div className="w-9 h-9 rounded-lg bg-white/20 text-white border border-white/30 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-4.5 h-4.5 stroke-[2.5]" />
+                  </div>
+                  <div className="flex flex-col">
+                    <h4 className="text-xs font-black text-white uppercase tracking-wider whitespace-nowrap">
+                      {item.title}
+                    </h4>
+                    <p className="text-[11px] text-red-100 leading-tight font-medium whitespace-nowrap">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
       </div>
     </section>
   );

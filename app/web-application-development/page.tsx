@@ -136,10 +136,10 @@ export default function WebApplicationDevelopmentPage() {
       ]}
       portfolioExamples={[
         {
-          title: "YumGo Marketplace Portal",
-          desc: "Full-stack food ordering platform with customer cart, vendor dashboard, and order management.",
-          url: "https://yum-go-fr.onrender.com/",
-          image: "/images/yumgo_marketplace_v2.png",
+          title: "Karma Business Consultancy Portal",
+          desc: "Australian business consultancy agency web portal engineered for brand authority and lead capture.",
+          url: "https://karmabs.com.au/",
+          image: "/images/karma_business.png",
         },
         {
           title: "Sheriff Foundation Portal",

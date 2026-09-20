@@ -142,10 +142,10 @@ export default function EcommerceDevelopmentPage() {
           image: "/images/mansoori_garments.png",
         },
         {
-          title: "YumGo Marketplace",
-          desc: "Online food & grocery store platform with real-time checkout workflow and admin portal.",
-          url: "https://yum-go-fr.onrender.com/",
-          image: "/images/yumgo_marketplace_v2.png",
+          title: "Jinda Car Rentals Platform",
+          desc: "Car rental platform featuring fleet showcase, vehicle specifications, online reservation workflow, and instant inquiries.",
+          url: "https://jindacarrentals.com/",
+          image: "/images/jinda_rentals.png",
         },
       ]}
       faqs={[
