@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "WordPress Development Services | UrbanTech Webs",
+  title: "WordPress Development Services",
   description:
     "UrbanTech Webs provides WordPress development services. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
   alternates: {
     canonical: "https://urbantechwebs.in/wordpress-development",
   },
   openGraph: {
-    title: "WordPress Development Services | UrbanTech Webs",
+    title: "WordPress Development Services",
     description:
       "UrbanTech Webs provides WordPress development services. We build custom WordPress themes, business sites, plugins, and easy CMS setups.",
     url: "https://urbantechwebs.in/wordpress-development",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WordPress Development Services | UrbanTech Webs",
+    title: "WordPress Development Services",
     description:
       "Custom WordPress theme development, plugin configuration, and CMS administration.",
     images: ["/images/wordpress_dev_hero_bg.jpg"],

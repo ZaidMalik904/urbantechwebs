@@ -22,14 +22,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | UrbanTech Webs - Professional Web Development Agency",
+  title: "About Us - Professional Web Development Agency",
   description:
     "Learn about UrbanTech Webs, a leading web development and website design agency. Discover our team values, expertise, and client focus.",
   alternates: {
     canonical: "https://urbantechwebs.in/about",
   },
   openGraph: {
-    title: "About Us | UrbanTech Webs - Professional Web Development Agency",
+    title: "About Us - Professional Web Development Agency",
     description:
       "Learn about UrbanTech Webs, a leading web development and website design agency. Discover our team values, expertise, and client focus.",
     url: "https://urbantechwebs.in/about",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | UrbanTech Webs - Professional Web Development Agency",
+    title: "About Us - Professional Web Development Agency",
     description:
       "Specialized web development & design agency dedicated to building high-converting websites.",
     images: ["/images/about_hero_bg.jpg"],
@@ -108,7 +108,7 @@ export default function AboutPage() {
       <main>
         {/* Expanded Hero Banner Section with Background Image */}
         <section className="relative overflow-hidden bg-slate-950 text-white -mt-[108px] pt-36 sm:pt-44 pb-16 sm:pb-20 text-center flex flex-col justify-center min-h-[480px] sm:min-h-[540px] border-b border-slate-800">
-          
+
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
           {/* Hero Content Container */}
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center space-y-6 sm:space-y-7">
-            
+
             {/* Badge: OUR COMPANY & MISSION */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-cyan-400 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
               <Building2 className="w-4 h-4 text-cyan-400" />
@@ -182,7 +182,7 @@ export default function AboutPage() {
         {/* Dedicated Section 1: Agency Core Values & Philosophy */}
         <section className="py-20 sm:py-24 bg-white text-slate-900 border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-blue-600 text-xs font-mono font-bold uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5" />
@@ -235,7 +235,7 @@ export default function AboutPage() {
         {/* Dedicated Section 2: Technical & Quality Standards */}
         <section className="py-20 sm:py-24 bg-slate-950 text-white border-b border-slate-800 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
-            
+
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="inline-flex items-center gap-2 px-3.5 py-1 bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-xs font-mono font-bold uppercase tracking-wider rounded-full backdrop-blur-md">
                 <Code2 className="w-3.5 h-3.5" />

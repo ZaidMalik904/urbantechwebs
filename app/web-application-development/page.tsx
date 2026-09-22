@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Custom Web Application Development Services | UrbanTech Webs",
+  title: "Custom Web Application Development Services",
   description:
     "UrbanTech Webs provides custom web application development services. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
   alternates: {
     canonical: "https://urbantechwebs.in/web-application-development",
   },
   openGraph: {
-    title: "Custom Web Application Development Services | UrbanTech Webs",
+    title: "Custom Web Application Development Services",
     description:
       "UrbanTech Webs provides custom web application development services. We build custom web apps, SaaS dashboards, booking portals, and admin systems.",
     url: "https://urbantechwebs.in/web-application-development",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Web Application Development Services | UrbanTech Webs",
+    title: "Custom Web Application Development Services",
     description:
       "Custom web applications, client dashboards, and booking portals.",
     images: ["/images/web_app_dev_hero_bg.jpg"],

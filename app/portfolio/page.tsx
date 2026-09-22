@@ -11,14 +11,14 @@ import FloatingActions from "@/components/WhatsAppButton";
 import { ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Portfolio & Projects | UrbanTech Webs - Web Design Showcase",
+  title: "Portfolio & Projects - Web Design Showcase",
   description:
     "Explore website design and development projects by UrbanTech Webs. Business websites, e-commerce stores, car rental portals, and custom web applications.",
   alternates: {
     canonical: "https://urbantechwebs.in/portfolio",
   },
   openGraph: {
-    title: "Portfolio & Case Studies | UrbanTech Webs - Website Design Projects",
+    title: "Portfolio & Case Studies - Website Design Projects",
     description:
       "Explore website design and web development projects by UrbanTech Webs. Featuring business websites, e-commerce stores, car rentals, and custom web apps.",
     url: "https://urbantechwebs.in/portfolio",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio & Projects | UrbanTech Webs - Web Design Showcase",
+    title: "Portfolio & Projects - Web Design Showcase",
     description:
       "Explore real client websites and web applications built by UrbanTech Webs.",
     images: ["/images/portfolio_hero_workspace.jpg"],

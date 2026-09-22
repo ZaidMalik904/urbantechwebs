@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "SEO & Website Performance Services | UrbanTech Webs",
+  title: "SEO & Website Performance Services",
   description:
     "UrbanTech Webs provides SEO and website performance services. Technical SEO, speed optimization, structured schema, and search visibility.",
   alternates: {
     canonical: "https://urbantechwebs.in/seo-services",
   },
   openGraph: {
-    title: "SEO & Website Performance Services | UrbanTech Webs",
+    title: "SEO & Website Performance Services",
     description:
       "UrbanTech Webs provides SEO and website performance services. Technical SEO, speed optimization, structured schema, and search visibility.",
     url: "https://urbantechwebs.in/seo-services",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEO & Website Performance Services | UrbanTech Webs",
+    title: "SEO & Website Performance Services",
     description:
       "Expert technical SEO and website performance optimization.",
     images: ["/images/seo_services_hero_bg.jpg"],

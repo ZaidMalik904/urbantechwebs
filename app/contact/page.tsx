@@ -9,14 +9,14 @@ import FloatingActions from "@/components/WhatsAppButton";
 import { MessageSquare, Phone, Mail, MapPin, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | UrbanTech Webs - Get a Free Web Consultation",
+  title: "Contact Us - Get a Free Web Consultation",
   description:
     "Contact UrbanTech Webs for custom website development and website design. Phone: +91 78277 75353, Email: urbantechwebs904@gmail.com.",
   alternates: {
     canonical: "https://urbantechwebs.in/contact",
   },
   openGraph: {
-    title: "Contact Us | UrbanTech Webs - Get a Free Web Consultation",
+    title: "Contact Us - Get a Free Web Consultation",
     description:
       "Contact UrbanTech Webs for website development, website design, and web applications.",
     url: "https://urbantechwebs.in/contact",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | UrbanTech Webs - Get a Free Web Consultation",
+    title: "Contact Us - Get a Free Web Consultation",
     description:
       "Get a free consultation and project quote for custom web development.",
     images: ["/images/contact_hero_bg.jpg"],

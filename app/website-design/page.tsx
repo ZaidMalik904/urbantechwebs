@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Website Design & Development Services | UrbanTech Webs",
+  title: "Website Design & Development Services",
   description:
     "UrbanTech Webs provides professional website design and UI/UX development services. We craft modern, responsive, and conversion-focused layouts for businesses.",
   alternates: {
     canonical: "https://urbantechwebs.in/website-design",
   },
   openGraph: {
-    title: "Website Design & Development Services | UrbanTech Webs",
+    title: "Website Design & Development Services",
     description:
       "UrbanTech Webs provides professional website design and UI/UX development services. We craft modern, responsive, and conversion-focused layouts for businesses.",
     url: "https://urbantechwebs.in/website-design",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Design & Development Services | UrbanTech Webs",
+    title: "Website Design & Development Services",
     description:
       "Professional website design and UI/UX development services for growing businesses.",
     images: ["/images/website_design_hero_bg.jpg"],

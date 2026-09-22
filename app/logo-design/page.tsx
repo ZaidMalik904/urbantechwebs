@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Logo & Brand Design Services | UrbanTech Webs",
+  title: "Logo & Brand Design Services",
   description:
     "UrbanTech Webs provides logo & brand design services. Custom logo design, brand identity, vector assets, and visual branding.",
   alternates: {
     canonical: "https://urbantechwebs.in/logo-design",
   },
   openGraph: {
-    title: "Logo & Brand Design Services | UrbanTech Webs",
+    title: "Logo & Brand Design Services",
     description:
       "UrbanTech Webs provides logo & brand design services. Custom logo design, brand identity, vector assets, and visual branding.",
     url: "https://urbantechwebs.in/logo-design",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Logo & Brand Design Services | UrbanTech Webs",
+    title: "Logo & Brand Design Services",
     description:
       "Professional logo design services and brand identity development.",
     images: ["/images/logo_design_hero_bg.jpg"],

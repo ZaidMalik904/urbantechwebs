@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "E-commerce Website Development Services | UrbanTech Webs",
+  title: "E-commerce Website Development Services",
   description:
     "UrbanTech Webs provides e-commerce website development services. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
   alternates: {
     canonical: "https://urbantechwebs.in/ecommerce-development",
   },
   openGraph: {
-    title: "E-commerce Website Development Services | UrbanTech Webs",
+    title: "E-commerce Website Development Services",
     description:
       "UrbanTech Webs provides e-commerce website development services. We build online stores with product catalogs, shopping carts, and payment gateway setup.",
     url: "https://urbantechwebs.in/ecommerce-development",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-commerce Website Development Services | UrbanTech Webs",
+    title: "E-commerce Website Development Services",
     description:
       "Online store development, shopping carts, and payment gateway setup.",
     images: ["/images/ecommerce_dev_hero_bg.jpg"],

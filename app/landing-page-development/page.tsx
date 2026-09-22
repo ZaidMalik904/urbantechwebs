@@ -4,14 +4,14 @@ import Link from "next/link";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Landing Page Design & Development Services | UrbanTech Webs",
+  title: "Landing Page Design & Development Services",
   description:
     "UrbanTech Webs provides landing page design & development services for lead generation, ad campaigns, Google Ads, and product launches.",
   alternates: {
     canonical: "https://urbantechwebs.in/landing-page-development",
   },
   openGraph: {
-    title: "Landing Page Design & Development Services | UrbanTech Webs",
+    title: "Landing Page Design & Development Services",
     description:
       "UrbanTech Webs provides landing page design & development services for lead generation, ad campaigns, Google Ads, and product launches.",
     url: "https://urbantechwebs.in/landing-page-development",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landing Page Design & Development Services | UrbanTech Webs",
+    title: "Landing Page Design & Development Services",
     description:
       "High-converting landing page design & development for ad campaigns & lead generation.",
     images: ["/images/landing_page_hero_bg.jpg"],
